@@ -1,0 +1,149 @@
+/*body {
+	font-family: sans-serif;
+	text-align: center;
+}*/
+
+
+body {
+color: black; background-color: white;
+font-size: 100.01%;
+font-family: Helvetica,Arial,sans-serif;
+margin: 0; padding: 1em 0;
+text-align: center;  /* IE */
+background-image:url('gfx/bg.jpg');
+}
+
+
+/* all-includeing div */
+
+div#page {
+	display: none;
+	text-align: left;
+	margin: 0 auto;
+	width: 95%;
+	padding: 0;
+	/*background: #6A93D4 url(gfx/black.gif) repeat-y;*/
+	background-color: #6A93D4;
+	border: 5px solid #7080D7;
+	border-style: outset;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0; padding: 0.3em;
+	text-align: center;
+	/*background: #fed url(gfx/bg.jpg);/* repeat 100% 45%;*/
+	border-bottom: 2px black;
+	border-bottom-style: dashed;
+}
+
+
+
+/* navigation */
+
+ul#navigation {
+	/*display: none;*/
+	float: left;
+	width: 10em;
+	margin: 0 0 1.2em;
+	padding: 0;
+	/*background-color: #447BD4;*/
+}
+
+ul#navigation li {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0.5em;
+}
+
+ul#navigation a {
+	display: block;
+	padding: 0.2em;
+	font-weight: bold;
+	/*background-color: blue;*/
+}
+
+ul#navigation a:link {
+	color: #FF6600;
+	background-color: #1144AA;
+}
+
+ul#navigation a:hover {
+	color: black;
+	background-color: yellow;
+}
+
+ul#navigation a:active {
+	color: white;
+	background-color: gray;
+}
+
+
+/* main */
+
+div#main {
+	/*display: none;*/
+	/*margin-left: 10em;
+	margin-bottom: 0;
+	padding: 0 1em;*/
+	/*background-color: #6A93D4;*/
+	margin: 0 0 1em 220px;
+	padding: 0 1em;
+}
+
+* html div#main {
+	height: 1em; /* Workaround gegen den 3-Pixel-Bug des Internet Explorer bis Version 6 [by selfhtml.org] */
+	margin-bottom: 0;
+}
+
+div#main h2 {
+	font-size: 1.2em;
+	margin: 0.2em 0;
+	color: navy;
+}
+
+div#main p {
+	font-size: 1em;
+	margin: 1em 0;
+}
+
+/* footer */
+p#footer {
+	clear: both;
+	margin: 0;
+	padding: 0.1em;
+	text-align: center;
+	color: white;
+	background-color: #071871;
+	border-top: 1px solid silver;
+}
+
+/*#game {
+	display: none;
+}
+
+#help {
+	display: none;
+}
+
+#browsertip {
+	display: none;
+	background-color: #01DF74;
+}
+
+#warning {
+	background-color: red;
+	display: none;
+}
+
+#lastscore {
+	background-color: red;
+}
+
+#credits {
+	clear: left;
+	float: right;
+	font-size: xx-small;
+	text-align: right;
+}*/
