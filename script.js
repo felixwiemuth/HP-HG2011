@@ -28,16 +28,33 @@ function addClickHandlers() {
 			$(this).fadeTo("slow", 0.5);
 		}
 	);
+	
+	$("#page").hover(
+		function() {
+			$(this).clearQueue();
+			$(this).fadeTo("fast", 1);
+		},
+		function() {
+			$(this).clearQueue();
+			$(this).delay(4000).fadeTo(4000, 0.5);
+		}
+	);
 }
 
 // ready event for document -- executed when DOM is ready
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
-	//slide divs
-	$("#page").animate({
+	//slide and fade 'page'
+	$("#page").delay(500).animate({
 		opacity: 'toggle',
 		height: 'toggle'
-	}, 2000);
+	}, 5000);
+	// $("#page").delay(1000).animate({
+		// opacity: 'toggle'
+	// }, 2000).animate({height: 'toggle'}, 5000);
+	// $("#page").animate({
+		// opacity: '0.8'
+	// }, 5000);
 	// $("#main").delay(200).animate({
 		// opacity: 'toggle',
 		// height: 'toggle'
