@@ -61,12 +61,14 @@ ul#navigation a {
 	display: block;
 	padding: 0.2em;
 	font-weight: bold;
-	/*background-color: blue;*/
 }
 
 ul#navigation a:link {
 	color: #FF6600;
 	background-color: #1144AA;
+	border: 2px solid #191919;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 ul#navigation a:hover {
