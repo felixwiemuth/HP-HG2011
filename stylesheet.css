@@ -1,8 +1,3 @@
-/*body {
-	font-family: sans-serif;
-	text-align: center;
-}*/
-
 
 body {
 color: black; background-color: white;
@@ -10,11 +5,12 @@ font-size: 100.01%;
 font-family: Helvetica,Arial,sans-serif;
 margin: 0; padding: 1em 0;
 text-align: center;  /* IE */
-background-image:url('gfx/bg.jpg');
+background: #030A35 url('gfx/bg.jpg') no-repeat;
+background-position: center top;
 }
 
 
-/* all-includeing div */
+/* all-including div */
 
 div#page {
 	display: none;
@@ -38,11 +34,9 @@ h1 {
 }
 
 
-
 /* navigation */
 
 ul#navigation {
-	/*display: none;*/
 	float: left;
 	width: 10em;
 	margin: 0 0 1.2em;
@@ -64,16 +58,17 @@ ul#navigation a {
 }
 
 ul#navigation a:link {
-	color: #FF6600;
-	background-color: #1144AA;
+	color: black;
+	background-color: #5D6DCF;
+	//background-color: #1144AA;
 	border: 2px solid #191919;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
 
 ul#navigation a:hover {
-	color: black;
-	background-color: yellow;
+	color: #000E67;
+	background-color: #E7A500;
 }
 
 ul#navigation a:active {
@@ -85,11 +80,6 @@ ul#navigation a:active {
 /* main */
 
 div#main {
-	/*display: none;*/
-	/*margin-left: 10em;
-	margin-bottom: 0;
-	padding: 0 1em;*/
-	/*background-color: #6A93D4;*/
 	margin: 0 0 1em 220px;
 	padding: 0 1em;
 }
@@ -110,6 +100,7 @@ div#main p {
 	margin: 1em 0;
 }
 
+
 /* footer */
 p#footer {
 	clear: both;
@@ -117,35 +108,6 @@ p#footer {
 	padding: 0.1em;
 	text-align: center;
 	color: white;
-	background-color: #071871;
+	background-color: #1E2A77;//#071871;
 	border-top: 1px solid silver;
 }
-
-/*#game {
-	display: none;
-}
-
-#help {
-	display: none;
-}
-
-#browsertip {
-	display: none;
-	background-color: #01DF74;
-}
-
-#warning {
-	background-color: red;
-	display: none;
-}
-
-#lastscore {
-	background-color: red;
-}
-
-#credits {
-	clear: left;
-	float: right;
-	font-size: xx-small;
-	text-align: right;
-}*/
