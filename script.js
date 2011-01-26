@@ -1,5 +1,17 @@
 // click handlers
 function addClickHandlers() {
+	//links
+	$("#link01").click( function() {
+		$("#main").load("content/content01.html");
+	});
+	
+	$("#link02").click( function() {
+		$("#main").load("content/content02.html");
+	});
+	
+	$("#link03").click( function() {
+		$("#main").load("content/content03.html");
+	});
 	
 	$("#warning").hover(
 		function() {
@@ -34,8 +46,7 @@ $(document).ready( function() {
 		// height: 'toggle'
 	// }, 5000);
 	
-	//load content
-	$("#main").load("content/template_v0.html");
+
 	
 	$("#page").toggle(); //DEBUG
 	//load();
