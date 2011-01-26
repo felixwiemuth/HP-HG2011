@@ -1,22 +1,5 @@
 // click handlers
 function addClickHandlers() {
-	$("#start").click(function() {
-		$("#menu").slideUp(600);
-		$("#help").slideUp(600);
-		$("#browsertip").slideUp(600);
-		$("#warning").slideUp(600);
-		$("#game").css("display","inline");
-	});
-
-	$("#showhelp").click(function() {
-		if ($("#help").css("display")=="none") {
-			$("#help").slideDown(600);
-			$("#showhelp").attr("value","Hide help");
-		} else {
-			$("#help").slideUp(600);
-			$("#showhelp").attr("value","Show help");
-		}
-	});
 	
 	$("#warning").hover(
 		function() {
@@ -44,22 +27,18 @@ function addClickHandlers() {
 // ready event for document -- executed when DOM is ready
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
+	//SWITCHED OFF FOR DEBUG PURPOSES
 	//slide and fade 'page'
-	$("#page").delay(500).animate({
-		opacity: 'toggle',
-		height: 'toggle'
-	}, 5000);
-	// $("#page").delay(1000).animate({
-		// opacity: 'toggle'
-	// }, 2000).animate({height: 'toggle'}, 5000);
-	// $("#page").animate({
-		// opacity: '0.8'
-	// }, 5000);
-	// $("#main").delay(200).animate({
+	// $("#page").delay(500).animate({
 		// opacity: 'toggle',
 		// height: 'toggle'
-	// }, 3000);
-	// //$("#navigation").slideDown(600);
+	// }, 5000);
+	
+	//load content
+	$("#main").load("content/template_v0.html");
+	
+	$("#page").toggle(); //DEBUG
+	//load();
 
 
 	//browser detection and support "information"
@@ -119,4 +98,33 @@ if (!Array.prototype.indexOf) {
     };
 }
 
-// ******************** game code *******************
+// ******************** code *******************
+
+// load html into divs
+
+function load()
+{
+	$("#main").append("<b>Enter loading!</b>");
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("#main").innerHTML=xmlhttp.responseText;
+    }
+	else {
+		$("#main").append("<b>Error!</b>");
+	}
+  }
+xmlhttp.open("GET","content/template_v0.html",true);
+xmlhttp.send();
+}
+
