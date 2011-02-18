@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>LaTeX</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
+<meta name="src" content="content01.tex"> 
+<meta name="date" content="2011-02-06 19:13:00"> 
+<link rel="stylesheet" type="text/css" href="content01.css"> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                                     
+                                                                                     
+
+<h2 class="titleHead"><span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span></h2>
+ <div class="author" ><span 
+class="cmr-12x-x-120">Jonas Abeln, J</span><span 
+class="cmr-12x-x-120">örg Harney und Mathias Rodemeyer</span></div><br />
+<div class="date" ><span 
+class="cmr-12x-x-120">6.</span><span 
+class="cmr-12x-x-120">&#x00A0;Februar 2011</span></div>
+                                                                                     
+                                                                                     
+   </div>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Inhaltsverzeichnis</h3>
+   <div class="tableofcontents">
+   <span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">Die ersten wichtigsten Befehle</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.1 <a 
+href="#x1-30001.1" id="QQ2-1-3">Allgemeines</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.2 <a 
+href="#x1-40001.2" id="QQ2-1-4">Dokumentenklassenbestimmung</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.3 <a 
+href="#x1-50001.3" id="QQ2-1-5">Dokument beginnen und unterteilen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.4 <a 
+href="#x1-60001.4" id="QQ2-1-6">Bilder und Graphiken</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.5 <a 
+href="#x1-70001.5" id="QQ2-1-7">Hervorheben und Trennen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.6 <a 
+href="#x1-80001.6" id="QQ2-1-8">Dokument beenden</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >1.7 <a 
+href="#x1-90001.7" id="QQ2-1-9">Fertig!</a></span>
+<br />   <span class="sectionToc" >2 <a 
+href="#x1-100002" id="QQ2-1-10">My Title</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.1 <a 
+href="#x1-110002.1" id="QQ2-1-11">My Title</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.2 <a 
+href="#x1-120002.2" id="QQ2-1-12">My Subsection</a></span>
+<br />   <span class="sectionToc" >3 <a 
+href="#x1-130003" id="QQ2-1-13">My Section 2</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >3.1 <a 
+href="#x1-140003.1" id="QQ2-1-14">My Subsection</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >3.1.1 <a 
+href="#x1-150003.1.1" id="QQ2-1-15">My Quote</a></span>
+   </div>
+                                                                                     
+                                                                                     
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>Die ersten wichtigsten Befehle</h3>
+<!--l. 121--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a 
+ id="x1-30001.1"></a>Allgemeines</h4>
+<!--l. 122--><p class="noindent" >Nachdem man LaTeX erfolgreich installiert hat zeigen wir dir nun wie man sein erstes
+Dokument erstellt. Allgemein ist zu sagen, dass alle Befehle mit einem Backslash beginnen.
+Direkt dahinter schreibt man den Befehl. Wenn ein Befehl etwas anzeigen soll wie [author],
+setzt man dahinter geschwungene Klammern <span 
+class="cmsy-10x-x-120">{</span>..Text..<span 
+class="cmsy-10x-x-120">}</span>und schreibt den entsprechenden Text
+in die Klammern. Die grundlegendsten Befehle zur Erstellung eines einfachen Dokumentes
+werden hier nun aufgelistet.
+<!--l. 125--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
+ id="x1-40001.2"></a>Dokumentenklassenbestimmung</h4>
+<!--l. 126--><p class="noindent" >Der erste Befehl ist die Bestimmung der Dokumentenklasse wie Artikel, Brief, Tabelle etc.
+Wir beginnen hier mit dem Artikel, der einfachsten Form, der Befehl ist wie folgt:
+[documentclassarticle]. Danach folgen verschiedene Einstellungen des Spaltabstandes oder
+ähnliches, was wir hier aber erst vernachlässigen.
+<!--l. 130--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
+ id="x1-50001.3"></a>Dokument beginnen und unterteilen</h4>
+<!--l. 131--><p class="noindent" >Mit dem Befehl [begin<span 
+class="cmsy-10x-x-120">{</span>document<span 
+class="cmsy-10x-x-120">}</span>] leitet man den Abschnitt ein um den ersten Text
+zu verfassen. Auch gibt es hier wieder wichtige Befehle wie [section<span 
+class="cmsy-10x-x-120">{</span>Überschrift<span 
+class="cmsy-10x-x-120">}</span>],
+[subsection<span 
+class="cmsy-10x-x-120">{</span>Unterüberschrift<span 
+class="cmsy-10x-x-120">}</span>], [subsubsection], usw. Damit kann man Abschnitte einteilen
+und so den Text gliedern. Das Schöne an LaTeX ist, dass man sich um die Konfiguration keine
+Gedanken machen muss wie in Word. Man gibt einfach nur den Befehl ein und nachher siehts
+klasse aus.
+                                                                                     
+                                                                                     
+<!--l. 134--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
+ id="x1-60001.4"></a>Bilder und Graphiken</h4>
+<!--l. 135--><p class="noindent" >In den Text kann man auch Bilder einfügen, dabei sollte man aber auch darauf achten, dass
+im Pfad der Graphik keine Leerzeichen vorhanden ist. Am besten speichert man die Graphik
+direkt innerhalb einer Festplatte (E//: Graphik). Mit folgenden Befehlen fügt man ein Bild
+ein: <!--l. 136-->
+   <div class="lstlisting" id="listing-1"><span class="label"><a 
+ id="x1-6001r1"></a></span><span 
+class="cmsy-10x-x-120">\</span>begin<span 
+class="cmsy-10x-x-120">{</span>figure<span 
+class="cmsy-10x-x-120">}</span>[h]&#x00A0;<br /><span class="label"><a 
+ id="x1-6002r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmsy-10x-x-120">\</span>centering&#x00A0;<br /><span class="label"><a 
+ id="x1-6003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmsy-10x-x-120">\</span>includegraphics[width=0.80<span 
+class="cmsy-10x-x-120">\</span>backslash&#x00A0;textwidth]<span 
+class="cmsy-10x-x-120">{</span>Quellordner<span 
+class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmsy-10x-x-120">\</span>caption<span 
+class="cmsy-10x-x-120">{</span>Untertitel<span 
+class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmsy-10x-x-120">\</span>label<span 
+class="cmsy-10x-x-120">{</span>fig:Titel&#x00A0;des&#x00A0;Bildes<span 
+class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6006r6"></a></span><span 
+class="cmsy-10x-x-120">\</span>end<span 
+class="cmsy-10x-x-120">{</span>figure<span 
+class="cmsy-10x-x-120">}</span>
+   
+   </div>
+<!--l. 144--><p class="indent" >   Im LaTeX- Programm kann man aber auch auf &#8222;Einfügen&#8220;- &#8222;Graphik&#8220; gehen, was das
+Einfügen einer Grpahik erleichtern würde.
+<!--l. 146--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
+ id="x1-70001.5"></a>Hervorheben und Trennen</h4>
+<!--l. 147--><p class="noindent" >Mit dem Befehl [clearpage] wird der Rest der Seite freigelassen. Das verhindert ein
+ungewolltes Trennen von Textabschnitten, die man zusammenbehalten möchte. Um
+Schriftzüge hervorzuheben gibt es die Möglichkeit sie größer zu schreiben. Dies tut man mit
+dem Befehl [large]. Dazu schreibt man den zu vergrößernen Schriftzug in die Zeile nach dem
+Befehl.
+<!--l. 152--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
+ id="x1-80001.6"></a>Dokument beenden</h4>
+<!--l. 153--><p class="noindent" >Wenn man seinen Text beendet hat, fügt man den Befehl [enddocument] ein. Um Schriftzüge
+hervorzuheben gibt es die Möglichkeit ihn größer zu schreiben. Dies tut man mit dem Befehl
+[large]. Das was man nicht mehr groß geschrieben haben möchte, schreibt man in die nächste
+                                                                                     
+                                                                                     
+Zeile.
+<!--l. 155--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.7   </span> <a 
+ id="x1-90001.7"></a>Fertig!</h4>
+<!--l. 156--><p class="noindent" ><span 
+class="cmr-12x-x-120">Schon hat man sein erstes Dokument erstellt! Auf dieser Seite haben wir</span>
+<span 
+class="cmr-12x-x-120">verschiedene Templates (Befehlzusammenstellung), mit denen man die</span>
+<span 
+class="cmr-12x-x-120">verschiedene Dokumentenklassen erstellen kann.</span>
+<!--l. 162--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">2   </span></span> <a 
+ id="x1-100002"></a><span 
+class="cmr-12x-x-120">My Title</span></h3>
+<!--l. 168--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">2.1   </span></span> <a 
+ id="x1-110002.1"></a><span 
+class="cmr-12x-x-120">My Title</span></h4>
+<!--l. 169--><p class="noindent" ><span 
+class="cmr-12x-x-120">Testetxtetstetxtetx</span>
+      <ul class="itemize1">
+      <li class="itemize"><span 
+class="cmbx-12x-x-120">Item 1 </span><span 
+class="cmr-12x-x-120">Text A</span>
+      </li>
+      <li class="itemize"><span 
+class="cmbx-12x-x-120">Item 2 </span><span 
+class="cmr-12x-x-120">Text B</span></li></ul>
+<!--l. 175--><p class="noindent" ><span 
+class="cmr-12x-x-120">BlablablaBlablablaBlablablaBlablablaBlablablaBlablablaBlablablaBlablabla[1]</span>
+                                                                                     
+                                                                                     
+<!--l. 178--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">2.2   </span></span> <a 
+ id="x1-120002.2"></a><span 
+class="cmr-12x-x-120">My Subsection</span></h4>
+<!--l. 190--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">3   </span></span> <a 
+ id="x1-130003"></a><span 
+class="cmr-12x-x-120">My Section 2</span></h3>
+<!--l. 193--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">3.1   </span></span> <a 
+ id="x1-140003.1"></a><span 
+class="cmr-12x-x-120">My Subsection</span></h4>
+<!--l. 195--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark"><span 
+class="cmr-12x-x-120">3.1.1   </span></span> <a 
+ id="x1-150003.1.1"></a><span 
+class="cmr-12x-x-120">My Quote</span></h5>
+<!--l. 197--><p class="noindent" >
+      <div class="quote">
+      <!--l. 198--><p class="noindent" ><span 
+class="cmr-12x-x-120">This is a quote. A corrseponding footnote is shown below. And</span>
+      <span 
+class="cmr-12x-x-120">this  is  simply  a  very  simple  text  to  demonstration  matters.</span>
+      <span class="footnote-mark"><a 
+href="content012.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x1-15001f1"></a></div>
+<!--l. 201--><p class="noindent" ><span 
+class="cmr-12x-x-120">Another text. This shows the usage of prettyref: siehe Abschnitt</span><span 
+class="cmr-12x-x-120">&#x00A0;</span><a 
+href="#x1-110002.1"><span 
+class="cmr-12x-x-120">2.1</span><!--tex4ht:ref: sec:labelA --></a> <span 
+class="cmr-12x-x-120">&#8222;</span><a 
+href="#x1-110002.1"><span 
+class="cmr-12x-x-120">2.1</span><!--tex4ht:ref: sec:labelA --></a><span 
+class="cmr-12x-x-120">&#8220;</span><span 
+class="cmr-12x-x-120">&#x00A0;auf</span>
+<span 
+class="cmr-12x-x-120">Seite </span><span class="pageref"><a 
+href="#x1-110002.1"><span 
+class="cmsy-10x-x-144">§</span></a></span>
+                                                                                     
+                                                                                     
+<div class="flushleft" 
+>
+<!--l. 206--><p class="noindent" >
+<h3 class="likesectionHead"><a 
+ id="x1-160003.1.1"></a><span 
+class="cmr-12x-x-120">Literatur</span></h3>
+<!--l. 208--><p class="noindent" >
+     <div class="thebibliography">
+     <p class="bibitem" ><span class="biblabel">
+  <span 
+class="cmr-12x-x-120">[1]</span><span class="bibsp"><span 
+class="cmr-12x-x-120">&#x00A0;</span><span 
+class="cmr-12x-x-120">&#x00A0;</span><span 
+class="cmr-12x-x-120">&#x00A0;</span></span></span>
+     <a 
+ id="X1"></a><span 
+class="cmr-12x-x-120">Test</span>
+     <span 
+class="cmr-12x-x-120">biblio</span>
+     <span 
+class="cmr-12x-x-120">1</span>
+     </p>
+     <p class="bibitem" ><span class="biblabel">
+  <span 
+class="cmr-12x-x-120">[2]</span><span class="bibsp"><span 
+class="cmr-12x-x-120">&#x00A0;</span><span 
+class="cmr-12x-x-120">&#x00A0;</span><span 
+class="cmr-12x-x-120">&#x00A0;</span></span></span>
+     <a 
+ id="X2"></a><span 
+class="cmr-12x-x-120">Graphics</span>
+     <span 
+class="cmr-12x-x-120">&#8222;test.png&#8220;,</span>
+     <span 
+class="cmr-12x-x-120">URL:</span>
+     <a 
+href="http://myurl/test.png" class="url" ><span 
+class="cmtt-12x-x-120">http://myurl/test.png</span></a>
+                                                                                     
+                                                                                     
+     <span 
+class="cmr-12x-x-120">[Date:</span>
+     <span 
+class="cmr-12x-x-120">xx.xx.xxxx]</span>
+</p>
+     </div>
+</div>
+    
+</body></html> 
+
+                                                                                     
+
+

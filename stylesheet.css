@@ -5,7 +5,11 @@ font-size: 100.01%;
 font-family: Helvetica,Arial,sans-serif;
 margin: 0; padding: 1em 0;
 text-align: center;  /* IE */
+<<<<<<< HEAD
 background: #030A35 url('gfx/bg.jpg') no-repeat fixed;
+=======
+background: #030A35 url('gfx/bg.jpg') no-repeat;
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 background-position: center top;
 }
 
@@ -14,17 +18,27 @@ background-position: center top;
 
 div#page {
 	display: none;
+<<<<<<< HEAD
 	text-align: centre;
 	margin: 0 auto;
 	width: 75%;
 	padding: 10px;
+=======
+	text-align: left;
+	margin: 0 auto;
+	width: 95%;
+	padding: 0;
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	/*background: #6A93D4 url(gfx/black.gif) repeat-y;*/
 	background-color: #6A93D4;
 	border: 5px solid #7080D7;
 	border-style: outset;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 h1 {
 	font-size: 2em;
 	margin: 0; padding: 0.3em;
@@ -33,6 +47,7 @@ h1 {
 	border-bottom: 2px black;
 	border-bottom-style: dashed;
 }
+<<<<<<< HEAD
 h2 {
 	color: white;
 }
@@ -54,6 +69,13 @@ color: white;
 /* home */
 
 ul#home {
+=======
+
+
+/* navigation */
+
+ul#navigation {
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	float: left;
 	width: 10em;
 	margin: 0 0 1.2em;
@@ -61,6 +83,7 @@ ul#home {
 	/*background-color: #447BD4;*/
 }
 
+<<<<<<< HEAD
 ul#home li {
 	list-style: none;
 	text-align: center;
@@ -69,12 +92,26 @@ ul#home li {
 }
 
 ul#home a {
+=======
+ul#navigation li {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0.5em;
+}
+
+ul#navigation a {
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	display: block;
 	padding: 0.2em;
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
 ul#home a:link {
+=======
+ul#navigation a:link {
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	color: black;
 	background-color: #5D6DCF;
 	//background-color: #1144AA;
@@ -83,11 +120,16 @@ ul#home a:link {
 	border-radius: 15px;
 }
 
+<<<<<<< HEAD
 ul#home a:hover {
+=======
+ul#navigation a:hover {
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	color: #000E67;
 	background-color: #E7A500;
 }
 
+<<<<<<< HEAD
 ul#home a:active {
 	color: white;
 	background-color: gray;
@@ -131,6 +173,9 @@ ul#home-navigation a:hover {
 }
 
 ul#home-navigation a:active {
+=======
+ul#navigation a:active {
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	color: white;
 	background-color: gray;
 }
@@ -139,7 +184,11 @@ ul#home-navigation a:active {
 /* main */
 
 div#main {
+<<<<<<< HEAD
 	margin: 0 0 1em 20px;
+=======
+	margin: 0 0 1em 220px;
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 	padding: 0 1em;
 }
 
@@ -151,7 +200,11 @@ div#main {
 div#main h2 {
 	font-size: 1.2em;
 	margin: 0.2em 0;
+<<<<<<< HEAD
 	color: white;
+=======
+	color: navy;
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 }
 
 div#main p {
@@ -159,6 +212,7 @@ div#main p {
 	margin: 1em 0;
 }
 
+<<<<<<< HEAD
 #column1 {
 	  float:left;
 	  width: 40%;
@@ -171,6 +225,8 @@ div#main p {
 	  margin-right: 8%; 
 	}
 	
+=======
+>>>>>>> 203dfaca9fd8a8c45a6074698882e9d59038840a
 
 /* footer */
 p#footer {
