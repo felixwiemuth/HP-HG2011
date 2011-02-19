@@ -13,6 +13,10 @@ function addClickHandlers() {
 		$("#main").load("content/content03.html");
 	});
 	
+	$("#linkimpressum").click( function() {
+		$("#main").load("content/impressum.html");
+	});
+	
 	$("#warning").hover(
 		function() {
 			$(this).clearQueue();
