@@ -24,16 +24,16 @@ function addClickHandlers() {
 		}
 	);
 	
-	$("#page").hover(
+	/*$("#home-navigation").hover(
 		function() {
 			$(this).clearQueue();
 			$(this).fadeTo("fast", 1);
 		},
 		function() {
 			$(this).clearQueue();
-			$(this).delay(4000).fadeTo(4000, 0.5);
+			$(this).delay(4000).fadeTo(4000, 0.2);
 		}
-	);
+	);*/
 }
 
 // ready event for document -- executed when DOM is ready
