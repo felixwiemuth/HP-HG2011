@@ -10,10 +10,12 @@ function addClickHandlers() {
 	//links
 	$("#link01").click( function() {
 		$("#main").load("content/content01.html");
+		//location.href.search = "index.htm?content01";
 	});
 	
 	$("#link02").click( function() {
 		$("#main").load("content/content02.html");
+		location.href.search = "index.htm?content02";
 	});
 	
 	$("#link03").click( function() {
@@ -117,11 +119,17 @@ if (!Array.prototype.indexOf) {
 }
 
 function start_switch() {
-	if (query == "content01")
-		$("#main").load("content/content01.html");
-	else if (query == "content02")
-		$("#main").load("content/content02.html");
-	//TODO add other links
+	if (query != "") {
+		if (query == "content01")
+		//$("#link01").click();
+			$("#main").load("content/content01.html");
+		else if (query == "content02")
+			$("#main").load("content/content02.html");
+		//TODO add other links
+		
+		//delete query from URL
+		//self.location.href = "index.htm";
+	}
 }
 	
 
