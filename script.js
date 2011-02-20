@@ -51,31 +51,11 @@ function addClickHandlers() {
 			$(this).fadeTo("slow", 0.5);
 		}
 	);
-	
-	/*$("#home-navigation").hover(
-		function() {
-			$(this).clearQueue();
-			$(this).fadeTo("fast", 1);
-		},
-		function() {
-			$(this).clearQueue();
-			$(this).delay(4000).fadeTo(4000, 0.2);
-		}
-	);*/
 }
 
 // ready event for document -- executed when DOM is ready
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
-	//SWITCHED OFF FOR DEBUG PURPOSES
-	//slide and fade 'page'
-	// $("#page").delay(500).animate({
-		// opacity: 'toggle',
-		// height: 'toggle'
-	// }, 5000);
-	//$("#page").toggle(); //DEBUG
-	//load();
-
 	//browser detection and support "information"
 	var tested = false;
 	var weardown = false;
@@ -117,22 +97,6 @@ $(document).ready( function() {
 	$("#warning").delay(3000).fadeTo("slow", 0.5);
 });
 
-// implement indexOf if not present
-if (!Array.prototype.indexOf) {
-    Array.prototype.indexOf = function (obj, fromIndex) {
-        if (fromIndex == null) {
-            fromIndex = 0;
-        } else if (fromIndex < 0) {
-            fromIndex = Math.max(0, this.length + fromIndex);
-        }
-        for (var i = fromIndex, j = this.length; i < j; i++) {
-            if (this[i] === obj)
-                return i;
-        }
-        return -1;
-    };
-}
-
 function start_switch() {
 	if (link != "") {
 		if (link == "content01")
@@ -147,35 +111,3 @@ function start_switch() {
 			$("#linkimpressum").click();
 	}
 }
-	
-
-// ******************** code *******************
-
-// load html into divs
-
-// function load()
-// {
-	// $("#main").append("<b>Enter loading!</b>");
-// var xmlhttp;
-// if (window.XMLHttpRequest)
-  // {// code for IE7+, Firefox, Chrome, Opera, Safari
-  // xmlhttp=new XMLHttpRequest();
-  // }
-// else
-  // {// code for IE6, IE5
-  // xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  // }
-// xmlhttp.onreadystatechange=function()
-  // {
-  // if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    // {
-    // document.getElementById("#main").innerHTML=xmlhttp.responseText;
-    // }
-	// else {
-		// $("#main").append("<b>Error!</b>");
-	// }
-  // }
-// xmlhttp.open("GET","content/template_v0.html",true);
-// xmlhttp.send();
-// }
-
