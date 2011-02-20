@@ -1,29 +1,41 @@
-query = self.location.search.substr(1);
+link = self.location.hash.substr(1);
 
 // click handlers
 function addClickHandlers() {
 	//links on 'start.html'
 	$("#page01").click( function() {
-		location.href = "index.htm?content01";
+		self.location.href = "index.htm#content01";
+	});
+	$("#page02").click( function() {
+		self.location.href = "index.htm#content02";
+	});
+	$("#page03").click( function() {
+		self.location.href = "index.htm#content03";
+	});
+	$("#page04").click( function() {
+		self.location.href = "index.htm#content04";
 	});
 	
 	//links
 	$("#link01").click( function() {
 		$("#main").load("content/content01.html");
-		//location.href.search = "index.htm?content01";
-	});
-	
+		self.location.hash = "content01";
+	});	
 	$("#link02").click( function() {
 		$("#main").load("content/content02.html");
-		location.href.search = "index.htm?content02";
-	});
-	
+		self.location.hash = "content02";
+	});	
 	$("#link03").click( function() {
 		$("#main").load("content/content03.html");
+		self.location.hash = "content03";
 	});
-	
+	$("#link04").click( function() {
+		$("#main").load("content/content04.html");
+		self.location.hash = "content04";
+	});
 	$("#linkimpressum").click( function() {
 		$("#main").load("content/impressum.html");
+		self.location.hash = "impressum";
 	});
 	
 	$("#warning").hover(
@@ -119,16 +131,17 @@ if (!Array.prototype.indexOf) {
 }
 
 function start_switch() {
-	if (query != "") {
-		if (query == "content01")
-		//$("#link01").click();
-			$("#main").load("content/content01.html");
-		else if (query == "content02")
-			$("#main").load("content/content02.html");
-		//TODO add other links
-		
-		//delete query from URL
-		//self.location.href = "index.htm";
+	if (link != "") {
+		if (link == "content01")
+			$("#link01").click();
+		else if (link == "content02")
+			$("#link02").click();
+		else if (link == "content02")
+			$("#link02").click();
+		else if (link == "content02")
+			$("#link02").click();
+		else if (link == "impressum")
+			$("#linkimpressum").click();
 	}
 }
 	
