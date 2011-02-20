@@ -13,7 +13,7 @@ background-position: center top;
 /* all-including div */
 
 div#page {
-	display: none;
+	/*display: none;*/
 	text-align: centre;
 	margin: 0 auto;
 	width: 75%;
