@@ -1,5 +1,12 @@
+query = self.location.search.substr(1);
+
 // click handlers
 function addClickHandlers() {
+	//links on 'start.html'
+	$("#page01").click( function() {
+		location.href = "index.htm?content01";
+	});
+	
 	//links
 	$("#link01").click( function() {
 		$("#main").load("content/content01.html");
@@ -49,12 +56,8 @@ $(document).ready( function() {
 		// opacity: 'toggle',
 		// height: 'toggle'
 	// }, 5000);
-	
-
-	
-	$("#page").toggle(); //DEBUG
+	//$("#page").toggle(); //DEBUG
 	//load();
-
 
 	//browser detection and support "information"
 	var tested = false;
@@ -113,33 +116,42 @@ if (!Array.prototype.indexOf) {
     };
 }
 
+function start_switch() {
+	if (query == "content01")
+		$("#main").load("content/content01.html");
+	else if (query == "content02")
+		$("#main").load("content/content02.html");
+	//TODO add other links
+}
+	
+
 // ******************** code *******************
 
 // load html into divs
 
-function load()
-{
-	$("#main").append("<b>Enter loading!</b>");
-var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("#main").innerHTML=xmlhttp.responseText;
-    }
-	else {
-		$("#main").append("<b>Error!</b>");
-	}
-  }
-xmlhttp.open("GET","content/template_v0.html",true);
-xmlhttp.send();
-}
+// function load()
+// {
+	// $("#main").append("<b>Enter loading!</b>");
+// var xmlhttp;
+// if (window.XMLHttpRequest)
+  // {// code for IE7+, Firefox, Chrome, Opera, Safari
+  // xmlhttp=new XMLHttpRequest();
+  // }
+// else
+  // {// code for IE6, IE5
+  // xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  // }
+// xmlhttp.onreadystatechange=function()
+  // {
+  // if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    // {
+    // document.getElementById("#main").innerHTML=xmlhttp.responseText;
+    // }
+	// else {
+		// $("#main").append("<b>Error!</b>");
+	// }
+  // }
+// xmlhttp.open("GET","content/template_v0.html",true);
+// xmlhttp.send();
+// }
 
