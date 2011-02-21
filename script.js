@@ -43,7 +43,11 @@ function addClickHandlers() {
 	$("#linkdownloads").click( function() {
 		$("#main").load("content/downloads.html");
 		self.location.hash = "downloads";
-	});	
+	});
+	$("#linkgaestebuch").click( function() {
+		$("#main").load("content/gaestebuch.html");
+		self.location.hash = "gaestebuch";
+	});
 	
 	$("#warning").hover(
 		function() {
