@@ -40,6 +40,10 @@ function addClickHandlers() {
 		$("#main").load("content/impressum.html");
 		self.location.hash = "impressum";
 	});
+	$("#linkdownloads").click( function() {
+		$("#main").load("content/downloads.html");
+		self.location.hash = "downloads";
+	});	
 	
 	$("#warning").hover(
 		function() {
