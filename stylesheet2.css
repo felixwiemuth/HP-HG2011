@@ -161,14 +161,14 @@ div#main p {
 
 #column1 {
 	  float:left;
-	  width: 40%;
-	  margin-left: 8%; 
+	  width: 35%;
+	  margin-left: 12%; 
 	}
 
 #column2 {
 	  float:right;
-	  width: 40%;
-	  margin-right: 8%; 
+	  width: 35%;
+	  margin-right: 12%; 
 	}
 	
 
