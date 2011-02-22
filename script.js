@@ -65,44 +65,11 @@ function addClickHandlers() {
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
 	//browser detection and support "information"
-	var tested = false;
-	var weardown = false;
-	var txt = "You are using ";
-	if (navigator.userAgent.indexOf("Firefox") != -1) {
-		$("#warning").append(txt + "Firefox.<br/>");
-		tested = true;
+	if (navigator.userAgent.indexOf("MSIE") != -1) {
+		$("#warning").slideDown(600);
+		$("#browsertip").delay(5000).slideDown(600);
+		$("#warning").delay(10000).fadeTo("slow", 0.5);
 	}
-	else if (navigator.userAgent.indexOf("Chrome") != -1) {
-		$("#warning").append(txt + "Google Chrome.<br/>");
-		tested = true;
-	}
-	else if (navigator.userAgent.indexOf("Opera") != -1) {
-		$("#warning").append(txt + "Opera.<br/>");
-	}
-	else if (navigator.userAgent.indexOf("Netscape.") != -1) {
-		$("#warning").append(txt + "Opera<br/>");
-	}
-	else if (navigator.userAgent.indexOf("MSIE") != -1) {
-		$("#warning").append(txt + "Microsoft Internet Explorer.<br/>");
-		weardown = true;
-	}
-	else {
-		$("#warning").append(txt + "an unidentified Browser.<br/>");
-		$("#warning").css("background-color", "orange");
-	}
-
-	if (tested == true) {
-		$("#warning").append("<b>The game was successfully tested with your browser.</b>");
-		$("#warning").css("background-color", "green");
-	} else {
-		$("#browsertip").delay(3000).slideDown(600);
-		$("#warning").append("<b>The game was not tested with your browser. Try yourself.</b>");
-	}
-	if (weardown == true) {
-		$("#warning").append("<b><font size='5'> <br/>Would you please refrain from using our worthy game with such an unworthy \"browser\"!  </font> </b>");
-	}
-	$("#warning").slideDown(600);
-	$("#warning").delay(3000).fadeTo("slow", 0.5);
 });
 
 function start_switch() {

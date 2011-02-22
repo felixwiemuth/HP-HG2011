@@ -23,6 +23,16 @@ div#page {
 	border-style: outset;
 }
 
+#warning {
+	background-color: red;
+	display: none;
+}
+
+#browsertip {
+	background-color: #00B358;
+	display: none;
+}
+
 h1 {
 	font-size: 2em;
 	margin: 0; padding: 0.3em;
