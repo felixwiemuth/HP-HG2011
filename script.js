@@ -48,6 +48,10 @@ function addClickHandlers() {
 		$("#main").load("content/gaestebuch.html");
 		self.location.hash = "gaestebuch";
 	});
+	$("#linkueber").click( function() {
+		$("#main").load("content/ueber.html");
+		self.location.hash = "ueber";
+	});
 	
 	$("#warning").hover(
 		function() {
