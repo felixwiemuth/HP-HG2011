@@ -76,6 +76,7 @@ ul#navigation a {
 .linkA {background-color: #104BA9; color: white;}
 .linkB {background-color: #447BD4; color: black;}
 .linkC {background-color: #FF6700; color: black;}
+.linkOn {background-color: #7CE700; color: black;}
 
 ul#navigation a:link {
 	border: 2px solid #191919;
