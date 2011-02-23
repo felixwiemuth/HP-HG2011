@@ -118,6 +118,12 @@ div#main p {
 	margin: 1em 0;
 }
 
+div#main h3 {
+	font-size: 1.2em;
+	margin: 0.2em 0;
+	color: navy;
+}
+
 
 /* footer */
 p#footer {
