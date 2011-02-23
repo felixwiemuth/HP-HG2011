@@ -16,6 +16,9 @@ function addClickHandlers() {
 	$("#page04").click( function() {
 		self.location.href = "index.htm#content04";
 	});
+	$("#pagegaestebuch").click( function() {
+		self.location.href = "index.htm#gaestebuch";
+	});
 	$("#pageimpressum").click( function() {
 		self.location.href = "index.htm#impressum";
 	});
