@@ -23,13 +23,28 @@ div#page {
 	border-style: outset;
 }
 
+#warning {
+	background-color: red;
+	display: none;
+}
+
+#browsertip {
+	background-color: #00B358;
+	display: none;
+}
+
 h1 {
 	font-size: 2em;
 	margin: 0; padding: 0.3em;
 	text-align: center;
-	/*background: #fed url(gfx/bg.jpg);/* repeat 100% 45%;*/
 	border-bottom: 2px black;
 	border-bottom-style: dashed;
+}
+
+h2 {
+	font-size: 1em;
+	margin: 0; padding: 0.3em;
+	text-align: center;
 }
 
 
@@ -52,14 +67,18 @@ ul#navigation li {
 
 ul#navigation a {
 	display: block;
+	text-decoration: none; /*no underlining*/
 	padding: 0.2em;
 	font-weight: bold;
 }
 
+/*classes for different link styles*/
+.linkA {background-color: #104BA9; color: white;}
+.linkB {background-color: #447BD4; color: black;}
+.linkC {background-color: #FF6700; color: black;}
+.linkOn {background-color: #7CE700; color: black;}
+
 ul#navigation a:link {
-	color: black;
-	background-color: #5D6DCF;
-	//background-color: #1144AA;
 	border: 2px solid #191919;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -97,6 +116,12 @@ div#main h2 {
 div#main p {
 	font-size: 1em;
 	margin: 1em 0;
+}
+
+div#main h3 {
+	font-size: 1.2em;
+	margin: 0.2em 0;
+	color: navy;
 }
 
 
