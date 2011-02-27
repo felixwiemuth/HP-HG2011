@@ -50,11 +50,12 @@ h2 {
 /* content */
 
 div#contentsrg { /* Schulrundgang */
-	background: url('content/schulrundgang/ueberblick.png') no-repeat;
+	/*background: url('content/schulrundgang/ueberblick.png') no-repeat;
 	/*width:1300px;*/
 }
 
 div#contentsrg table{
+	background: url('content/schulrundgang/ueberblick.png') no-repeat;
 	table-layout: fixed;
 }
 

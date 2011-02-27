@@ -44,7 +44,7 @@ function addClickHandlers() {
 		self.location.hash = "content03";
 		set_active_link("#link03");
 		//IMPORTANT
-		$("#page").width(1123); //TODO FIT TO IMAGE! + reset on other links!
+		$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
 	});
 	$("#link04").click( function() { //link 4
 		$("#main").load("content/content04.html");
