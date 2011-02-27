@@ -1,5 +1,5 @@
 
-body {
+.mainbody {
 color: black; background-color: white;
 font-size: 100.01%;
 font-family: Helvetica,Arial,sans-serif;
@@ -49,8 +49,17 @@ h2 {
 
 /* content */
 
-div#content {
+div#contentsrg { /* Schulrundgang */
 
+}
+
+div#contentsrg td {
+	width: 100px;
+	height: 100px;
+}
+
+.schulrundgang {
+	background: url('gfx/bg1.gif');
 }
 
 
