@@ -3,24 +3,24 @@ var active_link;
 
 // click handlers
 function addClickHandlers() {
-	//links on 'start.html'
+	//links on 'main.html'
 	$("#page01").click( function() {
-		self.location.href = "index.htm#content01";
+		self.location.href = "main.html#content01";
 	});
 	$("#page02").click( function() {
-		self.location.href = "index.htm#content02";
+		self.location.href = "main.html#content02";
 	});
 	$("#page03").click( function() {
-		self.location.href = "index.htm#content03";
+		self.location.href = "main.html#content03";
 	});
 	$("#page04").click( function() {
-		self.location.href = "index.htm#content04";
+		self.location.href = "main.html#content04";
 	});
 	$("#pagegaestebuch").click( function() {
-		self.location.href = "index.htm#gaestebuch";
+		self.location.href = "main.html#gaestebuch";
 	});
 	$("#pageimpressum").click( function() {
-		self.location.href = "index.htm#impressum";
+		self.location.href = "main.html#impressum";
 	});
 	
 	//links
