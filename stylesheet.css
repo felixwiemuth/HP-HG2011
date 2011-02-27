@@ -56,12 +56,21 @@ div#contentsrg { /* Schulrundgang */
 
 div#contentsrg table{
 	background: url('content/schulrundgang/ueberblick.png') no-repeat;
+	/*cellpadding: 0;
+	cellspacing: 0;*/
+	width: 736px;
+	height: 998px;
 	table-layout: fixed;
 }
 
-div#contentsrg td {
-	width: 56px;
-	height: 100px;
+div#contentsrg tr#tr0000 td#td0001 {
+	background: red;
+}
+div#contentsrg tr#tr0002 td#td0001 {
+	background: green;
+}
+div#contentsrg tr#tr0002 td#td0002 {
+	background: blue;
 }
 
 /*.schulrundgang {
