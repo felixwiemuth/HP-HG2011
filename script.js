@@ -45,6 +45,7 @@ function addClickHandlers() {
 		set_active_link("#link03");
 		//IMPORTANT
 		$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
+		init_schulrundgang();
 	});
 	$("#link04").click( function() { //link 4
 		$("#main").load("content/content04.html");
@@ -129,4 +130,22 @@ function set_active_link(link) {
 		$(active_link).removeClass("linkOn");
 	$(link).addClass("linkOn");
 	active_link = link;
+}
+
+//functionality for "Schulrundgang"
+function init_schulrundgang() {
+	alert("Start init Schulrundgang...");
+	
+	$("#td0001").click( function() {
+		alert("ok1!");
+	});
+	$("#contentsrg > #tr0002 > #td0002").click( function() {
+		alert("YEAH!");
+	});
+	$("#contentsrg").children("#tr0002").children("#td0002").click( function() {
+		alert("YEAH2!");
+	});
+	$("#td0219").click( function() {
+		alert("OKIIIDOKII:)");
+	});
 }
