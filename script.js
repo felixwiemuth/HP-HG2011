@@ -44,7 +44,7 @@ function addClickHandlers() {
 		self.location.hash = "content03";
 		set_active_link("#link03");
 		//IMPORTANT
-		$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
+		//$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
 		init_schulrundgang();
 	});
 	$("#link04").click( function() { //link 4
