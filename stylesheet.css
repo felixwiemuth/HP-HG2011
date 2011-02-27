@@ -63,14 +63,17 @@ div#contentsrg table{
 	table-layout: fixed;
 }
 
-div#contentsrg tr#tr0000 td#td0001 {
+div#contentsrg #td0100 {
 	background: red;
 }
-div#contentsrg tr#tr0002 td#td0001 {
+div#contentsrg #td0319 {
 	background: green;
 }
-div#contentsrg tr#tr0002 td#td0002 {
+div#contentsrg #td0015 {
 	background: blue;
+}
+div#contentsrg #td0707 {
+	background: yellow;
 }
 
 /*.schulrundgang {
