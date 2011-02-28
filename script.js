@@ -141,4 +141,11 @@ function init_schulrundgang() {
 	$("#td0000").click( function() {
 		alert("OKIIIDOKII22223334:)");
 	});
+	
+	//preview animation
+	$("#contentsrg td.preview").imgPreview ({
+		imgCSS: {
+			width: "150px"
+		}
+	});
 }
