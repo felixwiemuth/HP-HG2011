@@ -83,6 +83,7 @@ function addClickHandlers() {
 // ready event for document -- executed when DOM is ready
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
+	//init_schulrundgang()
 	//initialise link style
 	init_links();
 	//browser detection and support "information"
@@ -134,18 +135,23 @@ function set_active_link(link) {
 
 //functionality for "Schulrundgang"
 function init_schulrundgang() {
-	alert("Start init Schulrundgang...");
-	$("#td0419").click( function() {
-		alert("OKIIIDOKII:)");
-	});
-	$("#td0000").click( function() {
-		alert("OKIIIDOKII22223334:)");
-	});
+	alert("Los gehts!");
+	$("#td0000").attr("href", "gfx/bg2.jpg").imgPreview({imgCSS:{width: "150px"}}).lightBox();
+	$("#td0001").attr("href", "gfx/bg1.gif").imgPreview({imgCSS:{width: "150px"}}).lightBox();
+	// alert("Start init Schulrundgang...");
+	// $("#td0419").click( function() {
+		// alert("OKIIIDOKII:)");
+	// });
+	// $("#td0000").click( function() {
+		// alert("OKIIIDOKII22223334:)");
+	// });
 	
-	//preview animation
-	$("#contentsrg td.preview").imgPreview ({
-		imgCSS: {
-			width: "150px"
-		}
-	});
+	// //preview animation
+	// $("#contentsrg td.preview").imgPreview({imgCSS:{width: "150px"}});
+	// $("#td1408").attr("href", "gfx/bg2.jpg").imgPreview({imgCSS:{width: "150px"}});
+	// //$("td:has(href)").fancybox();
+	// //$("#td1408").fancybox();
+	// // $("#td0000").fancybox();
+	// // $("a#td0001").fancybox();
+
 }
