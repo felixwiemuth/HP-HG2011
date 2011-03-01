@@ -136,8 +136,10 @@ function set_active_link(link) {
 //functionality for "Schulrundgang"
 function init_schulrundgang() {
 	alert("Los gehts!");
-	$("#td0000").attr("href", "gfx/bg2.jpg").imgPreview({imgCSS:{width: "150px"}}).lightBox();
-	$("#td0001").attr("href", "gfx/bg1.gif").imgPreview({imgCSS:{width: "150px"}}).lightBox();
+	$("#td0000").attr("href", "gfx/bg2.jpg").addClass("img");
+	$("#td0001").attr("href", "gfx/bg.jpg").addClass("img");
+	$("#td1408").attr("href", "content/schulrundgang/img/Schulhof-1.JPG").addClass("img");
+	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 	// alert("Start init Schulrundgang...");
 	// $("#td0419").click( function() {
 		// alert("OKIIIDOKII:)");

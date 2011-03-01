@@ -63,22 +63,9 @@ div#contentsrg table{
 	table-layout: fixed;
 }
 
-div#contentsrg #td0100 {
-	background: red;
+.img {
+	background: url('gfx/button_s.png');
 }
-div#contentsrg #td0319 {
-	background: green;
-}
-div#contentsrg #td0015 {
-	background: blue;
-}
-div#contentsrg #td0707 {
-	background: yellow;
-}
-
-/*.schulrundgang {
-	background: url('gfx/bg1.gif');
-}*/
 
 
 /* navigation */
