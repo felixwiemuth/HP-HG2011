@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
 <!-- html --> 
 <meta name="src" content="content01.tex"> 
-<meta name="date" content="2011-02-06 19:13:00"> 
+<meta name="date" content="2011-03-03 19:27:00"> 
 <link rel="stylesheet" type="text/css" href="content01.css"> 
 </head><body 
 >
@@ -19,10 +19,11 @@
 class="E">E</span>X</span></span></h2>
  <div class="author" ><span 
 class="cmr-12x-x-120">Jonas Abeln, J</span><span 
-class="cmr-12x-x-120">örg Harney und Mathias Rodemeyer</span></div><br />
+class="cmr-12x-x-120">&ouml;rg Harney und Mathias Rodemeier</span></div><br />
 <div class="date" ><span 
-class="cmr-12x-x-120">6.</span><span 
-class="cmr-12x-x-120">&#x00A0;Februar 2011</span></div>
+class="cmr-12x-x-120">3.</span><span 
+class="cmr-12x-x-120">&#x00A0;M</span><span 
+class="cmr-12x-x-120">&auml;rz 2011</span></div>
                                                                                      
                                                                                      
    </div>
@@ -30,250 +31,1431 @@ class="cmr-12x-x-120">&#x00A0;Februar 2011</span></div>
  id="x1-1000"></a>Inhaltsverzeichnis</h3>
    <div class="tableofcontents">
    <span class="sectionToc" >1 <a 
-href="#x1-20001" id="QQ2-1-2">Die ersten wichtigsten Befehle</a></span>
+href="#x1-20001" id="QQ2-1-2">Einleitung</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.1 <a 
-href="#x1-30001.1" id="QQ2-1-3">Allgemeines</a></span>
+href="#x1-30001.1" id="QQ2-1-3">Was ist &uuml;berhaupt <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>?</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.2 <a 
-href="#x1-40001.2" id="QQ2-1-4">Dokumentenklassenbestimmung</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >1.3 <a 
-href="#x1-50001.3" id="QQ2-1-5">Dokument beginnen und unterteilen</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >1.4 <a 
-href="#x1-60001.4" id="QQ2-1-6">Bilder und Graphiken</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >1.5 <a 
-href="#x1-70001.5" id="QQ2-1-7">Hervorheben und Trennen</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >1.6 <a 
-href="#x1-80001.6" id="QQ2-1-8">Dokument beenden</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >1.7 <a 
-href="#x1-90001.7" id="QQ2-1-9">Fertig!</a></span>
+href="#x1-40001.2" id="QQ2-1-4">Unterschied zu Word</a></span>
 <br />   <span class="sectionToc" >2 <a 
-href="#x1-100002" id="QQ2-1-10">My Title</a></span>
+href="#x1-50002" id="QQ2-1-5">Das erste eigene Dokument</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >2.1 <a 
-href="#x1-110002.1" id="QQ2-1-11">My Title</a></span>
+href="#x1-60002.1" id="QQ2-1-6">Allgemeines</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >2.2 <a 
-href="#x1-120002.2" id="QQ2-1-12">My Subsection</a></span>
+href="#x1-70002.2" id="QQ2-1-7">Dokumentenklassenbestimmung</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.3 <a 
+href="#x1-80002.3" id="QQ2-1-8">Dokument beginnen und unterteilen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.4 <a 
+href="#x1-90002.4" id="QQ2-1-9">Bilder und Graphiken</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.5 <a 
+href="#x1-100002.5" id="QQ2-1-10">Hervorheben und Trennen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.6 <a 
+href="#x1-110002.6" id="QQ2-1-11">Dokument beenden</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >2.7 <a 
+href="#x1-120002.7" id="QQ2-1-12">Fertig!</a></span>
 <br />   <span class="sectionToc" >3 <a 
-href="#x1-130003" id="QQ2-1-13">My Section 2</a></span>
-<br />   &#x00A0;<span class="subsectionToc" >3.1 <a 
-href="#x1-140003.1" id="QQ2-1-14">My Subsection</a></span>
-<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >3.1.1 <a 
-href="#x1-150003.1.1" id="QQ2-1-15">My Quote</a></span>
+href="#x1-130003" id="QQ2-1-13">Dokumentenklassen</a></span>
+<br />   <span class="sectionToc" >4 <a 
+href="#x1-140004" id="QQ2-1-14">Packete (Usepackages)</a></span>
+<br />   <span class="sectionToc" >5 <a 
+href="#x1-150005" id="QQ2-1-15">Mathematische Formeln</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >5.1 <a 
+href="#x1-160005.1" id="QQ2-1-16">Grundprinzip</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.1.1 <a 
+href="#x1-170005.1.1" id="QQ2-1-17">Mathematische Formeln im Text</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.1.2 <a 
+href="#x1-180005.1.2" id="QQ2-1-18">Mathematische Formeln in gesonderten Zeilen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >5.2 <a 
+href="#x1-190005.2" id="QQ2-1-19">Grundrechenarten</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.2.1 <a 
+href="#x1-200005.2.1" id="QQ2-1-20">Addition, Subtraktion, Multiplikation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.2.2 <a 
+href="#x1-210005.2.2" id="QQ2-1-21">Division</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >5.3 <a 
+href="#x1-220005.3" id="QQ2-1-22">Wurzel, Exponenten und Indizes</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.3.1 <a 
+href="#x1-230005.3.1" id="QQ2-1-23">Wurzel</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >5.3.2 <a 
+href="#x1-240005.3.2" id="QQ2-1-24">Exponenten und Indizes</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >5.4 <a 
+href="#x1-250005.4" id="QQ2-1-25">Matritzen</a></span>
+                                                                                     
+                                                                                     
+<br />   &#x00A0;<span class="subsectionToc" >5.5 <a 
+href="#x1-260005.5" id="QQ2-1-26">Symbole, Sonderzeichen und andere mathematische Operatoren</a></span>
+<br />   <span class="sectionToc" >6 <a 
+href="#x1-270006" id="QQ2-1-27">Tabellen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >6.1 <a 
+href="#x1-280006.1" id="QQ2-1-28">Grundprinzip</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >6.2 <a 
+href="#x1-290006.2" id="QQ2-1-29">Spaltendefinitionen</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >6.3 <a 
+href="#x1-300006.3" id="QQ2-1-30">Befehle innerhalb der <span 
+class="cmti-12">tabular</span>-Umgebung</a></span>
+<br />   &#x00A0;<span class="subsectionToc" >6.4 <a 
+href="#x1-310006.4" id="QQ2-1-31">Zusammenfassen mehrerer Boxen</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >6.4.1 <a 
+href="#x1-320006.4.1" id="QQ2-1-32">Zusammenfassen von Spalten</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsubsectionToc" >6.4.2 <a 
+href="#x1-330006.4.2" id="QQ2-1-33">Zusammenfassen von Zeilen</a></span>
+<br />   <span class="sectionToc" >7 <a 
+href="#x1-340007" id="QQ2-1-34">Bilder nebeneinander anordnen (subfigure)</a></span>
+<br />   <span class="sectionToc" >8 <a 
+href="#x1-350008" id="QQ2-1-35">N&uuml;tzliche Links</a></span>
+<br />   <span class="sectionToc" >9 <a 
+href="#x1-360009" id="QQ2-1-36">Template f&uuml;r die Seminararbeit</a></span>
    </div>
                                                                                      
                                                                                      
    <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
- id="x1-20001"></a>Die ersten wichtigsten Befehle</h3>
-<!--l. 121--><p class="noindent" >
+ id="x1-20001"></a>Einleitung</h3>
+<!--l. 117--><p class="noindent" >Hallo und herzlich Willkommen zur Einf&uuml;hrung in das Textverarbeitungsprogramm
+<span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  durch den Seminarfachkurs 2011 von Herrn Dr. Preu&szlig;. Wahrscheinlich fragen sie
+sich jetzt, was ist <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  &uuml;berhaupt? Genauso ging es unserem Kurs auch als
+wir 2009 zum ersten mal zum Seminarfach kamen. Nat&uuml;rlich assoziiert man mit
+Latex erst einmal etwas ganz anderes. Aber dieses unscheinbare und unbekannte
+Programm sollte es unserem Kurs deutlich einfacher machen unsere Facharbeiten zu
+verfassen. Wir k&ouml;nnen nur jedem empfehlen die auch vor der Facharbeit stehen, diese
+mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  zu schreiben. Daher w&uuml;nschen wir jedem viel Spa&szlig; beim Lesen dieses
+Tutorials!
+<!--l. 119--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a 
- id="x1-30001.1"></a>Allgemeines</h4>
-<!--l. 122--><p class="noindent" >Nachdem man LaTeX erfolgreich installiert hat zeigen wir dir nun wie man sein erstes
+ id="x1-30001.1"></a>Was ist &uuml;berhaupt <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>?</h4>
+<!--l. 121--><p class="noindent" ><span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  ist wie oben schon angedeutet ein Textverarbeitungsprogramm, das aber anders
+Arbeitet als zum Beispiel Word von Microsoft. Es ist ein &#8222;what you get is what you mean&#8220;
+Textprogramm, das hei&szlig;t, dass die Textdatei sozusagen programmiert wird. Daher
+es werden Befehle eingegeben und das Programm f&uuml;hrt diese als Textdatei aus.
+Auf den ersten Blick mag dieses sehr kompliziert klingen, doch es bietet sehr viele
+Vorteile. Zum Beispiel macht <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  sinnige Seitenumbr&uuml;che von selbst oder setzt
+in einem Inhaltsverzeichnis oder Literaturverzeichnis die Zahlen und Beziehungen
+von selbst. Au&szlig;erdem m&uuml;ssen sich keine weiteren Gedanken &uuml;ber das Hervorheben
+von &Uuml;berschriften gemacht werden, da auch diese vom Programm selber erledigt
+werden.
+<!--l. 124--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
+ id="x1-40001.2"></a>Unterschied zu Word</h4>
+<!--l. 126--><p class="noindent" >Die oben beschriebenen Vorteile bringen nat&uuml;rlich einen sofort zum n&auml;chsten Abschnitt, was
+                                                                                     
+                                                                                     
+sind den noch weitere Unterschiede zu &#8222;What-you-see-is-what-you-get&#8220; Programmen wie
+Word oder Open Office. Bei solchen Textverarbeitungsprogrammen sieht man zwar sofort was
+sp&auml;ter gedruckt wird, jedoch ist die Fehlerquote deutlich h&ouml;her. Beispiele hierf&uuml;r w&auml;ren, dass
+irgendwo ein Absatz zu gro&szlig;, ein Seitenumbruch nicht stimmig oder durch einen Fehler sich
+die Schriftart ver&auml;ndert hat. Au&szlig;erdem kann die Datei in vielen verschiedenen Formaten
+herausgegeben werden, wie zum Beispiel als PDF Format. Dieses erlaubt es das
+Schriftdokument auf fast jeden Rechner zu &ouml;ffnen, auch wenn dieser nicht &uuml;ber
+<span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  verf&uuml;gt. Ein weiteres Ausgabem&ouml;glichkeit ist HTML. So wird es auch schnell m&ouml;glich
+Webseiten mit Texten zu f&uuml;llen. Aber der wohl gr&ouml;&szlig;te Vorteil bei <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  liegt in dem sehr
+einfachen Formeleditor. Im Gegensatz zu beispielsweise Word, wo es sehr umst&auml;ndlich ist mit
+dem Formeleditor l&auml;ngere Formeln zu erstellen und es &uuml;berhaupt nicht m&ouml;glich ist alle Arten
+von Formeln darzustellen, ist es vergleichsweise einfach bei <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>. Als Beispiel
+hierf&uuml;r:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-1">
+\begin{equation}
+&#x00A0;<br />f(x)=\sqrt[4]{38}&#x00A0;\sin(2x)&#x00A0;\frac{2x^{2}}{9}
+&#x00A0;<br />\end{equation}
+</div>
+<!--l. 132--><p class="nopar" >
+<!--l. 134--><p class="indent" >   W&uuml;rde im Dokument zu sehen sein als:
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="content010x.png" alt="          &#x221A;  ----             2
+           4              2x---
+f (x ) =     38  sin(2x  )
+                            9
+" class="math-display" ><a 
+ id="x1-4001r1"></a></center></td><td class="equation-label"><span 
+class="cmr-17">(1)</span></td></tr></table>
+<!--l. 139--><p class="nopar" >
+<!--l. 143--><p class="indent" >   Um etwas dergleichen bei Word darzustellen w&uuml;rde man viel l&auml;nger brauchen,
+beziehungsweise sind viele von den bei <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  m&ouml;glichen Formeln bei Word gar nicht
+vorhanden (Hierf&uuml;r gibt es noch ein weiteres Kapitel, welches sich nochmal mit den
+mathematischen Formeln auseinander setzen wird). Daher sollte bei gr&ouml;&szlig;eren Texten,
+Aufs&auml;tzen oder B&uuml;chern, aber auch bei kurzen gut ausgearbeiteten oder mathematischen
+                                                                                     
+                                                                                     
+Texten, <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>, als Textverarbeitungsprogramm, die erste Wahl sein. Bei kurzen Texten oder
+schnell zu erledigenden Texten hat nat&uuml;rlich zum Beispiel Word die Nase vorn.
+Dennoch sollte jeder mal <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  ausprobieren um die wunderbaren Vorteile kennen zu
+lernen.
+<!--l. 147--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-50002"></a>Das erste eigene Dokument</h3>
+<!--l. 149--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.1   </span> <a 
+ id="x1-60002.1"></a>Allgemeines</h4>
+<!--l. 150--><p class="noindent" >Nachdem man <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  erfolgreich installiert hat zeigen wir nun wie man sein erstes
 Dokument erstellt. Allgemein ist zu sagen, dass alle Befehle mit einem Backslash beginnen.
 Direkt dahinter schreibt man den Befehl. Wenn ein Befehl etwas anzeigen soll wie [author],
-setzt man dahinter geschwungene Klammern <span 
-class="cmsy-10x-x-120">{</span>..Text..<span 
-class="cmsy-10x-x-120">}</span>und schreibt den entsprechenden Text
-in die Klammern. Die grundlegendsten Befehle zur Erstellung eines einfachen Dokumentes
-werden hier nun aufgelistet.
-<!--l. 125--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
- id="x1-40001.2"></a>Dokumentenklassenbestimmung</h4>
-<!--l. 126--><p class="noindent" >Der erste Befehl ist die Bestimmung der Dokumentenklasse wie Artikel, Brief, Tabelle etc.
-Wir beginnen hier mit dem Artikel, der einfachsten Form, der Befehl ist wie folgt:
-[documentclassarticle]. Danach folgen verschiedene Einstellungen des Spaltabstandes oder
-ähnliches, was wir hier aber erst vernachlässigen.
-<!--l. 130--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
- id="x1-50001.3"></a>Dokument beginnen und unterteilen</h4>
-<!--l. 131--><p class="noindent" >Mit dem Befehl [begin<span 
-class="cmsy-10x-x-120">{</span>document<span 
-class="cmsy-10x-x-120">}</span>] leitet man den Abschnitt ein um den ersten Text
-zu verfassen. Auch gibt es hier wieder wichtige Befehle wie [section<span 
-class="cmsy-10x-x-120">{</span>Überschrift<span 
-class="cmsy-10x-x-120">}</span>],
-[subsection<span 
-class="cmsy-10x-x-120">{</span>Unterüberschrift<span 
-class="cmsy-10x-x-120">}</span>], [subsubsection], usw. Damit kann man Abschnitte einteilen
-und so den Text gliedern. Das Schöne an LaTeX ist, dass man sich um die Konfiguration keine
-Gedanken machen muss wie in Word. Man gibt einfach nur den Befehl ein und nachher siehts
+setzt man dahinter geschwungene Klammern <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\{..Text..}</span></span></span> und schreibt den entsprechenden
+Text in die Klammern. Die grundlegendsten Befehle zur Erstellung eines einfachen
+Dokumentes werden hier nun erl&auml;utert.
+<!--l. 153--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x1-70002.2"></a>Dokumentenklassenbestimmung</h4>
+<!--l. 154--><p class="noindent" >Der erste Befehl ist die Bestimmung der Dokumentenklasse wie Artikel, Brief, Tabelle
+etc. Wir beginnen hier mit dem Artikel, der einfachsten Form, der Befehl ist wie
+folgt: <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\documentclass{article}</span></span></span>. Danach folgen verschiedene Einstellungen des
+Zeilenabstand, Rand oder &Auml;hnliches, was wir hier aber der Einfachheit halber erst
+vernachl&auml;ssigen.
+                                                                                     
+                                                                                     
+<!--l. 158--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x1-80002.3"></a>Dokument beginnen und unterteilen</h4>
+<!--l. 159--><p class="noindent" >Mit dem Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\begin{document}</span></span></span> leitet man den Abschnitt ein um den ersten Text zu
+verfassen. Auch gibt es hier wieder wichtige Befehle wie <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\section{</span><span 
+class="cmtt-12">&Uuml;berschrift}</span></span></span>,
+<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\subsection{Unter</span><span 
+class="cmtt-12">&uuml;berschrift}</span></span></span>, <br 
+class="newline" /><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\subsubsection{Unterunter</span><span 
+class="cmtt-12">&uuml;berschrift}</span></span></span>, usw. Damit kann man Abschnitte einteilen und
+so den Text gliedern. Das Sch&ouml;ne an LaTeX ist, dass man sich um die Konfiguration keine
+Gedanken machen muss wie in Word. Man gibt einfach nur den Befehl ein und nachher sieht&acute;s
 klasse aus.
-                                                                                     
-                                                                                     
-<!--l. 134--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
- id="x1-60001.4"></a>Bilder und Graphiken</h4>
-<!--l. 135--><p class="noindent" >In den Text kann man auch Bilder einfügen, dabei sollte man aber auch darauf achten, dass
+<!--l. 163--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x1-90002.4"></a>Bilder und Graphiken</h4>
+<!--l. 164--><p class="noindent" >In den Text kann man auch Bilder einf&uuml;gen, dabei sollte man aber auch darauf achten, dass
 im Pfad der Graphik keine Leerzeichen vorhanden ist. Am besten speichert man die Graphik
-direkt innerhalb einer Festplatte (E//: Graphik). Mit folgenden Befehlen fügt man ein Bild
-ein: <!--l. 136-->
-   <div class="lstlisting" id="listing-1"><span class="label"><a 
- id="x1-6001r1"></a></span><span 
-class="cmsy-10x-x-120">\</span>begin<span 
-class="cmsy-10x-x-120">{</span>figure<span 
-class="cmsy-10x-x-120">}</span>[h]&#x00A0;<br /><span class="label"><a 
- id="x1-6002r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
-class="cmsy-10x-x-120">\</span>centering&#x00A0;<br /><span class="label"><a 
- id="x1-6003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
-class="cmsy-10x-x-120">\</span>includegraphics[width=0.80<span 
-class="cmsy-10x-x-120">\</span>backslash&#x00A0;textwidth]<span 
-class="cmsy-10x-x-120">{</span>Quellordner<span 
-class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
- id="x1-6004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
-class="cmsy-10x-x-120">\</span>caption<span 
-class="cmsy-10x-x-120">{</span>Untertitel<span 
-class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
- id="x1-6005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
-class="cmsy-10x-x-120">\</span>label<span 
-class="cmsy-10x-x-120">{</span>fig:Titel&#x00A0;des&#x00A0;Bildes<span 
-class="cmsy-10x-x-120">}</span>&#x00A0;<br /><span class="label"><a 
- id="x1-6006r6"></a></span><span 
-class="cmsy-10x-x-120">\</span>end<span 
-class="cmsy-10x-x-120">{</span>figure<span 
-class="cmsy-10x-x-120">}</span>
-   
-   </div>
-<!--l. 144--><p class="indent" >   Im LaTeX- Programm kann man aber auch auf &#8222;Einfügen&#8220;- &#8222;Graphik&#8220; gehen, was das
-Einfügen einer Grpahik erleichtern würde.
-<!--l. 146--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
- id="x1-70001.5"></a>Hervorheben und Trennen</h4>
-<!--l. 147--><p class="noindent" >Mit dem Befehl [clearpage] wird der Rest der Seite freigelassen. Das verhindert ein
-ungewolltes Trennen von Textabschnitten, die man zusammenbehalten möchte. Um
-Schriftzüge hervorzuheben gibt es die Möglichkeit sie größer zu schreiben. Dies tut man mit
-dem Befehl [large]. Dazu schreibt man den zu vergrößernen Schriftzug in die Zeile nach dem
+direkt innerhalb einer Festplatte (E//: Graphik).
+<!--l. 167--><p class="indent" >   Mit folgenden Befehlen f&uuml;gt man ein Bild ein:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-2">
+\begin{figure}[h]
+&#x00A0;<br />\centering
+&#x00A0;<br />\includegraphics[width=0.80\backslash&#x00A0;textwidth]{Quellordner}
+&#x00A0;<br />\caption{Untertitel}
+&#x00A0;<br />\label{fig:Titel&#x00A0;des&#x00A0;Bildes}
+&#x00A0;<br />\end{figure}
+</div>
+<!--l. 175--><p class="nopar" >
+<!--l. 177--><p class="indent" >   Im <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>-Programm kann man aber auch auf &#8222;Einf&uuml;gen&#8220;- &#8222;Graphik&#8220; gehen, was das
+Einf&uuml;gen einer Graphik erleichtert.
+<!--l. 179--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
+ id="x1-100002.5"></a>Hervorheben und Trennen</h4>
+<!--l. 180--><p class="noindent" >Mit dem Befehl [clearpage] wird der Rest der Seite freigelassen. Das verhindert ein
+ungewolltes Trennen von Textabschnitten, die man zusammenbehalten m&ouml;chte. Um
+Schriftz&uuml;ge hervorzuheben gibt es die M&ouml;glichkeit sie gr&ouml;&szlig;er zu schreiben. Dies tut man mit
+dem Befehl [large]. Dazu schreibt man den zu vergr&ouml;&szlig;ernen Schriftzug in die Zeile nach dem
 Befehl.
-<!--l. 152--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
- id="x1-80001.6"></a>Dokument beenden</h4>
-<!--l. 153--><p class="noindent" >Wenn man seinen Text beendet hat, fügt man den Befehl [enddocument] ein. Um Schriftzüge
-hervorzuheben gibt es die Möglichkeit ihn größer zu schreiben. Dies tut man mit dem Befehl
-[large]. Das was man nicht mehr groß geschrieben haben möchte, schreibt man in die nächste
+<!--l. 185--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">2.6   </span> <a 
+ id="x1-110002.6"></a>Dokument beenden</h4>
+<!--l. 186--><p class="noindent" >Wenn man seinen Text beendet hat, f&uuml;gt man den Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\end{document}</span></span></span> ein.
+<!--l. 188--><p class="noindent" >
                                                                                      
                                                                                      
-Zeile.
-<!--l. 155--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark">1.7   </span> <a 
- id="x1-90001.7"></a>Fertig!</h4>
-<!--l. 156--><p class="noindent" ><span 
-class="cmr-12x-x-120">Schon hat man sein erstes Dokument erstellt! Auf dieser Seite haben wir</span>
+   <h4 class="subsectionHead"><span class="titlemark">2.7   </span> <a 
+ id="x1-120002.7"></a>Fertig!</h4>
+<!--l. 189--><p class="noindent" ><span 
+class="cmr-12x-x-120">Schon hat man sein erstes Dokument erstellt! Auf dieser Seite haben wir zur</span>
 <span 
-class="cmr-12x-x-120">verschiedene Templates (Befehlzusammenstellung), mit denen man die</span>
+class="cmr-12x-x-120">Erleichterung verschiedene Templates (Befehlzusammenstellung), mit denen</span>
 <span 
-class="cmr-12x-x-120">verschiedene Dokumentenklassen erstellen kann.</span>
-<!--l. 162--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark"><span 
-class="cmr-12x-x-120">2   </span></span> <a 
- id="x1-100002"></a><span 
-class="cmr-12x-x-120">My Title</span></h3>
-<!--l. 168--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark"><span 
-class="cmr-12x-x-120">2.1   </span></span> <a 
- id="x1-110002.1"></a><span 
-class="cmr-12x-x-120">My Title</span></h4>
-<!--l. 169--><p class="noindent" ><span 
-class="cmr-12x-x-120">Testetxtetstetxtetx</span>
-      <ul class="itemize1">
-      <li class="itemize"><span 
-class="cmbx-12x-x-120">Item 1 </span><span 
-class="cmr-12x-x-120">Text A</span>
-      </li>
-      <li class="itemize"><span 
-class="cmbx-12x-x-120">Item 2 </span><span 
-class="cmr-12x-x-120">Text B</span></li></ul>
-<!--l. 175--><p class="noindent" ><span 
-class="cmr-12x-x-120">BlablablaBlablablaBlablablaBlablablaBlablablaBlablablaBlablablaBlablabla[1]</span>
-                                                                                     
-                                                                                     
-<!--l. 178--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark"><span 
-class="cmr-12x-x-120">2.2   </span></span> <a 
- id="x1-120002.2"></a><span 
-class="cmr-12x-x-120">My Subsection</span></h4>
-<!--l. 190--><p class="noindent" >
+class="cmr-12x-x-120">man die verschiedene Dokumentenklassen erstellen kann, dann muss man nicht</span>
+<span 
+class="cmr-12x-x-120">immer m</span><span 
+class="cmr-12x-x-120">&uuml;hevoll Eigene schreiben.</span>
+<!--l. 192--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark"><span 
 class="cmr-12x-x-120">3   </span></span> <a 
  id="x1-130003"></a><span 
-class="cmr-12x-x-120">My Section 2</span></h3>
-<!--l. 193--><p class="noindent" >
-   <h4 class="subsectionHead"><span class="titlemark"><span 
-class="cmr-12x-x-120">3.1   </span></span> <a 
- id="x1-140003.1"></a><span 
-class="cmr-12x-x-120">My Subsection</span></h4>
-<!--l. 195--><p class="noindent" >
-   <h5 class="subsubsectionHead"><span class="titlemark"><span 
-class="cmr-12x-x-120">3.1.1   </span></span> <a 
- id="x1-150003.1.1"></a><span 
-class="cmr-12x-x-120">My Quote</span></h5>
-<!--l. 197--><p class="noindent" >
-      <div class="quote">
-      <!--l. 198--><p class="noindent" ><span 
-class="cmr-12x-x-120">This is a quote. A corrseponding footnote is shown below. And</span>
-      <span 
-class="cmr-12x-x-120">this  is  simply  a  very  simple  text  to  demonstration  matters.</span>
-      <span class="footnote-mark"><a 
-href="content012.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a 
- id="x1-15001f1"></a></div>
-<!--l. 201--><p class="noindent" ><span 
-class="cmr-12x-x-120">Another text. This shows the usage of prettyref: siehe Abschnitt</span><span 
-class="cmr-12x-x-120">&#x00A0;</span><a 
-href="#x1-110002.1"><span 
-class="cmr-12x-x-120">2.1</span><!--tex4ht:ref: sec:labelA --></a> <span 
-class="cmr-12x-x-120">&#8222;</span><a 
-href="#x1-110002.1"><span 
-class="cmr-12x-x-120">2.1</span><!--tex4ht:ref: sec:labelA --></a><span 
-class="cmr-12x-x-120">&#8220;</span><span 
-class="cmr-12x-x-120">&#x00A0;auf</span>
+class="cmr-12x-x-120">Dokumentenklassen</span></h3>
+<!--l. 194--><p class="noindent" ><span 
+class="cmr-12x-x-120">Bei </span><span class="LATEX"><span 
+class="cmr-12x-x-120">L</span><span class="A"><span 
+class="cmr-12x-x-120">A</span></span><span class="TEX"><span 
+class="cmr-12x-x-120">T</span><span 
+class="E"><span 
+class="cmr-12x-x-120">E</span></span><span 
+class="cmr-12x-x-120">X</span></span></span> <span 
+class="cmr-12x-x-120">gibt es verschiedene sogenannte </span><span 
+class="cmr-12x-x-120">&#8222;Dokumentenklassen&#8220;, denn es</span>
 <span 
-class="cmr-12x-x-120">Seite </span><span class="pageref"><a 
-href="#x1-110002.1"><span 
-class="cmsy-10x-x-144">§</span></a></span>
+class="cmr-12x-x-120">macht einen Unterschied, ob man einen Brief verfassen will oder ob man ein</span>
+<span 
+class="cmr-12x-x-120">Buch schreiben m</span><span 
+class="cmr-12x-x-120">&ouml;chte.</span>
+<!--l. 196--><p class="indent" >   <span 
+class="cmr-12x-x-120">Die Dokumentenklasse wird wie folgt angegeben:</span>
                                                                                      
                                                                                      
-<div class="flushleft" 
->
-<!--l. 206--><p class="noindent" >
-<h3 class="likesectionHead"><a 
- id="x1-160003.1.1"></a><span 
-class="cmr-12x-x-120">Literatur</span></h3>
-<!--l. 208--><p class="noindent" >
-     <div class="thebibliography">
-     <p class="bibitem" ><span class="biblabel">
-  <span 
-class="cmr-12x-x-120">[1]</span><span class="bibsp"><span 
-class="cmr-12x-x-120">&#x00A0;</span><span 
-class="cmr-12x-x-120">&#x00A0;</span><span 
-class="cmr-12x-x-120">&#x00A0;</span></span></span>
-     <a 
- id="X1"></a><span 
-class="cmr-12x-x-120">Test</span>
-     <span 
-class="cmr-12x-x-120">biblio</span>
-     <span 
-class="cmr-12x-x-120">1</span>
-     </p>
-     <p class="bibitem" ><span class="biblabel">
-  <span 
-class="cmr-12x-x-120">[2]</span><span class="bibsp"><span 
-class="cmr-12x-x-120">&#x00A0;</span><span 
-class="cmr-12x-x-120">&#x00A0;</span><span 
-class="cmr-12x-x-120">&#x00A0;</span></span></span>
-     <a 
- id="X2"></a><span 
-class="cmr-12x-x-120">Graphics</span>
-     <span 
-class="cmr-12x-x-120">&#8222;test.png&#8220;,</span>
-     <span 
-class="cmr-12x-x-120">URL:</span>
-     <a 
-href="http://myurl/test.png" class="url" ><span 
-class="cmtt-12x-x-120">http://myurl/test.png</span></a>
-                                                                                     
-                                                                                     
-     <span 
-class="cmr-12x-x-120">[Date:</span>
-     <span 
-class="cmr-12x-x-120">xx.xx.xxxx]</span>
-</p>
-     </div>
+   <div class="verbatim" id="verbatim-3">
+\documentclass[Optionen]{Klasse}
 </div>
+<!--l. 199--><p class="nopar" >
+<!--l. 201--><p class="indent" >   <span 
+class="cmr-12x-x-120">Hier sind einmal die verschiedenen Dokumentenklassen von </span><span class="LATEX"><span 
+class="cmr-12x-x-120">L</span><span class="A"><span 
+class="cmr-12x-x-120">A</span></span><span class="TEX"><span 
+class="cmr-12x-x-120">T</span><span 
+class="E"><span 
+class="cmr-12x-x-120">E</span></span><span 
+class="cmr-12x-x-120">X</span></span></span><br 
+class="newline" /><span 
+class="cmr-12x-x-120">angegeben:</span>
+   <div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"><col 
+id="TBL-2-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"> <!--l. 206--><p class="noindent" ><span 
+class="cmr-10x-x-109">Klasse</span>                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"> <!--l. 206--><p class="noindent" ><span 
+class="cmr-10x-x-109">definiert die Dokumentenklasse</span>                                     </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-1"  
+class="td11"> 
+<!--l. 208--><p class="noindent" ><span 
+class="cmr-10x-x-109">&Uuml;bersicht der Klassen</span>        </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-2"  
+class="td11"> <!--l. 209--><p class="noindent" >                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"> <!--l. 210--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">article</span></span></span>                </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-3-2"  
+class="td11"> <!--l. 210--><p class="noindent" ><span 
+class="cmr-10x-x-109">Artikel  (z.B.  in  wissenschaftlichen  Zeitschriften),  kurze</span>
+  <span 
+class="cmr-10x-x-109">Berichte, etc.</span>                                                             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"> <!--l. 211--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">report</span></span></span>                 </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-4-2"  
+class="td11"> <!--l. 211--><p class="noindent" ><span 
+class="cmr-10x-x-109">l</span><span 
+class="cmr-10x-x-109">&auml;ngere Berichte (mit mehreren Kapiteln), Diplomarbeiten,</span>
+  <span 
+class="cmr-10x-x-109">Dissertationen, etc.</span>                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-5-1"  
+class="td11"> <!--l. 212--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">book</span></span></span>                   </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-5-2"  
+class="td11"> <!--l. 212--><p class="noindent" ><span 
+class="cmr-10x-x-109">f</span><span 
+class="cmr-10x-x-109">&uuml;r B</span><span 
+class="cmr-10x-x-109">&uuml;cher</span>                                                                </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-6-1"  
+class="td11"> <!--l. 213--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">scrartcl</span></span></span><span 
+class="cmr-10x-x-109">, </span><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">scrreprt</span></span></span><span 
+class="cmr-10x-x-109">,</span>
+  <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">scrbook</span></span></span>                </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-6-2"  
+class="td11"> <!--l. 213--><p class="noindent" ><span 
+class="cmr-10x-x-109">Varianten   der   o.   g.   Klassen   mit   Anpassung   an</span>
+  <span 
+class="cmr-10x-x-109">DIN-Papierformate</span>                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-7-1"  
+class="td11"> <!--l. 214--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">letter</span></span></span>                 </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-7-2"  
+class="td11"> <!--l. 214--><p class="noindent" ><span 
+class="cmr-10x-x-109">f</span><span 
+class="cmr-10x-x-109">&uuml;r Briefe</span>                                                                  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-8-1"  
+class="td11"> <!--l. 215--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">foils</span></span></span> </td> <td  style="white-space:wrap; text-align:left;" id="TBL-2-8-2"  
+class="td11"> <!--l. 215--><p class="noindent" ><span 
+class="cmr-10x-x-109">f</span><span 
+class="cmr-10x-x-109">&uuml;r Folien oder Pr</span><span 
+class="cmr-10x-x-109">&auml;sentationen</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-9-1"  
+class="td11"> <!--l. 217--><p class="noindent" ><span 
+class="cmr-10x-x-109">Optionen</span>                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-9-2"  
+class="td11"> <!--l. 217--><p class="noindent" ><span 
+class="cmr-10x-x-109">definiert      die      Optionen      f</span><span 
+class="cmr-10x-x-109">&uuml;r      die      bestehende</span>
+  <span 
+class="cmr-10x-x-109">Dukumentenklasse</span>                                                      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-10-1"  
+class="td11"> <!--l. 219--><p class="noindent" ><span 
+class="cmr-10x-x-109">&Uuml;bersicht der Optionen</span>      </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-10-2"  
+class="td11"> <!--l. 220--><p class="noindent" >                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-11-1"  
+class="td11"> <!--l. 221--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">10pt/11pt/12pt</span></span></span>         </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-11-2"  
+class="td11"> <!--l. 221--><p class="noindent" ><span 
+class="cmr-10x-x-109">Option f</span><span 
+class="cmr-10x-x-109">&uuml;r die normale Schriftgr</span><span 
+class="cmr-10x-x-109">&ouml;&szlig;e (10pt ist etwas kleiner,</span>
+  <span 
+class="cmr-10x-x-109">12pt gr</span><span 
+class="cmr-10x-x-109">&ouml;&szlig;er)</span>                                                              </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-12-1"  
+class="td11"> <!--l. 222--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">a4paper</span></span></span>                </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-12-2"  
+class="td11"> <!--l. 222--><p class="noindent" ><span 
+class="cmr-10x-x-109">Papierformat   in   DIN-A4   (ohne   diesen   Zusatz   wird</span>
+  <span 
+class="cmr-10x-x-109">amerikanisches Papierformat verwendet)</span>                         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-13-1"  
+class="td11"> <!--l. 223--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">fleqn</span></span></span>                  </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-13-2"  
+class="td11"> <!--l. 223--><p class="noindent" ><span 
+class="cmr-10x-x-109">linksb</span><span 
+class="cmr-10x-x-109">&uuml;ndige mathematische Gleichungen</span>                        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-14-1"  
+class="td11"> <!--l. 224--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">leqno</span></span></span>                  </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-14-2"  
+class="td11"> <!--l. 224--><p class="noindent" ><span 
+class="cmr-10x-x-109">Gleichungsnummern auf der linken Seite</span>                         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-15-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-15-1"  
+class="td11"> <!--l. 225--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">titlepage/notitlepage</span></span></span>  </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-15-2"  
+class="td11"> <!--l. 225--><p class="noindent" ><span 
+class="cmr-10x-x-109">Festlegung  f</span><span 
+class="cmr-10x-x-109">&uuml;r  Titel  und  Zusammenfassung  auf  einer</span>
+  <span 
+class="cmr-10x-x-109">eigenen oder gesonderten Seite</span>                                      </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-16-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-16-1"  
+class="td11"> <!--l. 226--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-10x-x-109">onecolumn/twocolumn</span></span></span>    </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-16-2"  
+class="td11"> <!--l. 226--><p class="noindent" ><span 
+class="cmr-10x-x-109">ein- oder zweispaltiger Satz (Voreinstellungen: onecolumn;</span>
+  <span 
+class="cmr-10x-x-109">gilt nicht f</span><span 
+class="cmr-10x-x-109">&uuml;r Dokumentenklasse &#8220;letter&#8220;)</span>                        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-17-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-17-1"  
+class="td11">                        </td> </tr></table></div>
+<!--l. 231--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-140004"></a>Packete (Usepackages)</h3>
+<!--l. 233--><p class="noindent" >Die sogenannten &#8222;Usepackages&#8220; sind ein sehr wichtiger Bestandteil von <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>. Sie dienen
+                                                                                     
+                                                                                     
+dem Programm um weitere Befehle, die es im normalen Betrieb nicht verwendet,
+&#8222;hochzuladen&#8220;. Daher setzen viele Befehle dementsprechende Usepackages voraus. Wenn in
+einem Dokument besondere Aktionen, wie zum Beispiel Bild neben Bild, ausgef&uuml;hrt werden
+sollen, wird das Package &#8222;subfigure&#8220; ben&ouml;tigt. F&uuml;r eine bessere &Uuml;bersicht, werden
+Usepackages generell am Anfang des Dokuments aufgef&uuml;hrt. Im folgenden wird
+erkl&auml;rt, wie sie eingebunden werden und einmal die am meisten benutzten Packages
+erkl&auml;rt.
+<!--l. 235--><p class="indent" >   Zum benutzen eines Usepackages wird der folgende Befehl benutzt:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-4">
+\usepackage[Optionen]{Packet}
+</div>
+<!--l. 238--><p class="nopar" >
+<!--l. 240--><p class="indent" >   Packete: definiert die zus&auml;tzlichen Packete f&uuml;r eine Dokumentenklasse
+<!--l. 243--><p class="indent" >   Hier sind einmal die am h&auml;ufigsten benutzten Usepackages aufgelistet:
+   <div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1"><col 
+id="TBL-3-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-1"  
+class="td11"> <!--l. 247--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">alltt</span></span></span>              </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-2"  
+class="td11"> <!--l. 247--><p class="noindent" >Variante der verbatim-Umgebung                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-1"  
+class="td11"> <!--l. 248--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">amsmath,</span><span 
+class="cmtt-12">&#x00A0;amssymb</span></span></span>    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-2"  
+class="td11"> <!--l. 248--><p class="noindent" >erweiterter mathematischer Formelsatz                        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-1"  
+class="td11"> <!--l. 249--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">babel[german]</span></span></span>       </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-2"  
+class="td11"> <!--l. 249--><p class="noindent" >Anpassung  f&uuml;r  jeweilige  Sprachen  mit  Sprache  als
+  &#8222;Option&#8220; (hier: german; f&uuml;r die deutsche Sprache)         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-1"  
+class="td11"> <!--l. 250--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">color</span></span></span>               </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-2"  
+class="td11"> <!--l. 250--><p class="noindent" >Unterst&uuml;tzung f&uuml;r die Farbausgabe                             </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-5-1"  
+class="td11"> <!--l. 251--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">dcolumn</span></span></span>             </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-5-2"  
+class="td11"> <!--l. 251--><p class="noindent" >f&uuml;r  Spalten  mit  Ausrichtung  auf  Dezimaltrennzeichen
+  (f&uuml;r array- und tabular-Umgebungen)                         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-6-1"  
+class="td11"> <!--l. 252--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">fancyhdr</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-6-2"  
+class="td11"> <!--l. 252--><p class="noindent" >flexible Gestaltung der Kopf- bzw. Fu&szlig;zeilen                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-7-1"  
+class="td11"> <!--l. 253--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">fontenc</span></span></span>             </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-7-2"  
+class="td11"> <!--l. 253--><p class="noindent" >f&uuml;r Schriften mit unterschiedlicher Codierung                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-8-1"  
+class="td11"> <!--l. 254--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">float</span></span></span>               </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-8-2"  
+class="td11"> <!--l. 254--><p class="noindent" >Erzwingt Bilder und Tabellen an der eingegebenen Stelle
+  zu setzen                                                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-9-1"  
+class="td11"> <!--l. 255--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">geometry</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-9-2"  
+class="td11"> <!--l. 255--><p class="noindent" >manuelle Bestimmung des Layouts mit den Ma&szlig;en als
+  Optionen                                                               </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-10-1"  
+class="td11"> <!--l. 256--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">german,</span><span 
+class="cmtt-12">&#x00A0;ngerman</span></span></span>     </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-10-2"  
+class="td11"> <!--l. 256--><p class="noindent" >Anpassung an die traditionelle (german) bzw. die neue
+  Rechtschreibung (ngerman)                                       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-11-1"  
+class="td11"> <!--l. 257--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">graphicx</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-11-2"  
+class="td11"> <!--l. 257--><p class="noindent" >Einbindung von Graphiken                                       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-12-1"  
+class="td11"> <!--l. 258--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">hyperref</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-12-2"  
+class="td11"> <!--l. 258--><p class="noindent" >Einbindung von Hyperlinks                                       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-13-1"  
+class="td11"> <!--l. 259--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">inputenc</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-13-2"  
+class="td11"> <!--l. 259--><p class="noindent" >Deklaration der Zeichenkodierung im Eingabefile           </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-14-1"  
+class="td11"> <!--l. 260--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">latexsym</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-14-2"  
+class="td11"> <!--l. 260--><p class="noindent" >Einbindung einiger Symbole                                      </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-15-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-15-1"  
+class="td11"> <!--l. 261--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">longtable</span></span></span>           </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-15-2"  
+class="td11"> <!--l. 261--><p class="noindent" >Einbindung  von  Tabellen  &uuml;ber  mehrere  Seiten  mit
+  automatischem Seitenumbruch                                   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-16-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-16-1"  
+class="td11"> <!--l. 262--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">makeidy</span></span></span>             </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-16-2"  
+class="td11"> <!--l. 262--><p class="noindent" >Unterst&uuml;tzung zum Erstellen eines Index                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-17-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-17-1"  
+class="td11"> <!--l. 263--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">multicol</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-17-2"  
+class="td11"> <!--l. 263--><p class="noindent" >Mehrspaltiger Satz mit Kolumnenausgleich                  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-18-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-18-1"  
+class="td11"> <!--l. 264--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">multirow</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-18-2"  
+class="td11"> <!--l. 264--><p class="noindent" >wird   ben&ouml;tigt   um   Tabellenzeilen   miteinander   zu
+  verbinden                                                              </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-19-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-19-1"  
+class="td11"> <!--l. 265--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">subfigure</span></span></span>           </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-19-2"  
+class="td11"> <!--l. 265--><p class="noindent" >Wird gebraucht um zwei Bilder nebeneinander zu setzen  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-20-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-20-1"  
+class="td11"> <!--l. 266--><p class="noindent" ><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">textcomp</span></span></span>            </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-20-2"  
+class="td11"> <!--l. 266--><p class="noindent" >Einbindung     von     Schriften     mit     zus&auml;tzlichen
+  Textsymbolen                                                         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-21-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-21-1"  
+class="td11">                     </td> </tr></table></div>
+<!--l. 271--><p class="noindent" >
+                                                                                     
+                                                                                     
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-150005"></a>Mathematische Formeln</h3>
+<!--l. 274--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">5.1   </span> <a 
+ id="x1-160005.1"></a>Grundprinzip</h4>
+<!--l. 276--><p class="noindent" >Im Folgenden wird erkl&auml;rt, wie man mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  mathematische Formeln erstellt.
+<!--l. 278--><p class="indent" >   Dazu gibt es grunds&auml;tzlich zwei verschiedene M&ouml;glichkeiten:
+<!--l. 280--><p class="indent" >   Zum einen kann man mathematische Formeln im Text wiedergeben, zum anderen kann
+man sie in einer gesonderten Zeile erscheinen lassen.
+<!--l. 283--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.1.1   </span> <a 
+ id="x1-170005.1.1"></a>Mathematische Formeln im Text</h5>
+<!--l. 285--><p class="noindent" >M&ouml;chte man mathematische Formeln im Text wiedergeben, so setzt man den Teil, der im
+Mathematikmodus erscheinen soll, entwerder zwischen <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">$</span></span></span> und <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">$</span></span></span> oder zwischen <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\(</span></span></span> und <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\)</span></span></span> oder
+zwischen <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">begin{math}</span></span></span> und <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">end{math}</span></span></span>. Am einfachsten und emfehlenswerten ist es jedoch die
+Zeichen <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">$</span></span></span> zu verwenden.
+<!--l. 288--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+<!--l. 291--><p class="indent" >   Der Satz des Pythagoras <span 
+class="cmmi-12">a</span><sup><span 
+class="cmr-8">2</span></sup> + <span 
+class="cmmi-12">b</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">c</span><sup><span 
+class="cmr-8">2</span></sup> gibt an, dass die Hypothenuse im rechtwinklingen
+Dreieck mit Hilfe der beiden Katheten berechnet werden kann.
+<!--l. 294--><p class="indent" >   Diese Formel sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-5">
+Der&#x00A0;Satz&#x00A0;des&#x00A0;Pythagoras&#x00A0;$&#x00A0;a^{2}&#x00A0;+&#x00A0;b^{2}&#x00A0;=&#x00A0;c^{2}&#x00A0;$&#x00A0;gibt&#x00A0;an,&#x00A0;dass&#x00A0;...
+</div>
+<!--l. 298--><p class="nopar" >
+<!--l. 301--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.1.2   </span> <a 
+ id="x1-180005.1.2"></a>Mathematische Formeln in gesonderten Zeilen</h5>
+<!--l. 303--><p class="noindent" >M&ouml;chte man mathematische Formeln in eigenen Zeilen erscheinen lassen, so geschieht dies auf
+folgende Weise:
+<!--l. 306--><p class="indent" >   Die Befehle
+<!--l. 309--><p class="indent" >   <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\begin{displaymath}</span></span></span> &#x00A0;     und &#x00A0;     <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\end{displaymeth}</span></span></span>
+<!--l. 312--><p class="indent" >   oder
+<!--l. 315--><p class="indent" >   <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\[</span></span></span> &#x00A0;     und &#x00A0;     <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\]</span></span></span>
+<!--l. 318--><p class="indent" >   geben die Formeln in eigenen Zeilen, aber ohne zugeh&ouml;rigen Gleichungsnummern an.
+<!--l. 321--><p class="indent" >   Die Befehle
+<!--l. 324--><p class="indent" >   <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\begin{equation}</span></span></span> &#x00A0;     und &#x00A0;     <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\end{equation}</span></span></span>
+<!--l. 327--><p class="indent" >   geben die Formeln in eigenen Zeilen und mit zugeh&ouml;rigen Gleichungsnummern
+an.
+<!--l. 329--><p class="indent" >   Mit den Befehlen <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\label</span></span></span> und <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\ref</span></span></span> kann sich im Text auf eine jeweilige Gleichung bezogen
+werden, indem sie durch <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\label{z.B.</span><span 
+class="cmtt-12">&#x00A0;Gleichungsname,</span><span 
+class="cmtt-12">&#x00A0;Gleichungsnummer}</span></span></span> ein
+sogenanntes <span 
+class="cmti-12">Label </span>zugesprochen bekommt. Dies ist im einfachsten Fall die Gleichungsnummer
+oder der Gleichungsname, um sp&auml;ter die &Uuml;bersicht zu behalten, kann aber auch beliebig
+umbenannt werden. Der Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">label</span></span></span> folg direkt nach dem Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\beginn{equation}</span></span></span>:
+                                                                                     
+                                                                                     
+<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\begin{equation}</span><span 
+class="cmtt-12">&#x00A0;\label{pythagoras}</span></span></span>. Dann wird die Gleichung im Text durch den
+Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\ref{Gleichungsname,</span><span 
+class="cmtt-12">&#x00A0;Gleichungsnummer}</span></span></span> angesprochen: Der Satz des Pythagoras
+<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\ref{pythagoras}</span></span></span> gibt an, dass &#x2026;
+<!--l. 332--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+<!--l. 335--><p class="indent" >   <span 
+class="cmbx-10x-x-109">ohne Gleichungsnummer</span>
+   <center class="par-math-display" >
+<img 
+src="content011x.png" alt=" 2   2    2
+a + b  = c
+" class="par-math-display" ></center>
+<!--l. 341--><p class="nopar" >
+<!--l. 343--><p class="indent" >   Der Satz des Pythagoras (s.o.) gibt an, dass &#x2026;
+<!--l. 346--><p class="indent" >   Diese Formel sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-6">
+\begin{displaymath}
+&#x00A0;<br />a^{2}&#x00A0;+&#x00A0;b^{2}&#x00A0;=&#x00A0;c^{2}
+&#x00A0;<br />\end{displaymath}
+&#x00A0;<br />Der&#x00A0;Satz&#x00A0;des&#x00A0;Pythagoras&#x00A0;(s.o.)&#x00A0;gibt&#x00A0;an,&#x00A0;dass&#x00A0;\ldots
+</div>
+<!--l. 353--><p class="nopar" >
+<!--l. 356--><p class="indent" >   <span 
+class="cmbx-10x-x-109">mit Gleichungsnummer</span>
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="content012x.png" alt="a2 + b2 = c2
+" class="math-display" ><a 
+ id="x1-18001r2"></a></center></td><td class="equation-label">(2)</td></tr></table>
+<!--l. 362--><p class="nopar" >
+<!--l. 364--><p class="indent" >   Der Satz des Pythagoras (<a 
+href="#x1-18001r2">2<!--tex4ht:ref: pythagoras --></a>) gibt an, dass &#x2026;
+<!--l. 367--><p class="indent" >   Diese Formel sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-7">
+\begin{equation}&#x00A0;\label{pythagoras}
+&#x00A0;<br />a^{2}&#x00A0;+&#x00A0;b^{2}&#x00A0;=&#x00A0;c^{2}
+&#x00A0;<br />\end{equation}
+&#x00A0;<br />Der&#x00A0;Satz&#x00A0;des&#x00A0;Pythagoras&#x00A0;(\ref{pythagoras})&#x00A0;gibt&#x00A0;an,&#x00A0;dass&#x00A0;\ldots
+</div>
+<!--l. 374--><p class="nopar" >
+<!--l. 377--><p class="indent" >   Die Formeln k&ouml;nnen auch &uuml;ber das Men&uuml; erstellt werden: Dazu wird in der Kopfzeile des
+TeXnicCenter unter <span 
+class="cmti-12">Einf</span><span 
+class="cmti-12">&uuml;gen/Formeln </span>die jeweilige Option ausgesucht.
+<!--l. 379--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">5.2   </span> <a 
+ id="x1-190005.2"></a>Grundrechenarten</h4>
+<!--l. 381--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.2.1   </span> <a 
+ id="x1-200005.2.1"></a>Addition, Subtraktion, Multiplikation</h5>
+<!--l. 383--><p class="noindent" >Das Addieren, Subtrahieren und Multiplizieren ist mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  sehr einfach darzustellen:
+<!--l. 386--><p class="indent" >   <span 
+class="cmbx-10x-x-109">Addition, Subtraktion</span>
+<!--l. 390--><p class="indent" >   Um zu addieren oder zu subtrahieren werden im Mathematikmodus die Operatoren <span 
+class="cmti-12">+ </span>und
+<span 
+class="cmti-12">- </span>verwendet.
+<!--l. 393--><p class="indent" >   <span 
+class="cmbx-10x-x-109">Multiplikation</span>
+<!--l. 397--><p class="indent" >   Um zu multiplizieren wird im Mathematikmodus der Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\cdot</span></span></span> verwendet.
+                                                                                     
+                                                                                     
+<!--l. 400--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.2.2   </span> <a 
+ id="x1-210005.2.2"></a>Division</h5>
+<!--l. 402--><p class="noindent" >F&uuml;r einfache Br&uuml;che wird der Operator <span 
+class="cmti-12">/ </span>verwendet.
+<!--l. 404--><p class="indent" >   F&uuml;r kompliziertere Br&uuml;che verwendet man den Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\frac{}{}</span></span></span>, wobei der Z&auml;hler in der
+ersten Klammer und der Nenner in der zweiten Klammer steht.
+<!--l. 407--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+   <center class="par-math-display" >
+<img 
+src="content013x.png" alt="(a + b) &#x22C5; (a + b)
+---------------
+(c - d) &#x22C5; (c - d)
+" class="par-math-display" ></center>
+<!--l. 412--><p class="nopar" >
+<!--l. 414--><p class="indent" >   Diese Formel sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-8">
+\begin{displaymath}
+&#x00A0;<br />\frac{(a&#x00A0;+&#x00A0;b)&#x00A0;\cdot&#x00A0;(a&#x00A0;+&#x00A0;b)}{(c-d)&#x00A0;\cdot&#x00A0;(c-d)}
+&#x00A0;<br />\end{displaymath}
+</div>
+<!--l. 421--><p class="nopar" >
+<!--l. 423--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">5.3   </span> <a 
+ id="x1-220005.3"></a>Wurzel, Exponenten und Indizes</h4>
+<!--l. 426--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.3.1   </span> <a 
+ id="x1-230005.3.1"></a>Wurzel</h5>
+<!--l. 428--><p class="noindent" >Mit dem Befehl <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\sqrt{}</span></span></span> l&auml;sst sich eine Wurzel erstellen. Der Ausdruck der unter der Wurzel
+stehen soll muss im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument zwischen den beiden Klammern stehen. Bei der
+Wurzel aus der Wurzel eines Ausdrucks wendet man innerhalb des <span 
+class="cmti-12">sprt</span>-Befehls diesen
+noch ein weiteres mal an: <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\sqrt{\sqrt{a}}</span></span></span>  <img 
+src="content014x.png" alt="&#x2218;&#x221A;---
+   a"  class="sqrt" >. Um die <span 
+class="cmmi-12">x</span>-te Wurzel zu ziehen
+stellt man den geschweiften Klammern zwei eckige Klammern voraus: <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\sqrt[x]{a}</span></span></span>
+<img 
+src="content015x.png" alt="&#x221A;x--
+  a"  class="root" align="middle" >.
+<!--l. 431--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">5.3.2   </span> <a 
+ id="x1-240005.3.2"></a>Exponenten und Indizes</h5>
+<!--l. 433--><p class="noindent" >Um mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  Exponenten darzustellen verwendet man innerhalb des Mathematikmodus
+den Operator <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">^</span></span></span> gefolgt von zwei geschweiften Klammern <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">{}</span></span></span>. Um Indizes darzustellen
+verwendet man den Operator <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">_</span></span></span> gefolgt von zwei geschweiften Klammern.
+                                                                                     
+                                                                                     
+<div class="center" 
+>
+<!--l. 438--><p class="noindent" >
+<!--l. 439--><p class="noindent" ><span 
+class="cmmi-12x-x-120">x</span><sup><span 
+class="cmr-10">2</span></sup>          <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12x-x-120">x^{2}</span></span></span>
+<!--l. 442--><p class="noindent" ><span 
+class="cmmi-12x-x-120">x</span><sub><span 
+class="cmr-10">2</span></sub>          <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12x-x-120">x_{2}</span></span></span></div>
+   <center class="par-math-display" >
+<img 
+src="content016x.png" alt="   &#x2218; ----
+    x  12
+-----z------
+ -  1x2
+e   3   &#x22C5; k
+" class="par-math-display" ></center>
+<!--l. 449--><p class="nopar" >
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-9">
+\frac{\sqrt[x]{z^{\frac{1}{2}}}}{e^{-\frac{1}{3}x^{2}}&#x00A0;\cdot&#x00A0;k}
+</div>
+<!--l. 455--><p class="nopar" >
+   <center class="par-math-display" >
+<img 
+src="content017x.png" alt=" &#x221A;  ---
+  x z4
+---------
+ex2 &#x22C5; k
+" class="par-math-display" ></center>
+<!--l. 460--><p class="nopar" >
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-10">
+\frac{\sqrt[x]{z_{4}}}{e^{x_{2}}&#x00A0;\cdot&#x00A0;k}
+</div>
+<!--l. 466--><p class="nopar" >
+<!--l. 468--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">5.4   </span> <a 
+ id="x1-250005.4"></a>Matritzen</h4>
+<!--l. 470--><p class="noindent" >Das Erstellen von Matritzen hat mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  &Auml;nhnlichkeiten mit dem Erstellen von
+Tabellen.
+<!--l. 472--><p class="indent" >   Hierzu verwendet man die Befehle
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-11">
+\begin{array}
+&#x00A0;<br />\end{array}
+</div>
+<!--l. 477--><p class="nopar" >
+<!--l. 479--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+   <center class="par-math-display" >
+<img 
+src="content018x.png" alt="     &#x230A;              &#x230B;
+     | 1  2  3  ... |
+     ||              ||
+     || 4  5  6  ... ||
+A =  ||              ||
+     |&#x2308; 7  8  9  ... |&#x2309;
+       ...  ...  ...  ...
+" class="par-math-display" ></center>
+<!--l. 490--><p class="nopar" >
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-12">
+\begin{displaymath}
+&#x00A0;<br />\mathbf{A}&#x00A0;=
+&#x00A0;<br />\left[&#x00A0;\begin{array}{c&#x00A0;c&#x00A0;c&#x00A0;c}
+&#x00A0;<br />1 &amp; 2 &amp; 3 &amp; \ldots \\
+&#x00A0;<br />4 &amp; 5 &amp; 6 &amp; \ldots \\
+&#x00A0;<br />7 &amp; 8 &amp; 9 &amp; \ldots \\
+&#x00A0;<br />\vdots &amp; \vdots &amp; \vdots &amp; \ddots \\
+&#x00A0;<br />\end{array}&#x00A0;\right]
+&#x00A0;<br />\end{displaymath}
+</div>
+<!--l. 502--><p class="nopar" >
+<!--l. 504--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">5.5   </span> <a 
+ id="x1-260005.5"></a>Symbole, Sonderzeichen und andere mathematische Operatoren</h4>
+<!--l. 506--><p class="noindent" >Andere mathematische Operatoren sowie Symbole und Sonderzeichen sind &uuml;ber die Kopfzeile
+des <span 
+class="cmti-12">TeXnicCenter </span>unter <span 
+class="cmmi-12">Mathe </span>einzuf&uuml;gen. Der Umgang mit mathematischen Operatoren
+erfolgt stets nach dem gleichen Schema.
+<!--l. 509--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-270006"></a>Tabellen</h3>
+<!--l. 512--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.1   </span> <a 
+ id="x1-280006.1"></a>Grundprinzip</h4>
+<!--l. 514--><p class="noindent" >Im Folgenden wird erkl&auml;rt, wie man mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>  Tabellen erstellt.
+                                                                                     
+                                                                                     
+<!--l. 516--><p class="indent" >   Am einfachsten funktioniert dies mit der Tabularumgebung:
+<!--l. 518--><p class="indent" >   Mit dem Befehl
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-13">
+\begin{tabular}{Spaltendefinition}
+</div>
+<!--l. 522--><p class="nopar" >
+<!--l. 524--><p class="indent" >   mit der entsprechenden Spaltendefinition hinter dem <span 
+class="cmti-12">tabular</span>-Befehl.
+<!--l. 526--><p class="indent" >   Und dem Befehl
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-14">
+\end{tabular}
+</div>
+<!--l. 530--><p class="nopar" >
+<!--l. 532--><p class="indent" >   zum Beenden der laufenden Tabelle.
+<!--l. 534--><p class="indent" >   Alle restlichen Tabelleninhalte m&uuml;ssen sich grunds&auml;tzlich zwischen den beiden (o.g.)
+Befehlen zum Beginnen und Beenden einer jeweiligen Tabelle befinden.
+<!--l. 537--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x1-290006.2"></a>Spaltendefinitionen</h4>
+   <div class="tabular"> <table id="TBL-4" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-4-1g"><col 
+id="TBL-4-1"><col 
+id="TBL-4-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-4-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">l</span></span></span>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-2"  
+class="td11"> der Text wird linksb&uuml;ndig ausgerichtet                                  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">c</span></span></span>         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-2"  
+class="td11"> der Text wird zentriert ausgerichtet                                      </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">r</span></span></span>         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-2"  
+class="td11"> der Text wird rechtsb&uuml;ndig ausgerichtet                                 </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">|</span></span></span>, <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">||</span></span></span>      </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-2"  
+class="td11"> einfache, doppelte senkrechte Trennlinie zwischen den Spalten    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">p{Breite}</span></span></span> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-2"  
+class="td11"> manuelle Festlegung der Spaltenbreite, k&uuml;rzere Spalte ist oben   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-6-1"  
+class="td11">           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-6-2"  
+class="td11"> ausgerichtet                                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-7-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">m{Breite}</span></span></span> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-7-2"  
+class="td11"> manuelle Festlegung der Spaltenbreite, k&uuml;rzere Spalte ist mittig  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-8-1"  
+class="td11">           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-8-2"  
+class="td11"> ausgerichtet                                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-9-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">b{Breite}</span></span></span> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-9-2"  
+class="td11"> manuelle Festlegung der Spaltenbreite, k&uuml;rzere Spalte ist unten  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-10-1"  
+class="td11">           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-10-2"  
+class="td11"> ausgerichtet                                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-11-1"  
+class="td11">           </td> </tr></table></div>
+<!--l. 550--><p class="noindent" ><span 
+class="cmbx-12">Ein Beispiel</span>
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-15">
+\begin{tabular}{|l||c|r|}
+</div>
+<!--l. 554--><p class="nopar" >
+<!--l. 556--><p class="indent" >   Dies ist eine Tabelle mit drei Spalten und vertikalen Trennlinien. Mit einer doppelten
+Trennlinie nach der ersten Spalte und einfachen Trennlinien vor der ersten, nach der zweiten
+und nach der dritten Spalte. Mit linksb&uuml;ndigem Text in der ersten, zentriertem Text in der
+zweiten und rechtsb&uuml;ndigem Text in der dritten Spalte.
+<!--l. 558--><p class="indent" >   Sind keine vertikalen Trennlinien gew&uuml;nscht, so sind die Abtrennungen (&#8222;<span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">|</span></span></span>&#8220;) durch
+Leerzeichen zu ersetzen.
+<!--l. 561--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.3   </span> <a 
+ id="x1-300006.3"></a>Befehle innerhalb der <span 
+class="cmti-12">tabular</span>-Umgebung</h4>
+   <div class="tabular"> <table id="TBL-5" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-5-1g"><col 
+id="TBL-5-1"><col 
+id="TBL-5-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-5-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">&amp;</span></span></span>            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-2"  
+class="td11"> zum Trennen der Spalten                                       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\\</span></span></span>            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-2"  
+class="td11"> Zeilenumbruch                                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\hline</span></span></span>        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-2"  
+class="td11"> horizontale Linie                                                  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\hline</span><span 
+class="cmtt-12">&#x00A0;\hline</span></span></span> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-2"  
+class="td11"> doppelte, horizontale Linie                                     </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\cline{1-2}</span></span></span>   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-2"  
+class="td11"> horizontale Linie von einer Spalte x bis zur jeweiligen  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-1"  
+class="td11">               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-2"  
+class="td11"> Spalte y (hier von Spalte 1 bis Spalte 2)                   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-7-1"  
+class="td11">               </td> </tr></table></div>
+<!--l. 572--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.4   </span> <a 
+ id="x1-310006.4"></a>Zusammenfassen mehrerer Boxen</h4>
+<!--l. 574--><p class="noindent" >Um einzelne Tabellenboxen zu einer Box zusammenzufassen - also eine gro&szlig;e Box &uuml;ber zwei
+oder mehrere kleine Boxen zu ziehen - wendet man folgende Befehle an
+<!--l. 577--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.4.1   </span> <a 
+ id="x1-320006.4.1"></a>Zusammenfassen von Spalten</h5>
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-16">
+\multicolumn{Spaltenzahl}{Spaltendefinition}{Text}
+</div>
+<!--l. 581--><p class="nopar" >
+<!--l. 583--><p class="indent" >   Mit dem <span 
+class="cmti-12">multicolumn</span>-Befehl l&auml;sst sich eine Spalte &uuml;ber mehrere kleine Spalten ziehen. F&uuml;r
+die Spaltenzahl wird die Anzahl an Spalten angegeben, &uuml;ber die die jeweilige gro&szlig;e Spalte
+laufen soll. In der Spaltendefinition wird die Ausrichtung des Spalteninhalts angegeben - wie
+in der Definition <br 
+class="newline" /><span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\begin{tabular}{Spaltendefinition}</span></span></span>:
+   <div class="tabular"> <table id="TBL-6" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-6-1g"><col 
+id="TBL-6-1"><col 
+id="TBL-6-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-6-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">l</span></span></span> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-2"  
+class="td11"> linksb&uuml;ndig   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">c</span></span></span>  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-2"  
+class="td11"> zentriert       </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-1"  
+class="td11"> <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">r</span></span></span> </td> <td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-2"  
+class="td11"> rechtsb&uuml;ndig</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-1"  
+class="td11">    </td> </tr></table>
+</div>
+<!--l. 593--><p class="indent" >   In die letzte Klammer wird der Text dieser Spalte geschrieben.
+<!--l. 596--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+   <div class="tabular"> <table id="TBL-7" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-7-1g"><col 
+id="TBL-7-1"></colgroup><colgroup id="TBL-7-2g"><col 
+id="TBL-7-2"></colgroup><colgroup id="TBL-7-3g"><col 
+id="TBL-7-3"></colgroup><colgroup id="TBL-7-4g"><col 
+id="TBL-7-4"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-1-"><td colspan="3" style="white-space:nowrap; text-align:left;" id="TBL-7-1-1"  
+class="td11"></td>                      <div class="multicolumn"  style="white-space:nowrap; text-align:center;">Vokabeln</div></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-2-"><td colspan="2" style="white-space:nowrap; text-align:center;" id="TBL-7-2-1"  
+class="td11"> <div class="multicolumn"  style="white-space:nowrap; text-align:center;">Englisch</div> </td><td colspan="2" style="white-space:nowrap; text-align:center;" id="TBL-7-2-3"  
+class="td11">    <div class="multicolumn"  style="white-space:nowrap; text-align:center;">Deutsch</div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-1"  
+class="td11"> 1.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-2"  
+class="td11"> door                </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-3"  
+class="td11"> 1.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-4"  
+class="td11"> die T&uuml;r                          </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-1"  
+class="td11"> 2. </td> <td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-2"  
+class="td11"> waiter, waitress </td> <td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-3"  
+class="td11"> 2. </td> <td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-4"  
+class="td11"> der Kellner, die Kellnerin;</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-1"  
+class="td11">   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-2"  
+class="td11">               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-3"  
+class="td11">   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-4"  
+class="td11"> die Bedienung; der Ober    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-6-1"  
+class="td11"> 3.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-6-2"  
+class="td11"> (magic) wand    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-6-3"  
+class="td11"> 3.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-6-4"  
+class="td11"> der Zauberstab                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-7-1"  
+class="td11"> 4.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-7-2"  
+class="td11"> potato             </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-7-3"  
+class="td11"> 4.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-7-4"  
+class="td11"> die Kartoffel                   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-8-1"  
+class="td11"> 5.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-8-2"  
+class="td11"> &#x2026;                    </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-8-3"  
+class="td11"> 5.  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-8-4"  
+class="td11"> &#x2026;                                  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-9-1"  
+class="td11"> </td> </tr></table>
+</div>
+<!--l. 613--><p class="indent" >   Diese Tabelle sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-17">
+\begin{tabular}{|l|l|l|l|}
+&#x00A0;<br />\hline
+&#x00A0;<br />\multicolumn{4}{|c|}{Vokabeln} \\
+&#x00A0;<br />\hline&#x00A0;\hline
+&#x00A0;<br />\multicolumn{2}{|c|}{Englisch} &amp; \multicolumn{2}{|c|}{Deutsch} \\
+&#x00A0;<br />\hline
+&#x00A0;<br />1. &amp; door &amp; 1. &amp; die&#x00A0;T&uuml;r \\
+&#x00A0;<br />2. &amp; waiter,&#x00A0;waitress &amp; 2. &amp; der&#x00A0;Kellner,&#x00A0;die&#x00A0;Kellnerin;&#x00A0;\\
+&#x00A0;<br />&amp; &amp; &amp; die&#x00A0;Bedienung;&#x00A0;der&#x00A0;Ober \\
+&#x00A0;<br />3. &amp; (magic)&#x00A0;wand &amp; 3. &amp; der&#x00A0;Zauberstab \\
+&#x00A0;<br />4. &amp; potato &amp; 4. &amp; die&#x00A0;Kartoffel \\
+&#x00A0;<br />5. &amp; \ldots &amp; 5. &amp; \ldots \\
+&#x00A0;<br />\end{tabular}
+</div>
+<!--l. 629--><p class="nopar" >
+<!--l. 632--><p class="noindent" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.4.2   </span> <a 
+ id="x1-330006.4.2"></a>Zusammenfassen von Zeilen</h5>
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-18">
+\multirow{Zeilenzahl}{Zeilenbreite}{Text}
+</div>
+<!--l. 636--><p class="nopar" >
+<!--l. 638--><p class="indent" >   Mit dem <span 
+class="cmti-12">multirow</span>-Befehl l&auml;sst sich eine Zeile &uuml;ber mehrere kleine Zeilen ziehen. Dies
+erfolgt entsprechend analog zum <span 
+class="cmti-12">multicolumn</span>-Befehl; allerdings wird hier keine
+Zeilendefinition, sondern nur eine Zeilenbreite angegeben. Der Text steht wiederum in der
+letzten Klammer. Um den Befehl ausf&uuml;hren zu k&ouml;nnen ist das <span class="obeylines-h"><span class="verb"><span 
+class="cmtt-12">\usepackage{multirow}</span></span></span>
+notwendig.
+<!--l. 641--><p class="indent" >   <span 
+class="cmbx-12">Ein Beispiel</span>
+   <div class="tabular"> <table id="TBL-8" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-8-1g"><col 
+id="TBL-8-1"></colgroup><colgroup id="TBL-8-2g"><col 
+id="TBL-8-2"></colgroup><colgroup id="TBL-8-3g"><col 
+id="TBL-8-3"></colgroup><colgroup id="TBL-8-4g"><col 
+id="TBL-8-4"></colgroup><colgroup id="TBL-8-5g"><col 
+id="TBL-8-5"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-1-"><td colspan="3" style="white-space:wrap; text-align:left;" id="TBL-8-1-1"  
+class="td11"></td>                          <div class="multicolumn"  style="white-space:nowrap; text-align:center;"><span 
+class="cmbx-12">Verkehrsaufkommen</span></div></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-2-1"  
+class="td11"> <!--l. 649--><p class="noindent" ><div class="multirow"><!-- rows=4 -->
+<span 
+class="cmbx-8">Personenverkehr</span>                                                </div> </td> <td colspan="3" style="white-space:nowrap; text-align:center;" id="TBL-8-2-2"  
+class="td11"></td> <div class="multicolumn"  style="white-space:nowrap; text-align:center;"><span 
+class="cmbx-8">Individualverkehr</span></div>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-3-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-4-1"  
+class="td11"> <!--l. 652--><p class="noindent" >               </td><td colspan="2" style="white-space:nowrap; text-align:center;" id="TBL-8-4-2"  
+class="td11">          <div class="multicolumn"  style="white-space:nowrap; text-align:center;">
+<span 
+class="cmr-10">motorisiert</span></div>                   </td><td colspan="2" style="white-space:nowrap; text-align:center;" id="TBL-8-4-4"  
+class="td11">      <div class="multicolumn"  style="white-space:nowrap; text-align:center;"><span 
+class="cmr-10">nicht motorisiert</span></div>
+</td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-5-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-6-1"  
+class="td11">
+</td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-7-1"  
+class="td11"> <!--l. 654--><p class="noindent" >               </td><td colspan="3" style="white-space:nowrap; text-align:center;" id="TBL-8-7-2"  
+class="td11"></td>                 <div class="multicolumn"  style="white-space:nowrap; text-align:center;"><span 
+class="cmbx-8">&ouml;ffentlicher Personenverkehr</span></div>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-8-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-9-1"  
+class="td11"> <!--l. 656--><p class="noindent" >               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-9-2"  
+class="td11"> 
+<span 
+class="cmr-10">Stra&szlig;enverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-9-3"  
+class="td11"> <span 
+class="cmr-10">Schienenverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-9-4"  
+class="td11"> <span 
+class="cmr-10">Schiffsverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-9-5"  
+class="td11"> <span 
+class="cmr-10">Luftverkehr  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-10-1"  
+class="td11"> <!--l. 659--><p class="noindent" ><div class="multirow"><!-- rows=4 -->
+<span 
+class="cmbx-8">G</span><span 
+class="cmbx-8">&uuml;terverkehr</span>                                                    </div> </td> <td colspan="3" style="white-space:nowrap; text-align:center;" id="TBL-8-10-2"  
+class="td11"></td> <div class="multicolumn"  style="white-space:nowrap; text-align:center;"><span 
+class="cmbx-8">40 Tonnen und weniger</span></div>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-11-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-12-1"  
+class="td11"> <!--l. 662--><p class="noindent" >               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-12-2"  
+class="td11"> 
+<span 
+class="cmr-10">Stra&szlig;enverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-12-3"  
+class="td11"> <span 
+class="cmr-10">Schienenverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-12-4"  
+class="td11"> <span 
+class="cmr-10">Schiffsverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-12-5"  
+class="td11"> <span 
+class="cmr-10">Luftverkehr  </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-13-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-14-1"  
+class="td11"> <!--l. 664--><p class="noindent" >               </td><td colspan="3" style="white-space:nowrap; text-align:center;" id="TBL-8-14-2"  
+class="td11"></td>                     <div class="multicolumn"  style="white-space:nowrap; text-align:center;">
+<span 
+class="cmbx-8">&uuml;ber 40 Tonnen</span></div>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-15-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-15-1"  
+class="td11"></td></tr><tr 
+class="cline"><td></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-16-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-16-1"  
+class="td11"> <!--l. 666--><p class="noindent" >               </td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-16-2"  
+class="td11"> 
+<span 
+class="cmr-10">Stra&szlig;enverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-16-3"  
+class="td11"> <span 
+class="cmr-10">Schienenverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-16-4"  
+class="td11"> <span 
+class="cmr-10">Schiffsverkehr  </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-8-16-5"  
+class="td11"> <span 
+class="cmr-10">Luftverkehr  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-17-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-17-1"  
+class="td11">                </td> </tr></table></div>
+<!--l. 672--><p class="indent" >   Diese Tabelle sieht im <span class="TEX">T<span 
+class="E">E</span>X</span>-Dokument so aus:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-19">
+\begin{tabular}{|p{3cm}|c|c|c|c|}
+&#x00A0;<br />\hline
+&#x00A0;<br />\multicolumn{5}{|c|}{Verkehrsaufkommen}&#x00A0;\\
+&#x00A0;<br />\hline
+&#x00A0;<br />\hline
+&#x00A0;<br />\multirow{4}{8cm}{Personenverkehr}
+&#x00A0;<br />&amp; \multicolumn{4}{|c|}{Individualverkehr} \\
+&#x00A0;<br />\cline{2-5}
+&#x00A0;<br />&amp; \multicolumn{2}{|c|}{motorisiert} &amp;
+&#x00A0;<br />\multicolumn{2}{|c|}{nicht&#x00A0;motorisiert}&#x00A0;\\
+&#x00A0;<br />\cline{2-5}&#x00A0;\cline{2-5}
+&#x00A0;<br />&amp; \multicolumn{4}{|c|}{&ouml;ffentlicher&#x00A0;Personenverkehr}&#x00A0;\\
+&#x00A0;<br />\cline{2-5}
+&#x00A0;<br />&amp; Stra&szlig;enverkehr &amp; Schienenverkehr &amp; Schiffsverkehr &amp; Luftverkehr&#x00A0;\\
+&#x00A0;<br />\hline
+&#x00A0;<br />\hline
+&#x00A0;<br />\multirow{4}{8cm}{G&uuml;terverkehr}
+&#x00A0;<br />&amp; \multicolumn{4}{|c|}{40&#x00A0;Tonnen&#x00A0;und&#x00A0;weniger}&#x00A0;\\
+&#x00A0;<br />\cline{2-5}
+&#x00A0;<br />&amp; Stra&szlig;enverkehr &amp; Schienenverkehr &amp; Schiffsverkehr &amp; Luftverkehr&#x00A0;\\
+&#x00A0;<br />\cline{2-5}
+&#x00A0;<br />&amp; \multicolumn{4}{|c|}{&uuml;ber&#x00A0;40&#x00A0;Tonnen}&#x00A0;\\
+&#x00A0;<br />\cline{2-5}
+&#x00A0;<br />&amp; Stra&szlig;enverkehr &amp; Schienenverkehr &amp; Schiffsverkehr &amp; Luftverkehr&#x00A0;\\
+&#x00A0;<br />\hline
+&#x00A0;<br />\end{tabular}
+</div>
+                                                                                     
+                                                                                     
+<!--l. 701--><p class="nopar" >
+<!--l. 703--><p class="indent" >   Einstellungen zum Schriftformat wurden hier der &Uuml;bersichtlichkeit halber au&szlig;er Acht
+gelassen.
+<!--l. 706--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">7   </span> <a 
+ id="x1-340007"></a>Bilder nebeneinander anordnen (subfigure)</h3>
+<!--l. 708--><p class="noindent" >Wie bei den Usepackages schon beschrieben, wird um Bilder nebeneinander darstellen zu
+lassen, dass Usepackage &#8222;subfigure&#8220; ben&ouml;tigt. Im Teil &#8222;Das erstes eigenes Dokument&#8220; wurde
+schon beschrieben wie ein Bild eingef&uuml;gt wird. Dieses funktioniert &auml;hnlich bei den
+Nebeneinander stehenden Bildern. So ist es m&ouml;glich direkte Bildervergleiche anzustellen. Ein
+Vorteil gegen&uuml;ber Word ist, dass die Bilder von der Gr&ouml;&szlig;e genau angepasst werden k&ouml;nnen.
+Hier einmal die Befehlsstruktur f&uuml;r solche Bilder:
+                                                                                     
+                                                                                     
+   <div class="verbatim" id="verbatim-20">
+\usepackage{subfigure}
+&#x00A0;<br />\begin{figure}[...]
+&#x00A0;<br />\centering
+&#x00A0;<br />\subfigure[Untertitel&#x00A0;des&#x00A0;1.&#x00A0;Bildes]{\includegraphics[width=...,
+&#x00A0;<br />height=...]{Quellordner}}
+&#x00A0;<br />\subfigure[Untertitel&#x00A0;des&#x00A0;2.&#x00A0;Bildes]{\includegraphics[width=...,
+&#x00A0;<br />height=...]{Quellordner}}
+&#x00A0;<br />\caption{gemeinsamer&#x00A0;Untertitel}
+&#x00A0;<br />\label{fig:Titel&#x00A0;des&#x00A0;Bildes}
+&#x00A0;<br />\end{figure}
+</div>
+<!--l. 721--><p class="nopar" >
+<!--l. 723--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">8   </span> <a 
+ id="x1-350008"></a>N&uuml;tzliche Links</h3>
+<!--l. 725--><p class="noindent" >Beim erstellen unserer Facharbeiten sind wir auf ein paar sehr n&uuml;tzliche Internetseiten
+gesto&szlig;en. Diese m&ouml;chten wir hier f&uuml;r Sie auch noch einmal auflisten:
+<!--l. 729--><p class="indent" >   <span 
+class="cmr-10x-x-109">http://www.latex-project.org/</span>
+<!--l. 730--><p class="indent" >        <span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">-Hauptseite: Hier kann </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span> <span 
+class="cmr-10x-x-109">heruntergeladen werden</span>
+<!--l. 733--><p class="indent" >   <span 
+class="cmr-10x-x-109">http://latex.mschroeder.net/</span>
+<!--l. 734--><p class="indent" >        <span 
+class="cmr-10x-x-109">Ein weiteres Tutorial f</span><span 
+class="cmr-10x-x-109">&uuml;r </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">: Sehr gut f</span><span 
+class="cmr-10x-x-109">&uuml;r Anf</span><span 
+class="cmr-10x-x-109">&auml;nger geeignet</span>
+<!--l. 737--><p class="indent" >   <span 
+class="cmr-10x-x-109">http://www.golatex.de/</span>
+<!--l. 738--><p class="indent" >        <span 
+class="cmr-10x-x-109">Deutschsprachiges </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">-Forum</span>
+<!--l. 741--><p class="indent" >   <span 
+class="cmr-10x-x-109">http://www.weinelt.de/latex/index.html</span>
+<!--l. 742--><p class="indent" >        <span 
+class="cmr-10x-x-109">Eine </span><span 
+class="cmr-10x-x-109">&Uuml;bersicht der </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">-Befehle</span>
+                                                                                     
+                                                                                     
+<!--l. 745--><p class="indent" >   <span 
+class="cmr-10x-x-109">http://www.heiner-lamprecht.net/uploads/media/Handbuch.pdf</span>
+<!--l. 746--><p class="indent" >        <span 
+class="cmr-10x-x-109">Gro&szlig;es und sehr umfangreiches 284 Seitiges </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">-Handbuch</span>
+<!--l. 749--><p class="indent" >   <span 
+class="cmr-10x-x-109">ftp://ftp.fernuni-hagen.de/pub/pdf/urz-broschueren/broschueren/a0279510.pdf</span>
+<!--l. 750--><p class="indent" >        <span 
+class="cmr-10x-x-109">Ein weiteres und etwas kleineres </span><span class="LATEX"><span 
+class="cmr-10x-x-109">L</span><span class="A"><span 
+class="cmr-10x-x-109">A</span></span><span class="TEX"><span 
+class="cmr-10x-x-109">T</span><span 
+class="E"><span 
+class="cmr-10x-x-109">E</span></span><span 
+class="cmr-10x-x-109">X</span></span></span><span 
+class="cmr-10x-x-109">-Handbuch mit 146 Seiten</span>
+<!--l. 753--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">9   </span> <a 
+ id="x1-360009"></a>Template f&uuml;r die Seminararbeit</h3>
+<!--l. 755--><p class="noindent" >Nach diesem Tutorial werden Sie sich wahrscheinlich fragen, wie lange wir an der
+Grundstruktur unserer Templates f&uuml;r die Seminararbeit gearbeitet haben. An dieser Stelle
+m&ouml;chten wir uns nochmal bei Herrn Dr. Preu&szlig; bedanken, der unserem Kurs ein
+Grund-Template geschrieben hatte. Dieses finden Sie auch hier zum Download unter
+folgendem Link:
+<!--l. 759--><p class="indent" >   Ansonsten w&uuml;nschen wir allen viel Spa&szlig; beim erfolgreichen Arbeiten mit <span class="LATEX">L<span class="A">A</span><span class="TEX">T<span 
+class="E">E</span>X</span></span>!
     
 </body></html> 
 

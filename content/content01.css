@@ -1,12 +1,37 @@
  
 /* start css.sty */
+.cmex-10{font-size:83%;}
 .cmr-10{font-size:83%;}
+.cmmi-10{font-size:83%;font-style: italic;}
 .cmr-17x-x-120{font-size:170%;}
 .cmr-12x-x-120{font-size:120%;}
-.cmsy-10x-x-144{font-size:120%;}
-.cmbx-12x-x-120{font-size:120%; font-weight: bold;}
+.cmmi-12x-x-120{font-size:120%;font-style: italic;}
+.cmr-17{font-size:141%;}
+.cmtt-12{font-family: monospace;}
+.cmtt-12{font-family: monospace;}
+.cmtt-12{font-family: monospace;}
+.cmti-12{ font-style: italic;}
+.cmmi-12x-x-144{font-size:144%;font-style: italic;}
+.cmmi-12{font-style: italic;}
+.cmsy-10x-x-172{font-size:143%;}
 .cmtt-12x-x-120{font-size:120%;font-family: monospace;}
+.cmtt-12x-x-120{font-family: monospace;}
+.cmtt-12x-x-120{font-family: monospace;}
 .cmr-10x-x-109{font-size:90%;}
+.cmr-8{font-size:66%;}
+.cmmi-6{font-size:50%;font-style: italic;}
+.cmtt-10x-x-109{font-size:90%;font-family: monospace;}
+.cmtt-10x-x-109{font-family: monospace;}
+.cmtt-10x-x-109{font-family: monospace;}
+.cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
+.cmbx-10x-x-109{font-size:90%; font-weight: bold;}
+.cmbx-10x-x-109{ font-weight: bold;}
+.cmbx-10x-x-109{ font-weight: bold;}
+.cmbx-8{font-size:66%; font-weight: bold;}
+.cmbx-8{ font-weight: bold;}
+.cmbx-8{ font-weight: bold;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
