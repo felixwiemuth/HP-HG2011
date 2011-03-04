@@ -1,5 +1,5 @@
 
-body {
+.mainbody {
 color: black; background-color: white;
 font-size: 100.01%;
 font-family: Helvetica,Arial,sans-serif;
@@ -45,6 +45,26 @@ h2 {
 	font-size: 1em;
 	margin: 0; padding: 0.3em;
 	text-align: center;
+}
+
+/* content */
+
+div#contentsrg { /* Schulrundgang */
+	/*background: url('content/schulrundgang/ueberblick.png') no-repeat;
+	/*width:1300px;*/
+}
+
+div#contentsrg table{
+	background: url('content/schulrundgang/ueberblick.png') no-repeat;
+	/*cellpadding: 0;
+	cellspacing: 0;*/
+	width: 736px;
+	height: 998px;
+	table-layout: fixed;
+}
+
+.img {
+	background: url('gfx/button_s.png');
 }
 
 

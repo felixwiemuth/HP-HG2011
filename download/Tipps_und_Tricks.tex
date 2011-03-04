@@ -1,0 +1,264 @@
+% -------------------- TeX template Felix Wiemuth 20.11.2011 --------------------
+
+% -------------------- document class --------------------
+\documentclass[12pt,titlepage]{article}
+
+% -------------------- package includes --------------------
+\usepackage[pdftex]{graphicx} %NOTE: must be deactivated when using "latex4ht" / conversion to html etc.
+\usepackage{ngerman}
+\usepackage{afterpage}
+\usepackage{psfrag}
+\usepackage{epsf}
+% Verweisungen
+\usepackage{prettyref}
+\usepackage{titleref}
+\usepackage{color} %vorl?ufig
+%\usepackage[a4paper, left=2.5cm, right=3.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{fancyhdr}
+% Windows-Zeichensatz verwenden
+\usepackage[ansinew]{inputenc}
+
+% Zahlen besser darstellen
+\usepackage{numprint}
+
+\usepackage{url}
+
+%\usepackage{footnote} % Erm?glicht Fu?noten in gleitenden Umgebungen
+%\usepackage{caption} % Erm?glicht Beschriftungen beliebiger Objekte
+
+% -------------------- reference definition --------------------
+% Definition von Verweisungen
+
+%%% F?r Abschnitte %%%
+\newrefformat{sec}{siehe Abschnitt~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+%%% F?r Abbildungen %%%
+\newrefformat{fig}{Abb.~\ref{#1} \glqq\titleref{#1}\grqq} %\newrefformat{fig}{Abb.~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+%%% F?r Tabellen %%%
+\newrefformat{tab}{siehe Tab.~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+
+% Punkt + Komma Abst"ande bei Tausendern/Dezimalzahlen ans dt. anpassen
+\mathcode`,="013B
+\mathcode`.="613A
+ 
+\setlength{\unitlength}{1mm}
+\addtolength{\textheight}{35mm} %45
+\addtolength{\textwidth}{20mm}
+\addtolength{\topmargin}{-10mm} %-20
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\settowidth{\marginparwidth}{0mm}
+\settowidth{\marginparsep}{0mm}
+\setlength{\baselineskip}{16pt}
+
+%\pagestyle{headings}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0.1pt}
+
+%\lhead{\bfseries Das Erstellen von
+%Fancyheadings}
+%\chead{}
+%%\rhead{\today}
+%\lfoot{K. Homolkova & P. S?ring}
+%\cfoot{}
+%\rfoot{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+%\rhead{\today}
+%
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+
+%----------------------------------------------------------
+
+% plain-Seitenstil umdefinieren (Kapitel-Anfangsseiten)
+\fancypagestyle{plain}{%
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+
+% Seitenstil definieren
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyfoot{}
+
+\lhead{\small\leftmark}
+\rhead{\thepage}
+
+%----------------------------------------------------------
+
+
+
+\def\lsi{\raise0.3ex\hbox{$<$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\def\gsi{\raise0.3ex\hbox{$>$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\newcommand{\lsim}{\mathop{\lsi}}
+\newcommand{\gsim}{\mathop{\gsi}}
+
+\renewcommand{\baselinestretch}{1.50}
+
+% -------------------- document begin --------------------
+
+\begin{document}
+  
+ 	\title{Tipps und Tricks für die Präsentation und die Facharbeit}     
+	
+        \author{Florian Unverzagt, Jakob Nöltker, Tobias Stadtfelder, Dennis Wiater}
+        
+ 	\maketitle
+	
+   \tableofcontents
+   
+% -------------------------------------------------------------------------------------------
+\newpage
+\section{Themenfindung}
+Um eine konkrete Vorstellung über ein Thema zu erlangen, sollte man sich zunächst einmal ein breites Spektrum anschauen, dass sowohl eurem Interesse entspricht, als auch für das Verfassen einer Facharbeit geeignet ist. 
+Dafür haben wir folgende Empfehlungen:
+\begin{enumerate}
+	\item Internetrecherchen
+	\item Kontaktieren von kompetenten Ansprechpartnern (Bspw.: Professoren, Wissenschaftler, Forscher, etc.)
+\begin{itemize}
+	\item WICHTIG: viel Zeit einplanen, da Ansprechpartner häufig erst nach einigen Wochen antworten 
+\end{itemize}
+	\item Besuch von öffentlichen Veranstaltungen (Bspw.: Tag der offenen Tür)
+	\item Bibliotheksbesuche
+	\item Gespräch mit dem Lehrer
+\end{enumerate}
+			
+			
+			
+			
+			
+			
+			
+\section{Informationsbeschaffung} \label{sec:labelA}
+Informationsbeschaffung:
+Es gibt 2 Hauptinformationsquellen die ihr für eure Seminararbeit benutzen könnt. Zum einen das Internet und zum anderen Fachlektüren über euer Thema. Das Internet ist eine sehr umfangreiche Quelle, in der ihr viele Informationen über euer Thema finden und natürlich auch benutzen könnt. 
+\newline 
+Aber Vorsicht!!!
+\newline
+Im Internet kann vieles falsch erklärt werden. Auf vielen Internetseiten hat jeder Zugriff und kann etwas falsches zu dem Thema beitragen. Deswegen achtet darauf, dass ihr euch auf seriösen Seiten informiert, um sicher zu gehen, dass diese Information auch richtig ist. Um zu überprüfen, ob eure Information wirklich richtig ist, vergleicht diese mit Informationen von anderen Internetseiten, damit Ihr die zwei Quellen vergleichen könnt. 
+\newpage 
+Ein Beispiel dafür ist die Internetseite Wikipedia. Wikipedia ist keine seriöse Internetseite, weil jede Person etwas dazu schreiben kann, dass eventuell nicht richtig ist. Deshalb solltet ihr diese Seite auch nicht als Quelle für eure Seminararbeit benutzen. 
+\newline
+Eine weitaus bessere Quelle für eure Seminarfacharbeit sind Bücher und Fachlektüren. Fachlektüren sind meistens informativer als jede Internetseite. In Büchern findet ihr viel mehr Details zu euerm Thema als auf Internetseiten, weil sie sich auf ein Thema spezialisieren. Desweiteren könnt ihr sicher sein, dass die Autoren dieser Bücher sich mit diesem Thema lange auseinander gesetzt haben, sodass sie als seriös betrachtet werden können. 
+\newline 
+Achtet aber bei Büchern und Fachlektüren auf das Erscheinungsdatum! Sind diese zu alt könnten die Informationen nicht mehr aktuell sein und damit auch falsch. Um an Bücher und Fachlektüren heran zu kommen wendet euch an die Schulbibliothek oder an die Stadtbibliothek. Auch wenn sie eure Bücher nicht haben könnt ihr über die Bibliothek eine Fernleihe veranlassen. Dafür könnt ihr im Internet zum Beispiel bei Hochschulbibliotheken ein Buch aussuchen, dass ihr über die Fernleihe ausleihen könnt. Kümmert euch unbedingt früh genug um diese Bücher. Fernleihe kann einige Tage dauern oder Bücher können nicht verliehen werden. Dann habt ihr noch genug Zeit um eine Alternative zu suchen. Außerdem lohnt sich ein Gespräch mit Firmen oder der Einrichtung über die ihr eure Arbeit schreiben wollt. Diese können euch oftmals wichtige Informationen zuschicken die euch bei eurer Facharbeit helfen können.
+Falls es möglich ist könnt ihr auch Termine mit Personen vereinbaren die sich mit euerem Thema auskennen und euch über diese Personen informieren.
+
+
+
+
+
+
+
+
+\newpage
+\section{Die Facharbeit}
+\subsection{Vorwort}
+Gute Vorbereitung und eine adäquate äußere Form sind die wichtigste Grundlage für das Verfassen einer guten Facharbeit!
+\newline
+Aus eigener Erfahrung und aus Gesprächen mit anderen Stufenkameraden können wir nur sagen, dass ein Projekt wie die Facharbeit für Schüler neues Terrain ist. Es ist ungewohnt einen derart langen, zusammenhängenden Text zu verfassen, bei dem eine zentrale Fragestellung und eine eigene Struktur entwickelt werden muss.
+\newline
+Um dieses Prozedere zu erleichtern, ist es eminent wichtig sich richtig vorzubereiten.
+Schon vor dem Verfassen der Facharbeit muss der Autor sich darüber im Klaren sein, wo er seine Schwerpunkte setzen will, ob genug Material in diesem Bereich vorhanden ist und zu welchem Resultat man im Fazit gelangen möchte. Den Lehrern ist es grundsätzlich wichtig, dass der jeweilige Schüler pointiert schreibt. Deshalb raten wir vom so genannten \textit{Schwafeln} ab. Auch zur Vermeidung des \textit{Schwafeln} dient die gute Vorbereitung. Sie ermöglicht, dass später quellenorientiert gearbeitet werden kann  und schon vor Beginn der Arbeit ein roter Faden im Kopf des Schülers vorhanden ist, ein roter Faden, der sich später auch durch die Facharbeit ziehen soll.
+\newline
+Im Folgenden werden wir einige Hilfestellungen geben, wie man sich gut auf die Facharbeit vorbereitet und wie anschließend eine gute Struktur und eine einwandfreie äußere Form in der Facharbeit erreicht werden kann.
+
+\subsection{Vorbereitung der Facharbeit}
+Die richtige Zeitplanung ist das A und O beim Verfassen der Facharbeit.
+\newline
+Wichtig ist es erst einmal, dass die Arbeit an der Facharbeit früh beginnt.
+\newline
+Einige von uns haben erst recht spät (in den Weihnachtsferien) mit der Informationsbeschaffung begonnen, nachträglich betrachtet etwas zu spät, da wir am Ende unter viel Stress arbeiten mussten. Desweiteren solltet Ihr die oben genannten Aspekte berücksichtigen (siehe:Informationsbeschaffung)
+
+\subsection{Strukturierung des Themenfelds}
+Als nächstes sollte man eine zentrale Fragestellung entwickeln. Die meisten Themen sind zu umfangreich um sie komplett zu behandeln, man muss sich spezialisieren.Im nächsten Schritt empfehlen wir rund um die zentrale Fragestellung wichtige Themen mit einzubeziehen, um eine ungeordnete Grundlage zu schaffen. Diese Grundlage muss anschließend sortiert werden, der Schüler kann beginnen eine Struktur zu schaffen.
+\newline
+Ist die Struktur komplettiert kann die eigentliche Arbeit beginnen, es sei jedem selbst überlassen, ob er in der Schreibphase klassisch mit der Einleitung beginnt oder erst den Hauptteil verfasst.
+
+\subsection{Die äußere Form der Facharbeit}
+Die äußere Form der Facharbeit ist nicht zu vernachlässigen, da diese einerseits 30 Prozent der Endnote ausmacht und andererseits bei guter Ausführung zu mehr Übersicht in der Facharbeit führt.
+\newline
+Über die äußere Form wird jedoch noch einmal im ersten Semester ausführlich mit dem Kurslehrer gesprochen
+\newline
+Jedoch sollte man immer folgende Aspekte im Hinterkopf behalten:
+\newline
+Fachspezifische Vorgaben einhalten:
+\newline
+Im jeweiligen Seminarfach werden grundsätzliche Vorschriften vom Lehrer gemacht, welche Form eingehalten werden soll, in welchem Format  und mit welchem Programm geschrieben werden soll. 
+Ein Tipp: Fangt schon beim ersten Satz damit an, die Richtlinien einzuhalten, späteres Nachjustieren kostet nur viel Zeit und es birgt die Gefahr Dinge zu übersehen.
+\newline
+Literatur:
+\newline
+Vor allen Dingen ist es bei der Facharbeit ähnlich wie an der Uni wichtig, wissenschaftlich zu arbeiten. Das schließt ein, dass quellenorientiert gearbeitet wird. Zitiert lieber einmal zu viel als zu wenig. Ohne Quellenangaben und Zitate wirken Thesen und Statistiken aus der Luft gegriffen.
+
+
+
+
+
+
+
+
+\section{Die Vorbereitung der Präsentation}
+
+Weil ihr eure Facharbeit zu diesem Zeitpunkt fertiggestellt haben solltet, solltet Ihr im Wesentlichen Informationen aus euren vorherigen Recherchen nutzen, um Arbeit und Zeit zu sparen. Da viele Facharbeiten meist aus mehreren Unterthemen bestehen, wäre es ratsam, euch nur auf einen Teilaspekt eurer Facharbeit zu fokussieren, um den zeitlichen Rahmen nicht zu  sprengen und um möglichst nahe ins Detail gehen zu können. 
+\newline
+\newline
+\bfseries WICHTIG:
+\newline
+DIE PRÄSENTATION IST KEINE 1:1 WIEDERGABE DER 
+\newline FACHARBEIT!!!
+\normalfont
+\newline
+\newline
+Ein Vorteil, der sich daraus ergibt, falls Fragen aufkommen sollten, die mit anderen Themenbereichen verknüpft sind, könnt ihr ein breit gefächertes Hintergrundwissen aufweisen. 
+\newline
+Ein weiterer wichtiger Aspekt bei der Vorbereitung der Präsentation ist, dass ihr nicht alle Informationen schriftlich wiedergeben solltet, damit Ihr auf der einen Seite nicht in die Versuchung kommt die Präsentation abzulesen und man auf der anderen Seite seinem Publikum nicht die Motivation nimmt, sich selbst mit dem Thema auseinanderzusetzten. 
+\newline
+Um sein Publikum jedoch überhaupt erst für einen bestimmten Teilaspekt zu begeistern, solltet ihr euch im Vorfeld darüber Gedanken machen: 
+\begin{enumerate}
+	\item Welches Thema ist für eure Zielgruppe (höchstwahrscheinlich euer Seminarfachkurs) interessant? 
+	\item Ist es möglich das Thema auch ohne Hintergrundwissen zu verstehen?     (Nicht alle haben sich so intensiv mit dem Thema beschäftigt wie ihr!)
+	\item Lässt sich das Thema gut vorbereiten?
+	\item Habt ihr neben den Informationen zu eurer Facharbeit weiteres Material, wie z.B. Modelle oder ähnliches? (Je mehr Medien genutzt werden, desto besser!)
+\end{enumerate}
+
+Sobald ihr diese Fragen für euch geklärt habt, kann die eigentliche Arbeit beginnen:
+\begin{center}
+\textbf{Der Entwurf der Präsentation.}
+\end{center}
+
+
+
+
+
+
+
+
+\section{Die Präsentation der Facharbeit}
+\subsection{Die ersten Schritte}
+Ebenfalls wie bei der Verfassung einer Facharbeit, müsst Ihr für die Erstellung einer gelungenen Präsentation viel Zeit einplanen, weil allein die Entscheidungen, die getroffen werden müssen (Welches Medium/Medien verwende ich? Muss ich mir noch Materialien aus der Bibliothek ausleihen? Benötige ich noch zusätzliche Informationen?), viel Zeit in Anspruch nehmen. Gestaltet Ihr euren Vortrag erst kurz vor dem Präsentationstermin, so wird er mit hoher Wahrscheinlichkeit schief gehen, da Ihr zum einen nicht genügend Routine beim Vortragen habt und zum anderen durch dieses \textsl{hecktische} Erstellen der Präsentation am Stichtag sehr nervös und unsicher sein werdet.
+\newline
+Um der oben genannten Angelegenheit aus dem Weg zu gehen, ist es Ratsam, die folgenden Aspekte zu berücksichtigen:
+\begin{enumerate}
+	\item Überlegt Euch, welche Teile eurer Facharbeit Ihr vorstellen möchtet und entscheidet \textbf{aufgrund dessen}, welche Medien Ihr benutzt. (Bspw.: CD-Player/PC für Musikwiedergaben,etc.)
+	\item Verschafft Euch einen Überblick über die vorhandenen Informationen und entscheidet anschießend, ob Ihr noch welche benötigt. (Der Anteil der Informationen hängt von der vorgegeben Vortragsdauer und von dem Umfang eures Themas ab!)
+\end{enumerate}
+
+Sind die ersten beiden Punkte abgearbeitet, so kann das eigentliche Erstellen der Präsentation beginnen. 
+\newline
+\newline
+\subsection{Das Erstellen der Präsentation}
+Je nach ausgewähltem Medium müssen ansprechende und sachlich korrekte Folien, oder Flipcharts erstellt werden. Dabei ist es besonders wichtig, dass diese nur zur Unterstützung eures Vortrages genommen werden. Wer seine erstellte Präsentation nur vorliest / abliest und wenig frei referiert hat die Aufmerksamkeit des Publikums so gut wie verloren und ist diese Aufmerksamkeit erst einmal verschwunden, so ist es umso schwieriger diese wieder herzustellen. Deshalb ist es notwendig den Vortrag bereits zu Hause vor der Familie, oder den Freunden zu halten, um eine gewisse Routine zu bekommen, die die freie und ansprechende Vortragsweise fundamentalisiert. 
+Ebenfalls ist es gut, wenn eine visualisierende Medienunterstützung vorhanden ist. Diese besteht daraus, dass möglichst viele Grafiken und Bilder zu Veranschaulichung verwendet werden, um dem Publikum die Möglichkeit zu geben, sich eigene Bilder im Kopf zu erstellen, sodass sich der Vortrag besser im Gedächtnis abspeichert und Ihr euch einen gewissen Wiedererkennungswert verschafft.
+Je leichter euer Thema zu verstehen ist, desto besser wird das Referat gewertet!
+
+\subsection{Der Vortrag}
+Ist nun der Tag gekommen, an dem ihr referieren müsst, so bleibt zunächst ruhig. Erscheint etwas überpünktlich und vergewissert euch, dass all eure Medien funktionieren und einsatzbereit sind. Habt Ihr im Anschluss noch etwas Zeit, so könnt Ihr euren Vortrag nochmal stichpunktartig im Kopf durchgehen. 
+Nach den pünktlichen Beginn, solltet Ihr zunächst alle freundlichst begrüßen und das Referat in einer Gliederung zusammenfassen, damit ein Überblick gewährleistet wird. Darauf könnte ein Aufmacher vorgetragen werden (Karikatur, eine These, Videos, o.ä.). Im Anschluss ist eurer Kreativität keine Grenze gesetzt. Referiert ruhig und mit eventuell einigen rhetorischen Mitteln (Rhetorische Frage, ein kleiner Witz) während des Vortrags, damit eine Lockerheit erkenntlich wird. Vergesst jedoch nicht die Zeit!!!
+\newline 
+Seit Ihr mit euren Vortrag fertig, so gebt Möglichkeit für eventuelle Fragen. Sind im Anschluss keine weiteren Fragen mehr vorhanden, so bedankt euch freundlich für die Aufmerksamkeit und verabschiedet euch von dem Publikum.
+\newline
+\newline
+
+\end{document}
