@@ -135,7 +135,7 @@ function set_active_link(link) {
 
 //functionality for "Schulrundgang"
 function init_schulrundgang() {
-	alert("Los gehts! (Waehrend dieser Meldung muss das Programm laden)");
+	alert("Los gehts! Bitte beachten: Es kann etwas dauern, bis alle Bilder geladen sind. Viel Spass!");
 	//links
 	$("#linkSrg1").click( function() { //linkSrg1
 		$("#link03").click();
