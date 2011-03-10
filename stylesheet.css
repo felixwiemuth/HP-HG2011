@@ -55,6 +55,12 @@ table#srg{
 	height: 998px;
 	table-layout: fixed;
 }
+table#srgA{
+	background: url('content/schulrundgang/grundriss.png') no-repeat;
+	width: 1702px;
+	height: 1288px;
+	table-layout: fixed;
+}
 
 .img {
 	background: url('gfx/button_s.png');
