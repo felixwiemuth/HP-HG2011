@@ -64,6 +64,7 @@ table#srgA{
 
 .img {
 	background: url('gfx/button_s.png');
+	cursor: crosshair;
 }
 
 
@@ -102,6 +103,7 @@ ul#navigation a {
 	font-weight: bold;
 	padding: 5px;
 	-moz-border-radius: 15px;
+	cursor: pointer;
 }
 
 ul#navigation a:link {
