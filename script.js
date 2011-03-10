@@ -46,6 +46,7 @@ function addClickHandlers() {
 		//IMPORTANT
 		//$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
 		init_schulrundgang();
+		set_srg_img();
 	});
 	$("#link04").click( function() { //link 4
 		$("#main").load("content/content04.html");
@@ -83,7 +84,6 @@ function addClickHandlers() {
 // ready event for document -- executed when DOM is ready
 $(document).ready(addClickHandlers);
 $(document).ready( function() {
-	//init_schulrundgang()
 	//initialise link style
 	init_links();
 	//browser detection and support "information"
@@ -135,25 +135,30 @@ function set_active_link(link) {
 
 //functionality for "Schulrundgang"
 function init_schulrundgang() {
-	alert("Los gehts!");
+	alert("Los gehts! (Waehrend dieser Meldung muss das Programm laden)");
+	//links
+	$("#linkSrg1").click( function() { //linkSrg1
+		$("#link03").click();
+	});
+	$("#linkSrg2").click( function() { //linkSrg2
+		$("#main").load("content/content03a.html");
+		self.location.hash = "content03";
+		set_active_link("#link03");
+		init_schulrundgang();
+		set_srgA_img();
+	});
+	
+}
+
+function set_srg_img() { //Schulrundgang (Standard)
+	//alert("Los gehts!");
 	$("#td0000").attr("href", "gfx/bg2.jpg").addClass("img");
 	$("#td0001").attr("href", "gfx/bg.jpg").addClass("img");
 	$("#td1408").attr("href", "content/schulrundgang/img/Schulhof-1.JPG").addClass("img");
 	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
-	// alert("Start init Schulrundgang...");
-	// $("#td0419").click( function() {
-		// alert("OKIIIDOKII:)");
-	// });
-	// $("#td0000").click( function() {
-		// alert("OKIIIDOKII22223334:)");
-	// });
-	
-	// //preview animation
-	// $("#contentsrg td.preview").imgPreview({imgCSS:{width: "150px"}});
-	// $("#td1408").attr("href", "gfx/bg2.jpg").imgPreview({imgCSS:{width: "150px"}});
-	// //$("td:has(href)").fancybox();
-	// //$("#td1408").fancybox();
-	// // $("#td0000").fancybox();
-	// // $("a#td0001").fancybox();
+}
 
+function set_srgA_img() { //Schulrundgang A
+	$("#td0105").attr("href", "gfx/bg2.jpg").addClass("img");
+	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 }
