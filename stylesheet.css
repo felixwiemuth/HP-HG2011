@@ -63,7 +63,7 @@ table#srgA{
 }
 
 .img {
-	background: url('gfx/button_s.png');
+	background: url('gfx/button_s.png') no-repeat;
 	cursor: crosshair;
 }
 
