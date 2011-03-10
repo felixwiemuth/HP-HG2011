@@ -48,13 +48,8 @@ h2 {
 }
 
 /* content */
-
-div#contentsrg { /* Schulrundgang */
-	/*background: url('content/schulrundgang/ueberblick.png') no-repeat;
-	/*width:1300px;*/
-}
-
-div#contentsrg table{
+/* "Schulrundgang"*/
+table#srg{
 	background: url('content/schulrundgang/ueberblick.png') no-repeat;
 	/*cellpadding: 0;
 	cellspacing: 0;*/
