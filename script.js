@@ -147,14 +147,24 @@ function init_schulrundgang() {
 		init_schulrundgang();
 		set_srgA_img();
 	});
-	
 }
 
 function set_srg_img() { //Schulrundgang (Standard)
-	//alert("Los gehts!");
-	$("#td0000").attr("href", "gfx/bg2.jpg").addClass("img");
-	$("#td0001").attr("href", "gfx/bg.jpg").addClass("img");
-	$("#td1408").attr("href", "content/schulrundgang/img/Schulhof-1.JPG").addClass("img");
+	$("#td1408").attr("href", "content/schulrundgang/imglow/Schulhof-1.png").addClass("img");
+	$("#td1711").attr("href", "content/schulrundgang/imglow/A-Trakt0.png").addClass("img");
+	$("#td1810").attr("href", "content/schulrundgang/imglow/A-Trakt1.png").addClass("img");
+	$("#td1114").attr("href", "content/schulrundgang/imglow/aus_erdkunde.png").addClass("img");
+	$("#td1609").attr("href", "content/schulrundgang/imglow/bibliothek.png").addClass("img");
+	$("#td0713").attr("href", "content/schulrundgang/imglow/D-Trakt_Gang.png").addClass("img");
+	$("#td0710").attr("href", "content/schulrundgang/imglow/KU1-1.png").addClass("img");
+	$("#td0810").attr("href", "content/schulrundgang/imglow/KU1-2.png").addClass("img");
+	$("#td0809").attr("href", "content/schulrundgang/imglow/KU1-3.png").addClass("img");
+	$("#td1111").attr("href", "content/schulrundgang/imglow/Pausenhalle.png").addClass("img");
+	$("#td1011").attr("href", "content/schulrundgang/imglow/Schuleingang_Sekretariat.png").addClass("img");
+	$("#td1306").attr("href", "content/schulrundgang/imglow/Schulhof-2.png").addClass("img");
+	$("#td0818").attr("href", "content/schulrundgang/imglow/Schweineboxen.png").addClass("img");
+	$("#td1110").attr("href", "content/schulrundgang/imglow/Vertretungsplan.png").addClass("img");
+	$("#td1108").attr("href", "content/schulrundgang/imglow/V-Trakt.png").addClass("img");
 	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 }
 
