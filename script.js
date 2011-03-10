@@ -159,6 +159,6 @@ function set_srg_img() { //Schulrundgang (Standard)
 }
 
 function set_srgA_img() { //Schulrundgang A
-	$("#td0105").attr("href", "gfx/bg2.jpg").addClass("img");
+	$("#srgA_664").attr("href", "gfx/bg2.jpg").addClass("img");
 	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 }
