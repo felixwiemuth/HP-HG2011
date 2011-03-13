@@ -48,23 +48,23 @@ h2 {
 }
 
 /* content */
-
-div#contentsrg { /* Schulrundgang */
-	/*background: url('content/schulrundgang/ueberblick.png') no-repeat;
-	/*width:1300px;*/
-}
-
-div#contentsrg table{
+/* "Schulrundgang"*/
+table#srg{
 	background: url('content/schulrundgang/ueberblick.png') no-repeat;
-	/*cellpadding: 0;
-	cellspacing: 0;*/
 	width: 736px;
 	height: 998px;
 	table-layout: fixed;
 }
+table#srgA{
+	background: url('content/schulrundgang/grundriss.png') no-repeat;
+	width: 1702px;
+	height: 1288px;
+	table-layout: fixed;
+}
 
 .img {
-	background: url('gfx/button_s.png');
+	background: url('gfx/button_s.png') no-repeat;
+	cursor: crosshair;
 }
 
 
@@ -97,6 +97,14 @@ ul#navigation a {
 .linkB {background-color: #447BD4; color: black;}
 .linkC {background-color: #FF6700; color: black;}
 .linkOn {background-color: #7CE700; color: black;}
+.linkSrg {
+	background-color: #104BA9;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	-moz-border-radius: 15px;
+	text-decoration: none;
+}
 
 ul#navigation a:link {
 	border: 2px solid #191919;
