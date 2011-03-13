@@ -44,8 +44,8 @@ function addClickHandlers() {
 		self.location.hash = "content03";
 		set_active_link("#link03");
 		init_schulrundgang();
-		//set_srg_img(); REACITVATE
-		$("#linkSrg2").click(); //DEBUG
+		set_srg_img(); REACITVATE
+		//$("#linkSrg1").click(); //DEBUG
 	});
 	$("#link04").click( function() { //link 4
 		$("#main").load("content/content04.html");
