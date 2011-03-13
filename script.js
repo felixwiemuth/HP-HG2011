@@ -43,10 +43,9 @@ function addClickHandlers() {
 		$("#main").load("content/content03.html");
 		self.location.hash = "content03";
 		set_active_link("#link03");
-		//IMPORTANT
-		//$("#page").width(1400); //TODO FIT TO IMAGE! + reset on other links!
 		init_schulrundgang();
-		set_srg_img();
+		//set_srg_img(); REACITVATE
+		$("#linkSrg2").click(); //DEBUG
 	});
 	$("#link04").click( function() { //link 4
 		$("#main").load("content/content04.html");
@@ -135,16 +134,24 @@ function set_active_link(link) {
 
 //functionality for "Schulrundgang"
 function init_schulrundgang() {
-	alert("Los gehts! Bitte beachten: Es kann etwas dauern, bis alle Bilder geladen sind. Viel Spass!");
+	alert("Schulrundgang - Los gehts! Bitte beachten: Es kann etwas dauern, bis alle Bilder geladen sind. Viel Spass!");
 	//links
+	//Schulrundgang A (Standard, "content03")
 	$("#linkSrg1").click( function() { //linkSrg1
-		$("#link03").click();
+		$("#main").load("content/content03.html");
+		self.location.hash = "content03";
+		set_active_link("#link03");
+		init_schulrundgang();
+		//alert("Schulrundgang A - Los gehts! Bitte beachten: Es kann etwas dauern, bis alle Bilder geladen sind. Viel Spass!");
+		set_srg_img();
 	});
+	//Schulrundgang B ("content03a")
 	$("#linkSrg2").click( function() { //linkSrg2
 		$("#main").load("content/content03a.html");
 		self.location.hash = "content03";
 		set_active_link("#link03");
 		init_schulrundgang();
+		//alert("Schulrundgang B - Los gehts! Bitte beachten: Es kann etwas dauern, bis alle Bilder geladen sind. Viel Spass!");
 		set_srgA_img();
 	});
 }
@@ -170,5 +177,29 @@ function set_srg_img() { //Schulrundgang (Standard)
 
 function set_srgA_img() { //Schulrundgang A
 	$("#srgA_664").attr("href", "gfx/bg2.jpg").addClass("img");
+	$("#srgA_865").attr("href", "content/schulrundgang/imglow/A12.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
 	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 }
