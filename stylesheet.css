@@ -103,7 +103,7 @@ ul#navigation a {
 	font-weight: bold;
 	padding: 5px;
 	-moz-border-radius: 15px;
-	cursor: pointer;
+	text-decoration: none;
 }
 
 ul#navigation a:link {
