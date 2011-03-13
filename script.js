@@ -173,6 +173,9 @@ function set_srg_img() { //Schulrundgang (Standard)
 	$("#td1110").attr("href", "content/schulrundgang/imglow/Vertretungsplan.png").addClass("img");
 	$("#td1108").attr("href", "content/schulrundgang/imglow/V-Trakt.png").addClass("img");
 	$("#td0601").attr("href", "content/schulrundgang/imglow/Mensa.png").addClass("img");
+	$("#td0409").attr("href", "content/schulrundgang/img-hp/D-Hof.png").addClass("img");
+	$("#td1303").attr("href", "content/schulrundgang/img-hp/gesamt2.png").addClass("img");
+	$("#td1302").attr("href", "content/schulrundgang/img-hp/uebersicht.png").addClass("img");
 	$(".img").imgPreview({imgCSS:{width: "150px"}}).lightBox();
 }
 
@@ -191,7 +194,10 @@ function set_srgA_img() { //Schulrundgang A
 	$("#srgA_555").attr("href", "content/schulrundgang/imglow/N32.png").addClass("img");
 	$("#srgA_584").attr("href", "content/schulrundgang/imglow/Pausenhalle.png").addClass("img");
 	$("#srgA_503").attr("href", "content/schulrundgang/imglow/Schuleingang_Sekretariat.png").addClass("img");
-	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
+	$("#srgA_665").attr("href", "content/schulrundgang/img-hp/Cafetaria2.png").addClass("img");
+	$("#srgA_741").attr("href", "content/schulrundgang/img-hp/bibli3.png").addClass("img");
+	$("#srgA_665").attr("href", "content/schulrundgang/img-hp/Cafetaria2.png").addClass("img");
+	$("#srgA_665").attr("href", "content/schulrundgang/img-hp/Cafetaria2.png").addClass("img");
 	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
 	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
 	$("#srgA_").attr("href", "content/schulrundgang/imglow/.png").addClass("img");
