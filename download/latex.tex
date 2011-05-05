@@ -1,0 +1,762 @@
+% -------------------- TeX template Felix Wiemuth 20.11.2011 --------------------
+%--------------------- Tex template bearbeitet am 20.02.2011---------------------
+% -------------------- document class --------------------
+\documentclass[12pt,titlepage]{article}
+
+% -------------------- package includes --------------------
+\usepackage[pdftex]{graphicx} %NOTE: must be deactivated when using "latex4ht" / conversion to html etc.
+\usepackage{ngerman}
+\usepackage{afterpage}
+\usepackage{psfrag}
+\usepackage{epsf}
+% Verweisungen
+\usepackage{prettyref}
+\usepackage{titleref}
+\usepackage{color} %vorläufig
+%\usepackage[a4paper, left=2.5cm, right=3.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{fancyhdr}
+% Windows-Zeichensatz verwenden
+\usepackage[ansinew]{inputenc}
+
+% Zahlen besser darstellen
+\usepackage{numprint}
+
+\usepackage{url}
+%----------------------------Eigene Usepackages----------------------------------
+\usepackage{listings}
+\usepackage{multirow}
+%--------------------------------------------------------------------------------
+%\usepackage{footnote} % Ermöglicht Fußnoten in gleitenden Umgebungen
+%\usepackage{caption} % Ermöglicht Beschriftungen beliebiger Objekte
+
+% -------------------- reference definition --------------------
+% Definition von Verweisungen
+
+%%% Für Abschnitte %%%
+\newrefformat{sec}{siehe Abschnitt~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+%%% Für Abbildungen %%%
+\newrefformat{fig}{Abb.~\ref{#1} \glqq\titleref{#1}\grqq} %\newrefformat{fig}{Abb.~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+%%% Für Tabellen %%%
+\newrefformat{tab}{siehe Tab.~\ref{#1} \glqq\titleref{#1}\grqq \ auf Seite \pageref{#1}}
+
+% Punkt + Komma Abst"ande bei Tausendern/Dezimalzahlen ans dt. anpassen
+\mathcode`,="013B
+\mathcode`.="613A
+ 
+\setlength{\unitlength}{1mm}
+\addtolength{\textheight}{35mm} %45
+\addtolength{\textwidth}{20mm}
+\addtolength{\topmargin}{-10mm} %-20
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\settowidth{\marginparwidth}{0mm}
+\settowidth{\marginparsep}{0mm}
+\setlength{\baselineskip}{16pt}
+
+%\pagestyle{headings}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0.1pt}
+
+%\lhead{\bfseries Das Erstellen von
+%Fancyheadings}
+%\chead{}
+%%\rhead{\today}
+%\lfoot{K. Homolkova & P. Säring}
+%\cfoot{}
+%\rfoot{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+%\rhead{\today}
+%
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+
+%----------------------------------------------------------
+
+% plain-Seitenstil umdefinieren (Kapitel-Anfangsseiten)
+\fancypagestyle{plain}{%
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}}
+
+% Seitenstil definieren
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyfoot{}
+
+\lhead{\small\leftmark}
+\rhead{\thepage}
+
+%----------------------------------------------------------
+
+
+
+\def\lsi{\raise0.3ex\hbox{$<$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\def\gsi{\raise0.3ex\hbox{$>$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\newcommand{\lsim}{\mathop{\lsi}}
+\newcommand{\gsim}{\mathop{\gsi}}
+
+\renewcommand{\baselinestretch}{1.50}
+
+% -------------------- document begin --------------------
+
+\begin{document}
+\parindent 0pt
+  
+ 	\title{\LaTeX}     
+	
+        \author{Jonas Abeln, Jörg Harney und Mathias Rodemeier}
+        
+ 	\maketitle
+	
+   \tableofcontents
+   \clearpage
+
+\section{Einleitung}
+
+Herzlich Willkommen zur Einführung in das Textverarbeitungsprogramm \LaTeX. Wahrscheinlich fragen Sie sich jetzt, was ist \LaTeX \enspace überhaupt? Genauso ging es unserem Kurs auch als wir 2009 zum ersten mal zum Seminarfach kamen. Natürlich assoziiert man mit Latex erst einmal etwas ganz anderes. Aber dieses unscheinbare und unbekannte Programm sollte es unserem Kurs deutlich einfacher machen unsere Facharbeiten zu verfassen. Wir können nur jedem empfehlen die auch vor der Facharbeit stehen, diese mit \LaTeX \enspace zu schreiben. Daher wünschen wir jedem viel Spaß beim Lesen dieses Tutorials!
+
+\subsection{Was ist überhaupt \LaTeX?}
+
+\LaTeX \enspace ist wie oben schon angedeutet ein Textverarbeitungsprogramm, das aber anders arbeitet als zum Beispiel Microsoft Word. Es ist ein "`what-you-mean-is-what-you-get"' Textprogramm, das heißt, dass die Textdatei sozusagen programmiert wird. Daher es werden Befehle eingegeben und das Programm führt diese als Textdatei aus. Auf den ersten Blick mag dies sehr kompliziert klingen, doch es bietet sehr viele Vorteile. Zum Beispiel macht \LaTeX \enspace sinnige Seitenumbrüche von selbst oder setzt in einem Inhaltsverzeichnis oder Literaturverzeichnis die Zahlen und Beziehungen von selbst. Außerdem braucht man sich keine weiteren Gedanken über das Hervorheben von Überschriften gemacht werden, da auch diese vom Programm selbst erledigt werden.
+
+
+\subsection{Unterschied zu Word}
+
+Durch die oben beschriebenen Vorteile hebt sich \LaTeX \enspace von "`What-you-see-is-what-you-get"' Programmen wie Word oder Open Office deutlich ab. Bei solchen Textverarbeitungsprogrammen sieht man zwar sofort was später gedruckt wird, jedoch ist die Fehlerquote deutlich höher. Beispiele hierfür wären, dass irgendwo ein Absatz zu groß, ein Seitenumbruch nicht stimmig oder durch einen Fehler sich die Schriftart verändert hat. Außerdem kann die Datei in vielen verschiedenen Formaten herausgegeben werden, wie zum Beispiel als PDF Format. Dieses erlaubt es das Schriftdokument auf fast jeden Rechner zu öffnen, auch wenn dieser nicht über \LaTeX \enspace verfügt. Ein weiteres Ausgabemöglichkeit ist HTML. So wird es auch schnell möglich Webseiten mit Texten zu füllen. Außerdem gibt \LaTeX \enspace bei jeder Ausarbeitung ein Editor-Dokument aus, dass von beinahe allen PC's geöffnet werden kann.Aber der wohl größte Vorteil bei \LaTeX \enspace liegt in dem sehr einfachen Formeleditor. Im Gegensatz zu beispielsweise Word, wo es sehr umständlich ist mit dem Formeleditor längere Formeln zu erstellen und es überhaupt nicht möglich ist alle Arten von Formeln darzustellen, ist es vergleichsweise einfach bei \LaTeX. Als Beispiel hierfür:
+
+\begin{verbatim}
+\begin{equation}
+f(x)=\sqrt[4]{38} \sin(2x) \frac{2x^{2}}{9}
+\end{equation}
+\end{verbatim} 
+
+Würde im Dokument zu sehen sein als:
+
+\Large
+\begin{equation}
+f(x)=\sqrt[4]{38} \sin(2x) \frac{2x^{2}}{9}
+\end{equation}
+\normalsize
+\bigskip
+
+Um etwas dergleichen bei Word darzustellen würde man viel länger brauchen, beziehungsweise sind viele von den bei \LaTeX \enspace möglichen Formeln bei Word gar nicht vorhanden (Hierfür gibt es noch ein weiteres Kapitel, welches sich nochmal mit den mathematischen Formeln auseinander setzen wird). Daher sollte bei größeren Texten, Aufsätzen oder Büchern, aber auch bei kurzen gut ausgearbeiteten oder mathematischen Texten, \LaTeX , als Textverarbeitungsprogramm, die erste Wahl sein. Bei kurzen Texten oder schnell zu erledigenden Texten hat natürlich zum Beispiel Word die Nase vorn. Dennoch sollte jeder mal \LaTeX \enspace ausprobieren um die wunderbaren Vorteile kennen zu lernen.
+
+%-----------------------------Hierzu kommen die Beispielbilder hinein----------------------------
+
+\section{Das erste eigene Dokument}
+	
+\subsection{Allgemeines}
+Nachdem man \LaTeX \enspace erfolgreich installiert hat, zeigen wir nun wie man sein erstes Dokument erstellt. Allgemein ist zu sagen, dass alle Befehle mit einem Backslash beginnen. Direkt dahinter schreibt man den Befehl. Wenn ein Befehl etwas anzeigen soll wie [author], setzt man dahinter geschwungene Klammern \verb|\{..Text..}| und schreibt den entsprechenden Text in die Klammern. Die grundlegendsten Befehle zur Erstellung eines einfachen Dokumentes werden hier nun erläutert. 
+
+
+\subsection{Dokumentenklassenbestimmung}
+Der erste Befehl ist die Bestimmung der Dokumentenklasse wie Artikel, Brief, Tabelle etc. Wir beginnen hier mit dem Artikel, der einfachsten Form, der Befehl ist wie folgt: \verb|\documentclass{article}|.
+Danach folgen verschiedene Einstellungen des Zeilenabstand, Rand oder Ähnliches, was wir hier aber der Einfachheit halber erst vernachlässigen.
+
+
+\subsection{Dokument beginnen und unterteilen}
+Mit dem Befehl \verb|\begin{document}| leitet man den Abschnitt ein um den ersten Text zu verfassen. 
+Auch gibt es hier wieder wichtige Befehle wie \verb|\section{Überschrift}|, \verb|\subsection{Unterüberschrift}|, \verb|\subsubsection{Unterunterüberschrift}|, usw. Damit kann man Abschnitte einteilen und so den Text gliedern. Das Schöne an LaTeX ist, dass man sich um die Konfiguration keine Gedanken machen muss wie in Word. Man gibt einfach nur den Befehl ein und nachher sieht´s klasse aus. 
+
+\subsection{Bilder und Graphiken}
+In den Text kann man auch Bilder einfügen, dabei sollte man aber auch darauf achten, dass im Pfad der Graphik keine Leerzeichen vorhanden ist. Am besten speichert man die Graphik direkt innerhalb einer Festplatte (E//: Graphik). 
+
+
+Mit folgenden Befehlen fügt man ein Bild ein:
+\begin{verbatim}
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.80\backslash textwidth]{Quellordner}
+	\caption{Untertitel}
+	\label{fig:Titel des Bildes}
+\end{figure}
+\end{verbatim}
+
+Im \LaTeX-Programm kann man aber auch auf "`Einfügen"'- "`Graphik"' gehen, was das Einfügen einer Graphik erleichtert.
+
+\subsection{Hervorheben und Trennen}
+Mit dem Befehl [clearpage] wird der Rest der Seite freigelassen. Das verhindert ein ungewolltes Trennen von Textabschnitten, die man zusammenbehalten möchte.
+Um Schriftzüge hervorzuheben gibt es die Möglichkeit sie größer zu schreiben. Dies tut man mit dem Befehl [large]. Dazu schreibt man den zu vergrößernen Schriftzug in die Zeile nach dem Befehl.  
+
+
+
+\subsection{Dokument beenden}
+Wenn man seinen Text beendet hat, fügt man den Befehl \verb|\end{document}| ein.
+
+\subsection{Fertig!}
+\large Schon hat man sein erstes Dokument erstellt! \newline
+\normalsize Auf dieser Seite haben wir zur Erleichterung verschiedene Templates (Befehlzusammenstellung), mit denen man die verschiedene Dokumentenklassen erstellen kann, dann muss man nicht immer mühevoll Eigene schreiben.
+
+\section{Dokumentenklassen}
+
+Bei \LaTeX \enspace gibt es verschiedene sogenannte "`Dokumentenklassen"', denn es macht einen Unterschied, ob man einen Brief verfassen will oder ob man ein Buch schreiben möchte.
+
+Die Dokumentenklasse wird wie folgt angegeben:
+\begin{verbatim}
+\documentclass[Optionen]{Klasse}
+\end{verbatim}
+
+Hier sind einmal die verschiedenen Dokumentenklassen von \LaTeX \newline
+angegeben:
+
+\small
+\begin{tabular}{p{4.3cm} p{9.8cm}}
+Klasse &definiert die Dokumentenklasse\\
+\hline
+Übersicht der Klassen & \\
+\hline
+\verb|article| &Artikel (z.B. in wissenschaftlichen Zeitschriften), kurze Berichte, etc.\\
+\verb|report| &längere Berichte (mit mehreren Kapiteln), Diplomarbeiten, Dissertationen, etc.\\
+\verb|book| &für Bücher\\
+\verb|scrartcl|, \verb|scrreprt|, \verb|scrbook|&	Varianten der o. g. Klassen mit Anpassung an DIN-Papierformate\\
+\verb|letter| &für Briefe\\
+\verb|foils| &für Folien oder Präsentationen\\
+\hline \hline
+Optionen &definiert die Optionen für die bestehende Dukumentenklasse\\
+\hline
+Übersicht der Optionen & \\
+\hline
+\verb|10pt/11pt/12pt| &Option für die normale Schriftgröße (10pt ist etwas kleiner, 12pt größer)\\
+\verb|a4paper| &Papierformat in DIN-A4 (ohne diesen Zusatz wird amerikanisches Papierformat verwendet)\\
+\verb|fleqn| &linksbündige mathematische Gleichungen\\
+\verb|leqno| &Gleichungsnummern auf der linken Seite\\
+\verb|titlepage/notitlepage| &Festlegung für Titel und Zusammenfassung auf einer eigenen oder gesonderten Seite\\
+\verb|onecolumn/twocolumn| &ein- oder zweispaltiger Satz (Voreinstellungen: onecolumn; gilt nicht für Dokumentenklasse "'letter"')\\
+\end{tabular}
+\normalsize
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Packete (Usepackages)}
+
+Die sogenannten "`Usepackages"' sind ein sehr wichtiger Bestandteil von \LaTeX. Sie dienen dem Programm um weitere Befehle, die es im normalen Betrieb nicht verwendet, zu aktivieren. Daher setzen viele Befehle dementsprechende Usepackages voraus. Wenn in einem Dokument besondere Aktionen, wie zum Beispiel Bild neben Bild, ausgeführt werden sollen, wird das Package "`subfigure"' benötigt. Für eine bessere Übersicht werden Usepackages generell am Anfang des Dokuments aufgeführt. Im Folgenden wird erklärt wie sie eingebunden werden und die meist benutzten Packages aufgelistet.
+
+Zum Benutzen eines Usepackages wird der folgende Befehl benutzt:
+\begin{verbatim}
+\usepackage[Optionen]{Packet}
+\end{verbatim}
+
+Packete: Hier wird der Name des Usepackage eingegeben.
+\bigskip
+
+Hier sind einmal die am häufigsten benutzten Usepackages aufgelistet:
+\medskip
+
+\begin{tabular}{p{4cm} p{10.1cm}}
+\verb|alltt|&Variante der verbatim-Umgebung\\
+\verb|amsmath, amssymb|&erweiterter mathematischer Formelsatz\\
+\verb|babel[german]|&Anpassung für jeweilige Sprachen mit Sprache als "`Option"' (hier: german; für die deutsche Sprache)\\
+\verb|color|&Unterstützung für die Farbausgabe\\
+\verb|dcolumn|&für Spalten mit Ausrichtung auf Dezimaltrennzeichen (für array- und tabular-Umgebungen)\\
+\verb|fancyhdr|&flexible Gestaltung der Kopf- bzw. Fußzeilen\\
+\verb|fontenc|&für Schriften mit unterschiedlicher Codierung\\
+\verb|float|&Erzwingt Bilder und Tabellen an der eingegebenen Stelle zu setzen\\
+\verb|geometry|&manuelle Bestimmung des Layouts mit den Maßen als Optionen\\
+\verb|german, ngerman|&	Anpassung an die traditionelle (german) bzw. die neue Rechtschreibung (ngerman)\\
+\verb|graphicx|&Einbindung von Graphiken\\
+\verb|hyperref|&Einbindung von Hyperlinks\\
+\verb|inputenc|&Deklaration der Zeichenkodierung im Eingabefile\\
+\verb|latexsym|&Einbindung einiger Symbole\\
+\verb|longtable|&Einbindung von Tabellen über mehrere Seiten mit automatischem Seitenumbruch\\
+\verb|makeidy|&Unterstützung zum Erstellen eines Index\\
+\verb|multicol|&Mehrspaltiger Satz mit Kolumnenausgleich\\
+\verb|multirow|&wird benötigt um Tabellenzeilen miteinander zu verbinden\\
+\verb|subfigure|&Wird gebraucht um zwei Bilder nebeneinander zu setzen\\ 
+\verb|textcomp|&Einbindung von Schriften mit zusätzlichen Textsymbolen\\
+\end{tabular}
+
+
+
+\section{Mathematische Formeln}
+
+
+\subsection{Grundprinzip}
+
+Im Folgenden wird erklärt, wie man mit \LaTeX \enspace mathematische Formeln erstellt. Dazu gibt es grundsätzlich zwei verschiedene Möglichkeiten: Zum Einen kann man mathematische Formeln im Text wiedergeben, zum Anderen kann man sie in einer gesonderten Zeile erscheinen lassen.
+	
+	
+\subsubsection{Mathematische Formeln im Text}
+
+Möchte man mathematische Formeln im Text wiedergeben, so setzt man den Teil, der im Mathematikmodus erscheinen soll, entweder zwischen \verb|$| und \verb|$|, zwischen \verb|\(| und \verb|\)| oder zwischen \verb|begin{math}| und \verb|end{math}|. Am einfachsten und emfehlenswerten ist es jedoch die Zeichen \verb|$| zu verwenden.
+\bigskip
+
+\textbf{Ein Beispiel}
+\medskip
+
+Der Satz des Pythagoras $ a^{2} + b^{2} = c^{2} $ gibt an, dass die Hypothenuse im rechtwinklingen Dreieck mit Hilfe der beiden Katheten berechnet werden kann.
+\medskip
+
+Diese Formel sieht im \TeX-Dokument so aus:
+
+\begin{verbatim}
+Der Satz des Pythagoras $ a^{2} + b^{2} = c^{2} $ gibt an, dass ...
+\end{verbatim}
+
+
+\subsubsection{Mathematische Formeln in gesonderten Zeilen}
+
+Möchte man mathematische Formeln in eigenen Zeilen erscheinen lassen, so geschieht dies auf folgende Weise:
+\medskip
+
+Die Befehle
+\bigskip
+
+\verb|\begin{displaymath}| \hspace{5mm} und \hspace{5mm} \verb|\end{displaymeth}|
+\medskip
+
+oder
+\medskip
+
+\verb|\[| \hspace{5mm} und \hspace{5mm} \verb|\]|
+\bigskip
+
+geben die Formeln in eigenen Zeilen, aber ohne zugehörigen Gleichungsnummern an.
+\bigskip
+
+Die Befehle
+\bigskip
+
+\verb|\begin{equation}| \hspace{5mm} und \hspace{5mm} \verb|\end{equation}|
+\bigskip
+
+geben die Formeln in eigenen Zeilen und mit zugehörigen Gleichungsnummern an.
+	\par
+	Mit den Befehlen \verb|\label| und \verb|\ref| kann sich im Text auf eine jeweilige Gleichung bezogen werden, indem sie durch \verb|\label{z.B. Gleichungsname, Gleichungsnummer}| ein sogenanntes \textit{Label} zugesprochen bekommt. Dies ist im einfachsten Fall die Gleichungsnummer oder der Gleichungsname, um später die Übersicht zu behalten, kann aber auch beliebig umbenannt werden. Der Befehl \verb|label| folg direkt nach dem Befehl \verb|\beginn{equation}|: \verb|\begin{equation} \label{pythagoras}|. Dann wird die Gleichung im Text durch den Befehl \verb|\ref{Gleichungsname, Gleichungsnummer}| angesprochen: Der Satz des Pythagoras \verb|\ref{pythagoras}| gibt an, dass \ldots
+\bigskip
+
+\textbf{Ein Beispiel}
+\medskip
+
+\small \textbf{ohne Gleichungsnummer}
+\normalsize
+\medskip
+
+\begin{displaymath}
+a^{2} + b^{2} = c^{2}
+\end{displaymath}
+
+Der Satz des Pythagoras (s.o.) gibt an, dass \ldots
+\medskip
+
+Diese Formel sieht im \TeX-Dokument so aus:
+
+\begin{verbatim}
+\begin{displaymath}
+a^{2} + b^{2} = c^{2}
+\end{displaymath}
+Der Satz des Pythagoras (s.o.) gibt an, dass \ldots
+\end{verbatim}
+\medskip
+
+\small \textbf{mit Gleichungsnummer}
+\normalsize
+\medskip
+
+\begin{equation} \label{pythagoras}
+a^{2} + b^{2} = c^{2}
+\end{equation}
+
+Der Satz des Pythagoras (\ref{pythagoras}) gibt an, dass \ldots
+\medskip
+
+Diese Formel sieht im \TeX-Dokument so aus:
+
+\begin{verbatim}
+\begin{equation} \label{pythagoras}
+a^{2} + b^{2} = c^{2}
+\end{equation}
+Der Satz des Pythagoras (\ref{pythagoras}) gibt an, dass \ldots
+\end{verbatim}
+\medskip
+
+Die Formeln können auch über das Menü erstellt werden: Dazu wird in der Kopfzeile des TeXnicCenter unter \textit{Einfügen/Formeln} die jeweilige Option ausgesucht.
+
+\subsection{Grundrechenarten}
+
+\subsubsection{Addition, Subtraktion, Multiplikation}
+
+Das Addieren, Subtrahieren und Multiplizieren ist mit \LaTeX \enspace sehr einfach darzustellen:
+\smallskip
+
+\small \textbf{Addition, Subtraktion}
+\normalsize
+\smallskip
+
+Um zu addieren oder zu subtrahieren werden im Mathematikmodus die Operatoren  \textit{+}  und \textit{-} verwendet.
+\smallskip
+
+\small \textbf{Multiplikation}
+\normalsize
+\smallskip
+
+Um zu multiplizieren wird im Mathematikmodus der Befehl \verb|\cdot| verwendet.
+
+
+\subsubsection{Division}
+
+Für einfache Brüche wird der Operator \textit{/} verwendet.
+	\par
+	Für kompliziertere Brüche verwendet man den Befehl \verb|\frac{}{}|, wobei der Zähler in der ersten Klammer und der Nenner in der zweiten Klammer steht.
+\bigskip
+
+\textbf{Ein Beispiel}
+\medskip
+
+\begin{displaymath}
+\frac{(a + b) \cdot (a + b)}{(c-d) \cdot (c-d)}
+\end{displaymath}
+
+Diese Formel sieht im \TeX-Dokument so aus:
+\medskip
+
+\begin{verbatim}
+\begin{displaymath}
+\frac{(a + b) \cdot (a + b)}{(c-d) \cdot (c-d)}
+\end{displaymath}
+\end{verbatim}
+
+\subsection{Wurzeln, Exponenten und Indizes}
+
+
+\subsubsection{Wurzeln}
+
+Mit dem Befehl \verb|\sqrt{}| lässt sich eine Wurzel erstellen. Der Ausdruck der unter der Wurzel stehen soll muss im \TeX-Dokument zwischen den beiden Klammern stehen. Bei der Wurzel aus der Wurzel eines Ausdrucks wendet man innerhalb des \textit{sqrt}-Befehls diesen noch ein weiteres mal an: \verb|\sqrt{\sqrt{a}}| \enspace $ \sqrt{\sqrt{a}} $. Um die $ x $-te Wurzel zu ziehen stellt man den geschweiften Klammern zwei eckige Klammern voraus: \verb|\sqrt[x]{a}| \enspace $ \sqrt[x]{a} $.
+
+
+\subsubsection{Exponenten und Indizes}
+
+Um mit \LaTeX \enspace Exponenten darzustellen verwendet man innerhalb des Mathematikmodus (z.B. mit \$ \dots \$) den Operator \verb|^| gefolgt von zwei geschweiften Klammern \verb|{}|.
+Um Indizes darzustellen verwendet man den Operator \verb|_| gefolgt von zwei geschweiften Klammern.
+\medskip
+
+\large
+\begin{center}
+$ x^{2} $ \qquad \verb|x^{2}|
+\medskip
+
+$ x_{2} $ \qquad \verb|x_{2}|
+\end{center}
+\normalsize
+
+\Large
+\begin{displaymath}
+\frac{\sqrt[x]{z^{\frac{1}{2}}}}{e^{-\frac{1}{3}x^{2}} \cdot k}
+\end{displaymath}
+\normalsize
+\smallskip
+
+\begin{verbatim}
+\frac{\sqrt[x]{z^{\frac{1}{2}}}}{e^{-\frac{1}{3}x^{2}} \cdot k}
+\end{verbatim}
+
+\Large
+\begin{displaymath}
+\frac{\sqrt[x]{z_{4}}}{e^{x_{2}} \cdot k}
+\end{displaymath}
+\normalsize
+\smallskip
+
+\begin{verbatim}
+\frac{\sqrt[x]{z_{4}}}{e^{x_{2}} \cdot k}
+\end{verbatim}
+
+\subsection{Matritzen}
+
+Das Erstellen von Matritzen hat mit \LaTeX \enspace Änhnlichkeiten mit dem Erstellen von Tabellen.
+
+Hierzu verwendet man die Befehle
+	
+\begin{verbatim}
+\begin{array}
+\end{array}
+\end{verbatim}
+
+\textbf{Ein Beispiel}
+\medskip
+
+\begin{displaymath}
+\mathbf{A} =
+\left[ \begin{array}{c c c c}
+1	&	2	&	3	&	\ldots	\\
+4	&	5	&	6	&	\ldots	\\
+7	&	8	&	9	&	\ldots	\\
+\vdots	&	\vdots	&	\vdots	&	\ddots	\\
+\end{array} \right]
+\end{displaymath}
+
+\begin{verbatim}
+\begin{displaymath}
+\mathbf{A} =
+\left[ \begin{array}{c c c c}
+1	&	2	&	3	&	\ldots	\\
+4	&	5	&	6	&	\ldots	\\
+7	&	8	&	9	&	\ldots	\\
+\vdots	&	\vdots	&	\vdots	&	\ddots	\\
+\end{array} \right]
+\end{displaymath}
+\end{verbatim}
+
+\subsection{Symbole, Sonderzeichen und andere mathematische Operatoren}
+
+Andere mathematische Operatoren sowie Symbole und Sonderzeichen sind über die Kopfzeile des \textit{TeXnicCenter} unter $ Mathe $ einzufügen. Der Umgang mit mathematischen Operatoren erfolgt stets nach dem gleichen Schema (z.B. mit \$ \dots \$). 
+
+
+\section{Tabellen}
+
+
+\subsection{Grundprinzip}
+
+Im Folgenden wird erklärt, wie man mit \LaTeX \enspace Tabellen erstellt.
+
+Am einfachsten funktioniert dies mit der Tabularumgebung:
+
+Mit dem Befehl
+
+\begin{verbatim}
+\begin{tabular}{Spaltendefinition}
+\end{verbatim}
+
+mit der entsprechenden Spaltendefinition hinter dem \textit{tabular}-Befehl.
+
+Und dem Befehl
+
+\begin{verbatim}
+\end{tabular}
+\end{verbatim}
+
+zum Beenden der laufenden Tabelle.
+
+Alle restlichen Tabelleninhalte müssen sich grundsätzlich zwischen den beiden (o.g.) Befehlen zum Beginnen und Beenden einer jeweiligen Tabelle befinden.
+
+
+\subsection{Spaltendefinitionen}
+
+\begin{tabular}{l l}
+\verb|l|	&	der Text innerhalb der Spalte wird linksbündig ausgerichtet	\\
+\verb|c|	&	der Text innerhalb der Spalte wird zentriert ausgerichtet	\\
+\verb|r|	&	der Text innerhalb der Spalte wird rechtsbündig ausgerichtet	\\
+\verb | ,  \verb || 	&	einfache, doppelte senkrechte Trennlinie zwischen den Spalten \\
+\verb|p{Breite}|	&	manuelle Festlegung der Spaltenbreite, kürzere Spalte ist oben \\ & ausgerichtet	\\
+\verb|m{Breite}|	&	manuelle Festlegung der Spaltenbreite, kürzere Spalte ist mittig \\ & ausgerichtet	\\
+\verb|b{Breite}|	&	manuelle Festlegung der Spaltenbreite, kürzere Spalte ist unten \\ & ausgerichtet	\\
+\end{tabular}
+\bigskip
+
+\textbf{Ein Beispiel}
+
+\begin{verbatim}
+\begin{tabular}{|l||c|r|}
+\end{verbatim}
+
+Dies ist eine Tabelle mit drei Spalten und vertikalen Trennlinien. Mit einer doppelten Trennlinie nach der ersten Spalte und einfachen Trennlinien vor der ersten, nach der zweiten und nach der dritten Spalte. Mit linksbündigem Text in der ersten, zentriertem Text in der zweiten und rechtsbündigem Text in der dritten Spalte.
+	\par
+	Sind keine vertikalen Trennlinien gewünscht, so sind die Abtrennungen ("`\verb | "') durch Leerzeichen zu ersetzen.
+
+
+\subsection{Befehle innerhalb der \textit{tabular}-Umgebung}
+
+\begin{tabular}{l l}
+\verb|&|	&	zum Trennen der Spalten	\\
+\verb|\\| &	Zeilenumbruch	\\
+\verb|\hline|	&	horizontale Linie \\
+\verb|\hline \hline|	&	doppelte, horizontale Linie \\
+\verb|\cline{1-2}|	&	horizontale Linie von einer Spalte x bis zur jeweiligen	\\	&	Spalte y (hier von Spalte 1 bis Spalte 2) \\
+\end{tabular}
+
+
+\subsection{Zusammenfassen mehrerer Boxen}
+
+Um einzelne Tabellenboxen zu einer Box zusammenzufassen - also eine große Box über zwei oder mehrere kleine Boxen zu ziehen - wendet man folgende Befehle an:
+
+
+\subsubsection{Zusammenfassen von Spalten}
+
+\begin{verbatim}
+\multicolumn{Spaltenzahl}{Spaltendefinition}{Text}
+\end{verbatim}
+
+Mit dem \textit{multicolumn}-Befehl lässt sich eine Spalte über mehrere kleine Spalten ziehen. Für die Spaltenzahl wird die Anzahl an Spalten angegeben, über die die jeweilige große Spalte laufen soll. In der Spaltendefinition wird die Ausrichtung des Spalteninhalts angegeben - wie in der Definition \newline \verb|\begin{tabular}{Spaltendefinition}|:
+\medskip
+
+\begin{tabular}{l l}
+\verb|l|	&	linksbündig	\\
+\verb|c|	&	zentriert	\\
+\verb|r|	&	rechtsbündig	\\
+\end{tabular}
+\medskip
+
+In die letzte Klammer wird der Text dieser Spalte geschrieben.
+\bigskip
+
+\textbf{Ein Beispiel}
+\medskip
+
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{4}{|c|}{Vokabeln}	\\
+\hline \hline
+\multicolumn{2}{|c|}{Englisch}	&	\multicolumn{2}{|c|}{Deutsch}	\\
+\hline
+1.			&	door							&	1.	&	die Tür	\\
+2.			&	waiter, waitress	&	2.	&	der Kellner, die Kellnerin; \\ & & & die Bedienung; der Ober 	\\
+3.			&	(magic) wand			&	3.	&	der Zauberstab	\\
+4.			&	potato						&	4.	&	die Kartoffel	\\
+5.			&	\ldots						&	5.	&	\ldots	\\
+\end{tabular}
+\bigskip
+
+Diese Tabelle sieht im \TeX-Dokument so aus:
+
+\begin{verbatim}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{4}{|c|}{Vokabeln}	\\
+\hline \hline
+\multicolumn{2}{|c|}{Englisch}	&	\multicolumn{2}{|c|}{Deutsch}	\\
+\hline
+1.			&	door							&	1.	&	die Tür	\\
+2.			&	waiter, waitress	&	2.	&	der Kellner, die Kellnerin; \\
+				&										&			&	die Bedienung; der Ober	\\
+3.			&	(magic) wand			&	3.	&	der Zauberstab	\\
+4.			&	potato						&	4.	&	die Kartoffel	\\
+5.			&	\ldots						&	5.	&	\ldots	\\
+\end{tabular}
+\end{verbatim}
+
+
+\subsubsection{Zusammenfassen von Zeilen}
+
+\begin{verbatim}
+\multirow{Zeilenzahl}{Zeilenbreite}{Text}
+\end{verbatim}
+
+Mit dem \textit{multirow}-Befehl lässt sich eine Zeile über mehrere kleine Zeilen ziehen. Dies erfolgt entsprechend analog zum \textit{multicolumn}-Befehl; allerdings wird hier keine Zeilendefinition, sondern nur eine Zeilenbreite angegeben. Der Text steht wiederum in der letzten Klammer. Um den Befehl ausführen zu können ist das \verb|\usepackage{multirow}| notwendig.
+\bigskip
+
+\textbf{Ein Beispiel}
+\medskip
+
+\begin{tabular}{|p{3cm}|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Verkehrsaufkommen}} \\
+\hline
+\hline
+	\multirow{4}{8cm}{\scriptsize \textbf{Personenverkehr}} \normalsize
+			&	\multicolumn{4}{|c|}{\scriptsize \textbf{Individualverkehr}} \normalsize	\\
+			\cline{2-5}
+			&	\multicolumn{2}{|c|}{\footnotesize motorisiert}	&	\multicolumn{2}{|c|}{\footnotesize nicht motorisiert} \normalsize \\
+			\cline{2-5} \cline{2-5}
+			&	\multicolumn{4}{|c|}{\scriptsize \textbf{öffentlicher Personenverkehr}} \normalsize \\
+			\cline{2-5}
+			&	\footnotesize Straßenverkehr	&	\footnotesize Schienenverkehr	&	\footnotesize Schiffsverkehr	&	\footnotesize Luftverkehr \normalsize \\
+\hline
+\hline
+	\multirow{4}{8cm}{\scriptsize \textbf{Güterverkehr}} \normalsize
+			&	\multicolumn{4}{|c|}{\scriptsize \textbf{40 Tonnen und weniger}} \normalsize \\
+			\cline{2-5}
+			&	\footnotesize Straßenverkehr	&	\footnotesize Schienenverkehr	&	\footnotesize Schiffsverkehr	&	\footnotesize Luftverkehr \normalsize \\
+			\cline{2-5}
+			&	\multicolumn{4}{|c|}{\scriptsize \textbf{über 40 Tonnen}} \normalsize \\
+			\cline{2-5}
+			&	\footnotesize Straßenverkehr	&	\footnotesize Schienenverkehr	&	\footnotesize Schiffsverkehr	&	\footnotesize Luftverkehr \normalsize \\
+\hline
+\end{tabular}
+\normalsize
+\bigskip
+
+Diese Tabelle sieht im \TeX-Dokument so aus:
+
+\begin{verbatim}
+\begin{tabular}{|p{3cm}|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Verkehrsaufkommen} \\
+\hline
+\hline
+	\multirow{4}{8cm}{Personenverkehr}
+			&	\multicolumn{4}{|c|}{Individualverkehr}	\\
+			\cline{2-5}
+			&	\multicolumn{2}{|c|}{motorisiert}	&	
+						\multicolumn{2}{|c|}{nicht motorisiert} \\
+			\cline{2-5} \cline{2-5}
+			&	\multicolumn{4}{|c|}{öffentlicher Personenverkehr} \\
+			\cline{2-5}
+			&	Straßenverkehr	&	Schienenverkehr	&	Schiffsverkehr	&	Luftverkehr \\
+\hline
+\hline
+	\multirow{4}{8cm}{Güterverkehr}
+			&	\multicolumn{4}{|c|}{40 Tonnen und weniger} \\
+			\cline{2-5}
+			&	Straßenverkehr	&	Schienenverkehr	&	Schiffsverkehr	&	Luftverkehr \\
+			\cline{2-5}
+			&	\multicolumn{4}{|c|}{über 40 Tonnen} \\
+			\cline{2-5}
+			&	Straßenverkehr	&	Schienenverkehr	&	Schiffsverkehr	&	Luftverkehr \\
+\hline
+\end{tabular}
+\end{verbatim}
+
+Einstellungen zum Schriftformat wurden hier der Übersichtlichkeit halber außer Acht gelassen.
+
+
+\section{Bilder nebeneinander anordnen (subfigure)}
+
+Wie bei den Usepackages schon beschrieben, wird um Bilder nebeneinander darstellen zu lassen, dass Usepackage "`subfigure"' benötigt. Im Teil "`Das erstes eigenes Dokument"' wurde schon beschrieben wie ein Bild eingefügt wird. Dieses funktioniert ähnlich bei den Nebeneinander stehenden Bildern. So ist es möglich direkte Bildervergleiche anzustellen. Ein Vorteil gegenüber Word ist, dass die Bilder von der Größe genau angepasst werden können. Hier einmal die Befehlsstruktur für solche Bilder:
+
+\begin{verbatim}
+\usepackage{subfigure}
+\begin{figure}[...]
+\centering
+\subfigure[Untertitel des 1. Bildes]{\includegraphics[width=...,
+height=...]{Quellordner}}
+\subfigure[Untertitel des 2. Bildes]{\includegraphics[width=...,
+height=...]{Quellordner}}
+\caption{gemeinsamer Untertitel}
+\label{fig:Titel des Bildes}
+\end{figure}
+\end{verbatim}
+
+\section{Nützliche Links}
+
+Beim erstellen unserer Facharbeiten sind wir auf ein paar sehr nützliche Internetseiten gestoßen. Diese möchten wir hier für Sie auch noch einmal auflisten:
+\bigskip
+
+\small
+http://www.latex-project.org/ \par
+\qquad \LaTeX-Hauptseite: Hier kann \LaTeX \enspace heruntergeladen werden
+\medskip
+		
+http://latex.mschroeder.net/ \par
+\qquad Ein weiteres Tutorial für \LaTeX: Sehr gut für Anfänger geeignet
+\medskip
+
+http://www.golatex.de/ \par
+\qquad Deutschsprachiges \LaTeX-Forum
+\medskip
+		
+http://www.weinelt.de/latex/index.html \par
+\qquad Eine Übersicht der \LaTeX-Befehle für Fortgeschrittene
+\medskip
+
+http://www.heiner-lamprecht.net/uploads/media/Handbuch.pdf \par
+\qquad Großes und sehr umfangreiches 284 Seitiges \LaTeX-Handbuch
+\medskip
+		
+ftp://ftp.fernuni-hagen.de/pub/pdf/urz-broschueren/broschueren/a0279510.pdf \par
+\qquad Ein weiteres und etwas kleineres \LaTeX-Handbuch mit 146 Seiten
+\normalsize
+
+\section{Template für die Seminararbeit}
+
+Nach diesem Tutorial werden Sie sich wahrscheinlich fragen, wie lange wir an der Grundstruktur unserer Templates für die Seminararbeit gearbeitet haben. An dieser Stelle möchten wir uns nochmal bei Herrn Dr. Preuß bedanken, der unserem Kurs ein Grund-Template geschrieben hatte. Dieses finden Sie auch hier zum Download unter folgendem Link:
+
+%------hier muss noch ein Link folgen, wo das Template heruntergeladen werden kann.--------- 
+
+Ansonsten wünschen wir allen viel Spaß beim erfolgreichen Arbeiten mit \LaTeX \enspace und freuen uns über eine Weiterempfehlung von der Homepage und \LaTeX ! 
+
+% -------------------------------------------------------------------------------------------
+
+
+\end{document}
+
+

@@ -1,0 +1,59 @@
+\documentclass[12pt,titlepage]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{ngerman}
+\usepackage{afterpage}
+\usepackage{psfrag}
+\usepackage{epsf}
+% Punkt + Komma Abst"ande bei Tausendern/Dezimalzahlen ans dt. anpassen
+\mathcode`,="013B
+\mathcode`.="613A
+ 
+\setlength{\unitlength}{1mm}
+\addtolength{\textheight}{35mm} 
+\addtolength{\textwidth}{20mm}
+\addtolength{\topmargin}{-10mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\settowidth{\marginparwidth}{0mm}
+\settowidth{\marginparsep}{0mm}
+\setlength{\baselineskip}{16pt}
+
+\pagestyle{headings}
+
+\def\lsi{\raise0.3ex\hbox{$<$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\def\gsi{\raise0.3ex\hbox{$>$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\newcommand{\lsim}{\mathop{\lsi}}
+\newcommand{\gsim}{\mathop{\gsi}}
+\renewcommand{\baselinestretch}{1.50}
+
+\begin{document}
+  
+ 	\title{Meine Facharbeit}     
+	
+        \author{Schlaubi Schlumpf}
+        
+ 	\maketitle
+	
+   \tableofcontents
+   \clearpage
+
+   \section{Einleitung}
+   
+% Anzahl der sections, subsections etc. sind nat"urlich frei zu w"ahlen
+   
+   \section{}
+    
+     \subsection{}
+       \subsubsection{}    
+
+   \section{}
+
+ \begin{thebibliography}{99}
+   \bibitem{cit2}
+   \bibitem{cit2}
+   \bibitem{cit3}
+ \end{thebibliography}
+
+
+\end{document}
+
